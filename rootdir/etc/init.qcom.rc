@@ -677,10 +677,14 @@ service vendor.sensors /vendor/bin/sscrpcd
     capabilities BLOCK_SUSPEND
 
 service vendor.sensors.qti /vendor/bin/sensors.qti
-    class core
+    class main
     user system
-    group root system input
+    group system input
     disabled
+    group system
+    # Grants the ability for this daemon to bind IPC router ports so it can
+    # register QMI services
+    capabilities NET_BIND_SERVICE
     writepid /dev/cpuset/system-background/tasks
 
 on property:ro.vendor.use_data_netmgrd=false
