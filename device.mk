@@ -601,6 +601,7 @@ PRODUCT_PACKAGES += \
 # Wi-FI caf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.hostapd@1.1 \
+    vendor.qti.hardware.wifi.hostapd@1.0 \
     vendor.qti.hardware.wifi@1.0 \
     vendor.qti.hardware.wifi.supplicant@2.1
 
