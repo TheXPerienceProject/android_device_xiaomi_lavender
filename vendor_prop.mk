@@ -174,8 +174,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.use_data_netmgrd=true \
-    persist.vendor.data.mode=concurrent \
-    persist.data.netmgrd.qos.enable=true
+    persist.vendor.data.mode=concurrent
 
 # Nitz
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -207,12 +206,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
     persist.data.df.dev_name=rmnet_usb0 \
-    persist.data.wda.enable=true \
     persist.radio.aosp_usr_pref_sel=true \
     persist.radio.sib16_support=1 \
     persist.radio.schd.cache=3500 \
     persist.radio.multisim.config=dsds \
-    persist.rmnet.data.enable=true \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
