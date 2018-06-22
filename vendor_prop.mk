@@ -52,7 +52,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.period_size=192 \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio.adm.buffering.ms=2 \
-    vendor.fm.a2dp.conc.disabled=true \
     vendor.voice.path.for.pcm.voip=true \
     ro.config.media_vol_steps=25 \
     ro.config.vc_call_vol_steps=7 \
