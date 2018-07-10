@@ -218,6 +218,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-qcp=true \
     media.stagefright.enable-scan=true \
     mm.enable.smoothstreaming=true \
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
     mmp.enable.3g2=true \
     vendor.mm.enable.qcom_parser=13631471 \
     persist.mm.enable.prefetch=true \
