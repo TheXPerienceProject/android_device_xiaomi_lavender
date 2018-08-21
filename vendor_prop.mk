@@ -234,6 +234,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.cmc=false \
     ro.vendor.sdk.sensors.gestures=false
 
+# Sensor features
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.sensor.hw.binder.size=8
+
 # Thermal
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.thermal.data.path=/data/vendor/thermal/
