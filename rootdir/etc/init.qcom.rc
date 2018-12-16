@@ -725,7 +725,7 @@ service vendor.sensors /vendor/bin/sscrpcd
 service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
     user system
-    group system
+    group root system input
     disabled
     writepid /dev/cpuset/system-background/tasks
 
