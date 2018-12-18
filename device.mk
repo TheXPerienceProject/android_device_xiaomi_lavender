@@ -501,3 +501,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd.accept:$(TARGET_OUT_VENDOR_ETC)/hostapd/hostapd.accept \
     $(LOCAL_PATH)/wifi/hostapd.deny:$(TARGET_OUT_VENDOR_ETC)/hostapd/hostapd.deny \
     $(LOCAL_PATH)/wifi/hostapd.conf:$(TARGET_OUT_VENDOR_ETC)/hostapd/hostapd_default.conf
+
+###################################################################################
+# This is the End of target.mk file.
+# Now, Pickup other split product.mk files:
+###################################################################################
+$(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
+$(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
+###################################################################################
