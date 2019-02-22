@@ -70,6 +70,9 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := lavender
 
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
@@ -274,5 +277,5 @@ ifeq ($(HOST_OS),linux)
 endif
 #PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
-# Inherit from the proprietary version
+# inherit from the proprietary version
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
