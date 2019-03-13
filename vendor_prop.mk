@@ -84,6 +84,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.camera.camera2=true \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,org.cyanogenmod.snap
 
+# Codec2 switch
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.media.codec2=2
+
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.chg.max_volt_mv=9000
