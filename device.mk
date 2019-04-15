@@ -7,6 +7,9 @@
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/lavender/lavender-vendor.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
