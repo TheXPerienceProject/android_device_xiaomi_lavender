@@ -498,6 +498,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/hostapd.accept:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd.accept \
-    $(LOCAL_PATH)/wifi/hostapd.deny:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd.deny \
-    $(LOCAL_PATH)/wifi/hostapd.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/hostapd/hostapd_default.conf
+    $(LOCAL_PATH)/wifi/hostapd.accept:$(TARGET_OUT_VENDOR_ETC)/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/wifi/hostapd.deny:$(TARGET_OUT_VENDOR_ETC)/hostapd/hostapd.deny \
+    $(LOCAL_PATH)/wifi/hostapd.conf:$(TARGET_OUT_VENDOR_ETC)/hostapd/hostapd_default.conf
