@@ -438,6 +438,7 @@
         <item>"/system/lib64/libRSDriver.so"</item>
         <item>"/system/lib64/libRSCpuRef.so"</item>
         <item>"/system/lib64/libblas.so"</item>
+        <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
