@@ -581,4 +581,7 @@
          fading edges is prohibitively expensive on most GPUs. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
 
+    <!-- Enable WPA3 support -->
+    <bool translatable="false" name="config_wifi_wpa3_supported">false</bool>
+
 </resources>
