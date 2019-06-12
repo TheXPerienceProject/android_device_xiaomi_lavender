@@ -692,10 +692,9 @@ service vendor.dataadpl /system/vendor/bin/adpl
     disabled
 
 service vendor.sensors /vendor/bin/sscrpcd
-    class core
+    class early_hal
     user system
     group system
-    disabled
 
 service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
