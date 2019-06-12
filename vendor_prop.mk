@@ -279,3 +279,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Netflix custom property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q660-13149-1
+
+# VoLTE Shit hax
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.dbg.volte_avail_ovr=1 \
+   persist.dbg.vt_avail_ovr=1
