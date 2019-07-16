@@ -451,6 +451,7 @@ on charger
     start qcom-post-boot
     start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
+    start thermal-engine
     start vendor.power_off_alarm
 
 #
@@ -536,28 +537,28 @@ on property:sys.hbm_mode=0
     write /sys/class/graphics/fb0/msm_fb_hbm 0
 
 on property:sys.dynamic_debug=1
-   write /sys/kernel/debug/dynamic_debug/control "file q6afe.c +p" 
-   write /sys/kernel/debug/dynamic_debug/control "file q6adm.c +p" 
-   write /sys/kernel/debug/dynamic_debug/control "file msm-pcm-routing-v2.c +p" 
-   write /sys/kernel/debug/dynamic_debug/control "file msm-dai-q6-v2.c +p" 
-   write /sys/kernel/debug/dynamic_debug/control "file soc-core.c +p" 
-   write /sys/kernel/debug/dynamic_debug/control "file soc-dapm.c +p" 
-   write /sys/kernel/debug/dynamic_debug/control "file sdm660-internal.c +p" 
-   write /sys/kernel/debug/dynamic_debug/control "file sdm660-common.c +p" 
-   write /sys/kernel/debug/dynamic_debug/control "file msm-analog-cdc.c +p" 
+   write /sys/kernel/debug/dynamic_debug/control "file q6afe.c +p"
+   write /sys/kernel/debug/dynamic_debug/control "file q6adm.c +p"
+   write /sys/kernel/debug/dynamic_debug/control "file msm-pcm-routing-v2.c +p"
+   write /sys/kernel/debug/dynamic_debug/control "file msm-dai-q6-v2.c +p"
+   write /sys/kernel/debug/dynamic_debug/control "file soc-core.c +p"
+   write /sys/kernel/debug/dynamic_debug/control "file soc-dapm.c +p"
+   write /sys/kernel/debug/dynamic_debug/control "file sdm660-internal.c +p"
+   write /sys/kernel/debug/dynamic_debug/control "file sdm660-common.c +p"
+   write /sys/kernel/debug/dynamic_debug/control "file msm-analog-cdc.c +p"
    write /sys/kernel/debug/dynamic_debug/control "file msm-digital-cdc.c +p"
-   write /sys/kernel/debug/dynamic_debug/control "file wcd-mbhc-v2.c +p" 
+   write /sys/kernel/debug/dynamic_debug/control "file wcd-mbhc-v2.c +p"
 
 on property:sys.dynamic_debug=0
-   write /sys/kernel/debug/dynamic_debug/control "file q6afe.c -p" 
-   write /sys/kernel/debug/dynamic_debug/control "file q6adm.c -p" 
-   write /sys/kernel/debug/dynamic_debug/control "file msm-pcm-routing-v2.c -p" 
-   write /sys/kernel/debug/dynamic_debug/control "file msm-dai-q6-v2.c -p" 
-   write /sys/kernel/debug/dynamic_debug/control "file soc-core.c -p" 
-   write /sys/kernel/debug/dynamic_debug/control "file soc-dapm.c -p" 
-   write /sys/kernel/debug/dynamic_debug/control "file sdm660-internal.c -p" 
-   write /sys/kernel/debug/dynamic_debug/control "file sdm660-common.c -p" 
-   write /sys/kernel/debug/dynamic_debug/control "file msm-analog-cdc.c -p" 
+   write /sys/kernel/debug/dynamic_debug/control "file q6afe.c -p"
+   write /sys/kernel/debug/dynamic_debug/control "file q6adm.c -p"
+   write /sys/kernel/debug/dynamic_debug/control "file msm-pcm-routing-v2.c -p"
+   write /sys/kernel/debug/dynamic_debug/control "file msm-dai-q6-v2.c -p"
+   write /sys/kernel/debug/dynamic_debug/control "file soc-core.c -p"
+   write /sys/kernel/debug/dynamic_debug/control "file soc-dapm.c -p"
+   write /sys/kernel/debug/dynamic_debug/control "file sdm660-internal.c -p"
+   write /sys/kernel/debug/dynamic_debug/control "file sdm660-common.c -p"
+   write /sys/kernel/debug/dynamic_debug/control "file msm-analog-cdc.c -p"
    write /sys/kernel/debug/dynamic_debug/control "file msm-digital-cdc.c -p"
    write /sys/kernel/debug/dynamic_debug/control "file wcd-mbhc-v2.c -p"
 
