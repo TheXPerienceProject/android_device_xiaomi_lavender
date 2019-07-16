@@ -314,6 +314,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_sdm660_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_sdm660_v1.xml \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
+# Vendor property overrides
+#Rank OMX SW codecs lower than OMX HW codecs
+PRODUCT_PROPERTY_OVERRIDES += debug.stagefright.omx_default_rank.sw-audio=1
+PRODUCT_PROPERTY_OVERRIDES += debug.stagefright.omx_default_rank=0
 
 # Net
 PRODUCT_PACKAGES += \
