@@ -7,6 +7,8 @@ BOARD_IPAv3_LIST += sdm710
 BOARD_IPAv3_LIST += msmnile
 BOARD_IPAv3_LIST += $(MSMSTEPPE)
 BOARD_IPAv3_LIST += $(TRINKET)
+BOARD_ETH_BRIDGE_LIST := msmnile
+BOARD_ETH_BRIDGE_LIST += kona
 
 ifneq ($(call is-board-platform-in-list,$(BOARD_PLATFORM_LIST)),true)
 ifneq (,$(filter $(QCOM_BOARD_PLATFORMS),$(TARGET_BOARD_PLATFORM)))
@@ -25,7 +27,10 @@ LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 LOCAL_CFLAGS := -v
 LOCAL_CFLAGS += -DFEATURE_IPA_ANDROID
 LOCAL_CFLAGS += -DFEATURE_IPACM_RESTART
+
+ifeq ($(call is-board-platform-in-list,$(BOARD_ETH_BRIDGE_LIST)),true)
 LOCAL_CFLAGS += -DFEATURE_ETH_BRIDGE_LE
+endif
 
 LOCAL_CFLAGS += -DFEATURE_IPACM_HAL -Wall -Werror -Wno-error=macro-redefined
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
