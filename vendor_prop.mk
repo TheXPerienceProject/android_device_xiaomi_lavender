@@ -113,7 +113,7 @@ persist.bluetooth.a2dp_offload.disabled=false
 
 #enable headset calibration
 PRODUCT_PROPERTY_OVERRIDES += \
-audio.volume.headset.gain.depcal=true
+vendor.audio.volume.headset.gain.depcal=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
