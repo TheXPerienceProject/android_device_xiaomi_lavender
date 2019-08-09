@@ -51,7 +51,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
-TARGET_KERNEL_CONFIG := lineage-lavender_defconfig
+TARGET_KERNEL_CONFIG := Yuki_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # dtbo
@@ -200,6 +200,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
     /vendor/bt_firmware:/bt_firmware
 TARGET_COPY_OUT_VENDOR := vendor
+TARGET_USES_MKE2FS := true
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
