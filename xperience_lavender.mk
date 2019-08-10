@@ -32,6 +32,8 @@ include device/qcom/common/common.mk
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2340
 
+#call tcmiface in boot
+PRODUCT_BOOT_JARS += tcmiface
 
 PRODUCT_NAME := xperience_lavender
 PRODUCT_BRAND := Xiaomi
