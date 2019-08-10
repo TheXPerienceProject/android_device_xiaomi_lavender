@@ -1,7 +1,5 @@
-#
 # Copyright (C) 2009 The Android Open Source Project
 # Copyright (c) 2011, The Linux Foundation. All rights reserved.
-# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,11 +18,11 @@ import common
 import re
 
 def FullOTA_Assertions(info):
-  AddBasebandAssertion(info, info.input_zip)
+  AddTrustZoneAssertion(info, info.input_zip)
   return
 
 def IncrementalOTA_Assertions(info):
-  AddBasebandAssertion(info, info.target_zip)
+  AddTrustZoneAssertion(info, info.target_zip)
   return
 
 def FullOTA_InstallEnd(info):
@@ -35,16 +33,14 @@ def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
 
-def AddBasebandAssertion(info, input_zip):
-  android_info = input_zip.read("OTA/android-info.txt")
-  m = re.search(r'require\s+version-baseband\s*=\s*(.+)', android_info)
+def AddTrustZoneAssertion(info, input_zip):
+  android_info = info.input_zip.read("OTA/android-info.txt")
+  m = re.search(r'require\s+version-trustzone\s*=\s*(\S+)', android_info)
   if m:
-    timestamp, firmware_version = m.group(1).rstrip().split(',')
-    timestamps = timestamp.split('|')
-    if ((len(timestamps) and '*' not in timestamps) and \
-        (len(firmware_version) and '*' not in firmware_version)):
-      cmd = 'assert(xiaomi.verify_baseband(' + ','.join(['"%s"' % baseband for baseband in timestamps]) + ') == "1" || abort("ERROR: This package requires firmware from MIUI {1} or newer. Please upgrade firmware and retry!"););'
-      info.script.AppendExtra(cmd.format(timestamps, firmware_version))
+    versions = m.group(1).split('|')
+    if len(versions) and '*' not in versions:
+      cmd = 'assert(lavender.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1");'
+      info.script.AppendExtra(cmd)
   return
 
 def AddImage(info, basename, dest):
