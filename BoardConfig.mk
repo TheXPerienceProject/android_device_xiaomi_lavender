@@ -1,12 +1,12 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2019 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 BOARD_VENDOR := xiaomi
 
-DEVICE_PATH := device/xiaomi/violet
+DEVICE_PATH := device/xiaomi/lavender
 
 # Architecture
 TARGET_ARCH := arm64
@@ -51,8 +51,8 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_SOURCE := kernel/xiaomi/violet
-TARGET_KERNEL_CONFIG := vendor/violet-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
+TARGET_KERNEL_CONFIG := vendor/lavender-perf_defconfig
 TARGET_KERNEL_VERSION := 4.14
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -270,4 +270,4 @@ WIFI_HIDL_FEATURE_AWARE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/violet/BoardConfigVendor.mk
+-include vendor/xiaomi/lavender/BoardConfigVendor.mk

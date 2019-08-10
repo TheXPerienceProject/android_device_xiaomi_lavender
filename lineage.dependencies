@@ -4,7 +4,7 @@
     "target_path": "packages/resources/devicesettings"
   },
   {
-    "repository": "android_kernel_xiaomi_violet",
-    "target_path": "kernel/xiaomi/violet"
+    "repository": "android_kernel_xiaomi_lavender",
+    "target_path": "kernel/xiaomi/lavender"
   }
 ]
