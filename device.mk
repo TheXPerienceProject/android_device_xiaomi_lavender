@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne
 
+# Crypto
+PRODUCT_PACKAGES += \
+    libcryptfs_hw
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
