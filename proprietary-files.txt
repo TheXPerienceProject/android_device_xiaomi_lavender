@@ -1177,6 +1177,8 @@ vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|ecf91d0902c45d133425f69903844d26871
 vendor/bin/qseecomd
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libsdedrm.so
+vendor/lib64/libcpion.so
+vendor/lib64/libcppf.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
