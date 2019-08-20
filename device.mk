@@ -306,7 +306,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    android.hardware.media.omx@1.0-impl
 
 # Power
 PRODUCT_PACKAGES += \
