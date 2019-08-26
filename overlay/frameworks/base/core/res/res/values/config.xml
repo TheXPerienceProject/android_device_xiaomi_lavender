@@ -578,4 +578,7 @@
     <!-- Enable WPA3 support -->
     <bool translatable="false" name="config_wifi_wpa3_supported">false</bool>
 
+    <!-- Whether device has screen with higher aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
 </resources>
