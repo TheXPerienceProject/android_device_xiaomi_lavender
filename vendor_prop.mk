@@ -256,3 +256,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
+
+#paper mode
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.paper_mode_max_level=255 \
+    sys.tianma_nt36672a_offset=6 \
+    sys.tianma_nt36672a_length=42 \
+    sys.boe_td4320_offset=-9 \
+    sys.boe_td4320_length=42 \
+    sys.shenchao_nt36672a_offset=-10 \
+    sys.shenchao_nt36672a_length=38
