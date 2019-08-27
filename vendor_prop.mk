@@ -116,7 +116,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.perf_hint_window=50 \
     vendor.display.disable_rotator_downscale=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
-    ro.sf.lcd_density=440
+    ro.sf.lcd_density=440 \
+    vendor.display.enable_default_color_mode=1
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
