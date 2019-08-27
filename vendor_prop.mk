@@ -266,3 +266,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.boe_td4320_length=42 \
     sys.shenchao_nt36672a_offset=-10 \
     sys.shenchao_nt36672a_length=38
+
+#Netflix custom property
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q660-13149-1
