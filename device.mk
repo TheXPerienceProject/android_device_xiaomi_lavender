@@ -344,6 +344,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qcom.sensors.sh \
     init.target.rc \
+    init.xperience.rc \
     ueventd.qcom.rc \
     fstab.qcom
 
