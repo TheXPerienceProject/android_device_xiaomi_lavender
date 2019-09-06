@@ -361,7 +361,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_lavender
+    librecovery_updater_xiaomi
 
 # RIL
 PRODUCT_PACKAGES += \
