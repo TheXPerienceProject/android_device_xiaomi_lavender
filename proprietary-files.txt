@@ -1676,14 +1676,17 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 # Sensors
 vendor/bin/sensors.qti
 vendor/etc/sensors/sensor_def_qcomdev.conf
+vendor/etc/elliptic_sensor.xml
 vendor/lib/hw/activity_recognition.sdm660.so
 vendor/lib/libsensor_reg.so
 vendor/lib/libsensor1.so
 vendor/lib/sensors.ssc.so
+vendor/lib/sensors.touch.so
 vendor/lib64/hw/activity_recognition.sdm660.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libsensor1.so
 vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.touch.so
 
 # Soter
 -app/SoterService/SoterService.apk
