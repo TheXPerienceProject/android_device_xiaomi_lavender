@@ -266,7 +266,8 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_lavender
+    android.hardware.light@2.0-service.xiaomi_lavender \
+    android.hardware.light-V2.0-java
 
 # Media
 PRODUCT_COPY_FILES += \
