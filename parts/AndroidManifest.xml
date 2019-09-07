@@ -31,7 +31,7 @@
         android:persistent="true">
 
         <receiver android:name=".BootCompletedReceiver">
-            <intent-filter>
+            <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -45,6 +45,10 @@
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="org.lineageos.settings.DOZE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
     </application>
