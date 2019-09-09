@@ -247,11 +247,11 @@ service audiod /system/vendor/bin/audiod
    user system
    group system
 
-service vendor.cdsprpcd /vendor/bin/cdsprpcd
-   class main
-   user system
-   group system
-   disabled
+#service vendor.cdsprpcd /vendor/bin/cdsprpcd
+#   class main
+#   user system
+#   group system
+#   disabled
 
 #
 #service usf_tester /system/vendor/bin/usf_tester
