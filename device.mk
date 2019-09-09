@@ -106,10 +106,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbthost_if
 
-# Sensor HAL conf file
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
-
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
