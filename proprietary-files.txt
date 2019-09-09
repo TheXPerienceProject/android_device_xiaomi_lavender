@@ -1484,6 +1484,9 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 
+# Modem interface 
+vendor/bin/adpl
+
 # Mlipay
 vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
