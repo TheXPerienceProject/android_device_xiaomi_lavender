@@ -1404,6 +1404,9 @@ vendor/lib64/libsdm-disp-vndapis.so|d93f262f60b58f32273909142aa7fdc7bfb6dda3
 vendor/lib64/libsdmextension.so|d431d8feaa8b45a80f031d50e424418e53aed5d2
 vendor/lib64/libtinyxml2_1.so|a2d9661cf2bb426e72ba15fd1a6a4eec940418a5
 
+# IPA
+vendor/bin/ipacm-diag
+
 # Keystore
 vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
