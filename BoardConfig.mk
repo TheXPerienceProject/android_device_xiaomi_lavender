@@ -254,7 +254,7 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 BOARD_VNDK_VERSION := current
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := libinit_lavender
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lavender
 TARGET_RECOVERY_DEVICE_MODULES := libinit_lavender
 
 # Wifi
