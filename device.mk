@@ -156,10 +156,11 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne
 
-# Crypto
+# HW crypto
 PRODUCT_PACKAGES += \
     libcryptfs_hw \
-    vendor.qti.hardware.cryptfshw@1.0
+    vendor.qti.hardware.cryptfshw@1.0 \
+    vendor.qti.hardware.cryptfshw@1.0-service-ioctl-qti
 
 # Display
 PRODUCT_PACKAGES += \
