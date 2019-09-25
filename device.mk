@@ -158,6 +158,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.graphics.mapper@2.1-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     copybit.sdm660 \
@@ -178,8 +179,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer@2.0 \
     vendor.display.config@1.11 \
     vendor.display.config@1.11.vendor \
+    vendor.qti.hardware.display.mapper@1.0 \
+    vendor.qti.hardware.display.mapper@1.1 \
+    vendor.qti.hardware.display.mapper@2.0 \
     vendor.qti.hardware.display.mapper@3.0 \
-    vendor.qti.hardware.display.mapperextensions@1.1 \
     libvulkan
 
 PRODUCT_PACKAGES += \
