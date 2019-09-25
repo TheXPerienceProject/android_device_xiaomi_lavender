@@ -149,7 +149,8 @@ PRODUCT_PACKAGES += \
 
 # Crypto
 PRODUCT_PACKAGES += \
-    libcryptfs_hw
+    libcryptfs_hw \
+    vendor.qti.hardware.cryptfshw@1.0
 
 # Display
 PRODUCT_PACKAGES += \
@@ -164,9 +165,22 @@ PRODUCT_PACKAGES += \
     hwcomposer.sdm660 \
     libdisplayconfig \
     liboverlay \
+    libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
     memtrack.sdm660
+
+# Display QTI
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.allocator@1.0 \
+    vendor.qti.hardware.display.allocator@3.0 \
+    vendor.qti.hardware.display.composer@1.0 \
+    vendor.qti.hardware.display.composer@2.0 \
+    vendor.display.config@1.11 \
+    vendor.display.config@1.11.vendor \
+    vendor.qti.hardware.display.mapper@3.0 \
+    vendor.qti.hardware.display.mapperextensions@1.1 \
+    libvulkan
 
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
@@ -400,6 +414,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
+
+# System Helper
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.systemhelper@1.0
 
 # Telephony
 PRODUCT_PACKAGES += \
