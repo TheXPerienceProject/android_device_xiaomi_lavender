@@ -1077,6 +1077,8 @@ vendor/lib/libois_lc898122.so
 
 # Charger - from LA.UM.7.2.r1-06900-sdm660.0
 vendor/bin/hvdcp_opti|ee724f847755d87e40754d6b57637ed37ec2bf22
+# Stock 
+-sbin/charger:bin/chargeonlymode
 
 # CNE
 etc/permissions/cneapiclient.xml
