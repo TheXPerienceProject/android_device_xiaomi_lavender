@@ -264,10 +264,6 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0.vendor \
     android.hidl.manager@1.0-java
 
-# IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \

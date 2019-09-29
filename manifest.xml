@@ -117,9 +117,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <name>android.hardware.gnss</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
+        <version>2.0</version>
         <interface>
             <name>IGnss</name>
             <instance>default</instance>
+            <instance>gnss_vendor</instance>
             <instance>gnss_vendor</instance>
         </interface>
     </hal>
@@ -173,6 +175,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.media.c2</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>software</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.memtrack</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -184,7 +195,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl">
         <name>android.hardware.power</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.0</version>
         <interface>
             <name>IPower</name>
             <instance>default</instance>
@@ -537,16 +548,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
+        <version>2.0</version>
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.radio.qtiradio</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
@@ -690,5 +697,18 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IComposer</name>
             <instance>default</instance>
         </interface>
+    </hal>
+    <hal format="hidl" >
+         <name>vendor.goodix.hardware.interfaces.biometrics.fingerprint</name>
+		 <transport>hwbinder</transport>
+		 <version>2.1</version>
+		 <interface>
+		     <name>IGoodixFingerprintDaemon</name>
+			 <instance>default</instance>
+	    </interface>
+		 <interface>
+		     <name>IGoodixFingerprintDaemonExt</name>
+			 <instance>default</instance>
+	    </interface>
     </hal>
 </manifest>
