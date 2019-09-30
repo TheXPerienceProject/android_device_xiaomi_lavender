@@ -122,7 +122,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IGnss</name>
             <instance>default</instance>
             <instance>gnss_vendor</instance>
-            <instance>gnss_vendor</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -549,11 +548,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <transport>hwbinder</transport>
         <version>1.0</version>
         <version>2.0</version>
-        <interface>
-            <name>IQtiRadio</name>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
-        </interface>
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
