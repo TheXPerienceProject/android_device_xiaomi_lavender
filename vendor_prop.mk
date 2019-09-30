@@ -40,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.multiple.enabled=false \
     vendor.audio.offload.passthrough=false \
     vendor.audio.offload.gapless.enabled=true \
-    vendor.audio.safx.pbe.enabled=true \
+    vendor.audio.safx.pbe.enabled=false \
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.flac.sw.decoder.24bit=true \
     vendor.audio.use.sw.alac.decoder=true \
@@ -54,14 +54,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.fm.a2dp.conc.disabled=true \
     vendor.voice.path.for.pcm.voip=true \
     ro.config.media_vol_steps=25 \
-    ro.config.vc_call_vol_steps=7
+    ro.config.vc_call_vol_steps=7 \
+    vendor.audio.volume.headset.gain.depcal=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+    bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
     ro.bluetooth.emb_wp_mode=true \
     ro.bluetooth.wipower=true \
+    ro.bluetooth.a2dp_offload.supported=true \
+    persist.vendor.bt.aac_frm_ctl.enabled=true \
+    persist.bluetooth.a2dp_offload.disabled=false \
     vendor.qcom.bluetooth.soc=cherokee \
     vendor.bluetooth.soc=cherokee
 
