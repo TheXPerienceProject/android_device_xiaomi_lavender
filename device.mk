@@ -348,7 +348,10 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-impl \
+    android.hardware.power@1.0-impl \
     android.hardware.power@1.2-service
+TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
