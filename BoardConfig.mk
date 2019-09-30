@@ -9,6 +9,8 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/lavender
 
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
