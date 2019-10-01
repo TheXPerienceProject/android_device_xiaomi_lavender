@@ -1623,9 +1623,9 @@ vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so|f70878746fabb81b16195637dd
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so|2ce8dd10bf44e8cf5c99b010b497d8f4417aea0f
 vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so|ced0fc5fcd2c8f19219767d185420b44f33a9b47
 vendor/lib/vendor.qti.hardware.radio.qtiradio@2.0.so|70a738d91a314f6c08b82fa5d3fc110878a6d621
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so|a8a8d080a400c895a4a0afbee83bd5d84b09ac91
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so|591c527882379804e698865a8ea24cec13118299
-vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so|5614da945f6e1de00372fb5677d08af18be906d0
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.1.so|a8a8d080a400c895a4a0afbee83bd5d84b09ac91
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.2.so|591c527882379804e698865a8ea24cec13118299
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.3.so|5614da945f6e1de00372fb5677d08af18be906d0
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so|5e4826c792687c200c87a399993a433cd99aac88
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so|af65fba0168f9bc7784f4f451ea83a49251e6da6
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so|a8a8d080a400c895a4a0afbee83bd5d84b09ac91
@@ -1675,8 +1675,6 @@ vendor/etc/init/imsrcsd.rc|2dc42ff6e4b6dd389bd3bc9a7af30dec2f1a45df
 vendor/etc/init/ims_rtp_daemon.rc|b3c3a380204d7b1b3a58937db8c8e76c00ac8825
 vendor/lib/lib-imsvtcore.so|aedeb0867e2971eda3aea356efe0d60f2bcde30b
 vendor/lib64/lib-imsvtcore.so|49e0fd8894028228a275bfddce7dd03cef053235
-vendor/lib/libqti_vndfwk_detect.so|9574c91356902cf6441706fa579b35015b3b6433
-vendor/lib64/libqti_vndfwk_detect.so|d4c353fbb03e0961f07652cb55bea78b081b8d23
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so|69b508396484afd42f7181431d7652561b4faca4
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so|457484164cc50322307c57c295b29ebb79150f03
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so|f55c40bc029e7b38e24aef6eceb007a1ef273857
