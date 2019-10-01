@@ -1153,12 +1153,11 @@ vendor/etc/qdcm_calib_data_boe_td4320_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_shenchao_nt36672a_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml
 
-# DPM - from Redmi K20 V10.3.6.0.PFJCNXM
-lib64/libdiag_system.so|9e6e39892961871e42e3b33c850f968b51c61d09
-framework/tcmclient.jar|91b415288494fa208b5f5ec9fafa33c47e569c96
-vendor/bin/dpmQmiMgr|5c8868fa54fe77e5bdef995950843ab35bf4e686
-vendor/lib64/libdpmqmihal.so|e7dbf5ed0bd789da89faf35027dfd2b8f303b192
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|ecf91d0902c45d133425f69903844d26871c60c8
+# DPM - from LA.UM.8.2.r1-04000-sdm660.0
+framework/tcmclient.jar|a55e6981795bf74b3249c5e7297ea4e3cf1dea83
+vendor/bin/dpmQmiMgr|d536096b310a2d3f30a683c1bdcad8658db1ba52
+vendor/lib64/libdpmqmihal.so|30a170684219dd589d05ce5b446e73b7501f13e3
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|fbff6357ee46dd6d62f490a942ff567b6ce955d1
 
 # DRM
 vendor/bin/qseecomd
