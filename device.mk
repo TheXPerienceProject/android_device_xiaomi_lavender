@@ -320,9 +320,7 @@ PRODUCT_COPY_FILES += \
 
 # MEDIA BT CAF
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
-    frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
-    frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml
+    $(LOCAL_PATH)/media/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml
 
 # Vendor property overrides
 #Rank OMX SW codecs lower than OMX HW codecs
