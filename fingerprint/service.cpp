@@ -35,7 +35,7 @@ using android::hardware::biometrics::fingerprint::V2_1::implementation::Biometri
 int main() {
     android::sp<IBiometricsFingerprint> bio = BiometricsFingerprint::getInstance();
 
-    if (service == nullptr) {
+    if (bio == nullptr) {
         ALOGE("Instance of BiometricsFingerprint is null");
         return 1;
     }
@@ -43,10 +43,11 @@ int main() {
     configureRpcThreadpool(1, true /*callerWillJoin*/);
 
     if (bio != nullptr) {
-		if (::android::OK != bio->registerAsService()) {
-	            return 1;
-	    } else {
-			ALOGE("Can't create instance of BiometricsFingerprint, nullptr");
+        if (::android::OK != bio->registerAsService()) {
+                return 1;
+        } else {
+            ALOGE("Can't create instance of BiometricsFingerprint, nullptr");
+        }
     }
 
     joinRpcThreadpool();
