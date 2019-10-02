@@ -40,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.multiple.enabled=false \
     vendor.audio.offload.passthrough=false \
     vendor.audio.offload.gapless.enabled=true \
-    vendor.audio.safx.pbe.enabled=false \
+    vendor.audio.safx.pbe.enabled=true \
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.flac.sw.decoder.24bit=true \
     vendor.audio.use.sw.alac.decoder=true \
@@ -54,8 +54,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.fm.a2dp.conc.disabled=true \
     vendor.voice.path.for.pcm.voip=true \
     ro.config.media_vol_steps=25 \
-    ro.config.vc_call_vol_steps=7 \
-    vendor.audio.volume.headset.gain.depcal=true
+    ro.config.vc_call_vol_steps=7
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
