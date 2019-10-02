@@ -223,8 +223,8 @@ fingerprint_device_t* getDeviceForVendor(const char *class_name)
     int err;
 
     err = hw_get_module_by_class(FINGERPRINT_HARDWARE_MODULE_ID, class_name, &hw_module);
-    if (err) {
-        ALOGE("Failed to get fingerprint module: class %s, error %d", class_name, err);
+    if (0 != (err)) {
+        ALOGE("Can't open fingerprint HW Module: class %s, error %d", class_name, err);
         return nullptr;
     }
 
@@ -244,7 +244,7 @@ fingerprint_device_t* getDeviceForVendor(const char *class_name)
     hw_device_t *device = nullptr;
 
     err = fp_module->common.methods->open(hw_module, nullptr, &device);
-    if (err) {
+    if (0 != (err)) {
         ALOGE("Can't open fingerprint methods, class %s, error: %d", class_name, err);
         return nullptr;
     }
