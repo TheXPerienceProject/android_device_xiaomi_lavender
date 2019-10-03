@@ -1,4 +1,4 @@
-# ADSP
+# ADSP from LA.UM.8.2.r1-03200-sdm660.0
 vendor/bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsp_hvx_callback_skel.so
@@ -15,7 +15,7 @@ vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
-# ADSP modules
+# ADSP modules from LA.UM.8.2.r1-03200-sdm660.0
 vendor/etc/scve/facereco/gModel.dat
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
@@ -58,7 +58,7 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 lib64/libaptX_encoder.so|22f5749edb5099526788c22708099a7791dd837f
 lib64/libaptXHD_encoder.so|c4ad4d6d7615f7df3ea1a4be5c6dae8a8c8ee8b1
 
-# Audio
+# Audio from LA.UM.8.2.r1-03200-sdm660.0
 vendor/firmware/dbmd4_va_fw.bin
 vendor/firmware/tfa98xx.cnt
 vendor/firmware/voice_amodel.bin
@@ -115,6 +115,24 @@ vendor/lib/libbtnv.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
+
+# Bluetooth Audio from LA.UM.8.2.r1-03200-sdm660.0
+vendor/lib64/hw/audio.bluetooth_qti.default.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
+vendor/lib64/libbluetooth_audio_session_qti.so
+vendor/lib/hw/audio.bluetooth_qti.default.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
+vendor/lib/libbluetooth_audio_session_qti.so
 
 # Camera
 vendor/lib/hw/camera.sdm660.so
@@ -1185,8 +1203,8 @@ vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 
 # DRM
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib64/libwvhidl.so
 
 # ESE-Powermanager
@@ -1398,7 +1416,7 @@ vendor/bin/ipacm-diag
 vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
 
-# Listen
+# Listen partial LA.UM.8.2.r1-03200-sdm660.0
 vendor/lib/hw/sound_trigger.primary.sdm660.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
@@ -1485,25 +1503,49 @@ vendor/lib64/libmlipay.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
-# Perf - from LA.UM.7.2.r1-06900-sdm660.0
-vendor/bin/energy-awareness|c1ad0ec1e4171b59f166e580ef8ce7395ccb41a5
-vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|f7cbecab5e467690575c4846c54a951932dae123
-vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
-vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b06477c0943e543d58a71550b544160d28b9b9d0
-vendor/etc/perf/commonresourceconfigs.xml|20280e40ca43784316e96be09fe2d2296d79e972
-vendor/etc/perf/perfboostsconfig.xml|cbc146d59b8f05f74e61f8bc72276f384bcb467e
+# Perf - from LA.UM.8.2.r1-03200-sdm660.0
+product/lib/vendor.qti.hardware.perf@1.0.so|c97191d162d608ad9f75556de3c4cff1ac9518ab
+product/lib/vendor.qti.hardware.perf@2.0.so|f51966661accc69c30f88259b603e1f2bcac33f5
+product/lib64/vendor.qti.hardware.perf@1.0.so|fb06dcbbf156f0307cb8d07200929d58d5d8d0a1
+product/lib64/vendor.qti.hardware.perf@2.0.so|17cf6b3a3c73ed5cee96db80b5f7da11e5f4b3cb
+vendor/bin/energy-awareness|f8c2fd0dcdde5e971a7cca14f9287bfc2c33cff6
+vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|d82b193e12e54fa74d39c4d940c52cd76c004759
+vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|0101a3294311c2988060a00f7b25d8abf2f428f9
+vendor/etc/perf/commonresourceconfigs.xml|9e277f76243eb5ad16d3e55843aadf68a54e7aaa
+vendor/etc/perf/perfboostsconfig.xml|0fd6a9951f22cfe9f0942629f9d20da433604f14
+vendor/etc/perf/perfconfigstore.xml|760248b82c4f1ad8b0e7ed1924d2b198229e118d
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
-vendor/etc/perf/targetresourceconfigs.xml|2084cab83603da8fb1817902836ffb890dfc8a16
-vendor/lib/libperfgluelayer.so|a88084be00012bbe9a323fe2823eee250c55a0bb
-vendor/lib/libqti-perfd-client.so|85ebe15611a5153a70fb48cce5ddd28ebdd5701c
-vendor/lib/libqti-perfd.so|bc50f73c1037728f54a47c01a0aef58499bd09cf
-vendor/lib/libqti-util.so|c2263219ce71773cc5a74d28d8854cc98e569004
-vendor/lib/vendor.qti.hardware.perf@1.0.so|824d9d0b18280c886996492ffea71d180a088cc0
-vendor/lib64/libperfgluelayer.so|f97bc3383e3bdc39738b7c1f85805771dbfb6c97
-vendor/lib64/libqti-perfd-client.so|974abf576e3cbb13774671f8a80be5705063e5c2
-vendor/lib64/libqti-perfd.so|279a82bfcdfb30c9991dfda44ee923ee9d4c3eca
-vendor/lib64/libqti-util.so|98bbc3a80fee315fe7de34f0ed5b2ec3042b8d58
-vendor/lib64/vendor.qti.hardware.perf@1.0.so|54ef4b7c6942e343b83e5837f3af9fc04cc97ce0
+vendor/etc/perf/targetresourceconfigs.xml|7132f1e9ce3bb21b4854b81d6e5d24409251f177
+vendor/lib/libperfconfig.so|9c4123512ab71bb34abb3b310bce18998cb373bf
+vendor/lib/libperfgluelayer.so|9fc1a68ec2b3063e0d336bb25cefc0dd0c64cc71
+vendor/lib/libqti-perfd-client.so|0d257135b88750d6b37252d61564758046499c0b
+vendor/lib/libqti-perfd.so|5ee70a516f43cacf11cdd7c727e71575f43bf8ab
+vendor/lib/libqti-util.so|5a7c58ce00c1cc8e49f7ef9fbfcadcae7afb9f97
+vendor/lib/libqti-utils.so|722620fd7a35ce8517a4e33ac947a765e8d707f3
+vendor/lib/vendor.qti.hardware.perf@1.0.so|4506f9f549b907180cd0ec3fc50e3aa4c12cba5e
+vendor/lib/vendor.qti.hardware.perf@2.0.so|c2c005c1b2d5fc89f539c27b49f0cb65ae51a17c
+vendor/lib64/libperfconfig.so|18e98f44adb360b31446defc434b693349dd1e86
+vendor/lib64/libperfgluelayer.so|e51addfa5ee4b757765aa23a7274bdac57bf6e40
+vendor/lib64/libqti-perfd-client.so|ab070ed07dea1e25458c36a3c53221e9aa4907aa
+vendor/lib64/libqti-perfd.so|3ed57d659d085c4c395aa897588b8e63829e9ddb
+vendor/lib64/libqti-util.so|ace0cd0de97ace0d914b2b481afc8ee2ff83a2df
+vendor/lib64/libqti-utils.so|dced5ae30fbea50bf6d7ef216a92126bf36e365b
+vendor/lib64/vendor.qti.hardware.perf@1.0.so|76644802e3633e129bf2867ea21c49fd411c9c2f
+vendor/lib64/vendor.qti.hardware.perf@2.0.so|1c5c2869cb808c222dbf24aabe2c8e23518d562d
+
+# IOP from LA.UM.8.2.r1-03200-sdm660.0
+vendor/lib/vendor.qti.hardware.iop@1.0.so
+vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/vendor.qti.hardware.iop@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
+vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib/libqti-iopd-client.so
+vendor/lib/vendor.qti.hardware.iop@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib64/libqti-iopd-client.so
+vendor/lib64/vendor.qti.hardware.iop@1.0.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -1623,9 +1665,9 @@ vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so|f70878746fabb81b16195637dd
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so|2ce8dd10bf44e8cf5c99b010b497d8f4417aea0f
 vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so|ced0fc5fcd2c8f19219767d185420b44f33a9b47
 vendor/lib/vendor.qti.hardware.radio.qtiradio@2.0.so|70a738d91a314f6c08b82fa5d3fc110878a6d621
-vendor/lib/vendor.qti.hardware.radio.qtiradio@2.1.so|a8a8d080a400c895a4a0afbee83bd5d84b09ac91
-vendor/lib/vendor.qti.hardware.radio.qtiradio@2.2.so|591c527882379804e698865a8ea24cec13118299
-vendor/lib/vendor.qti.hardware.radio.qtiradio@2.3.so|5614da945f6e1de00372fb5677d08af18be906d0
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.1.so|b7fc16ded94a986dc62eab4e7d3ac72f002b5806
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.2.so|c1b611213b92af6ed3507e0b0254bb40119a8c22
+vendor/lib/vendor.qti.hardware.radio.qtiradio@2.3.so|11bb77a8b9d4b6247730a4acf1d9403a535b4fbd
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so|5e4826c792687c200c87a399993a433cd99aac88
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so|af65fba0168f9bc7784f4f451ea83a49251e6da6
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so|a8a8d080a400c895a4a0afbee83bd5d84b09ac91
