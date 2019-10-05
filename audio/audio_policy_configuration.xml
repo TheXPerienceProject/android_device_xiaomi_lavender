@@ -195,7 +195,7 @@
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000,16000,32000,48000" channelMasks="AUDIO_CHANNEL_IN_MONO"/>
                 </mixPort>
-                <mixPort name="surround_sound" role="sink" maxOpenCount="2" maxActiveCount="2">
+                <mixPort name="surround_sound" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000,11025,12000,16000,22050,24000,32000,44100,48000"
                              channelMasks="AUDIO_CHANNEL_IN_MONO,AUDIO_CHANNEL_IN_STEREO,AUDIO_CHANNEL_IN_FRONT_BACK,AUDIO_CHANNEL_INDEX_MASK_3,AUDIO_CHANNEL_INDEX_MASK_4,AUDIO_CHANNEL_IN_5POINT1,AUDIO_CHANNEL_INDEX_MASK_6"/>
@@ -338,15 +338,15 @@
                 <route type="mix" sink="FM"
                        sources="primary output"/>
                 <route type="mix" sink="BT SCO"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
                 <route type="mix" sink="BT SCO Headset"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
                 <route type="mix" sink="BT SCO Car Kit"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx"/>
                 <route type="mix" sink="USB Device Out"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,hifi_playback"/>
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,hifi_playback"/>
                 <route type="mix" sink="USB Headset Out"
-                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,hifi_playback"/>
+                       sources="primary output,raw,deep_buffer,direct_pcm,compressed_offload,voip_rx,hifi_playback"/>
                 <route type="mix" sink="Telephony Tx"
                        sources="voice_tx"/>
                 <route type="mix" sink="voice_rx"
