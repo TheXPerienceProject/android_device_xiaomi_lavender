@@ -1,0 +1,1 @@
+allow shell hal_keymaster_hwservice:hwservice_manager find;
