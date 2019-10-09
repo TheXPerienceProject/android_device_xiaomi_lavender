@@ -398,6 +398,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service \
     android.hardware.power@1.2-impl \
+    android.hardware.power@1.0-impl \
     android.hardware.power@1.2 \
     vendor.xperience.power@1.0
 
