@@ -1,5 +1,6 @@
 # Copyright (C) 2009 The Android Open Source Project
 # Copyright (c) 2011, The Linux Foundation. All rights reserved.
+# Copyright (c) 2019, The XPerience Project.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -56,5 +57,5 @@ def AddBasebandAssertion(info, input_zip):
     timestamps = timestamp.split('|')
     if ((len(timestamps) and '*' not in timestamps) and \
         (len(firmware_version) and '*' not in firmware_version)):
-      cmd = 'assert(xiaomi.verify_baseband(' + ','.join(['"%s"' % baseband for baseband in timestamps]) + ') == "1" || abort("ERROR: This package requires firmware from MIUI {1} or newer. Please upgrade firmware and retry!"););'
+      cmd = 'assert(xiaomi.verify_baseband(' + ','.join(['"%s"' % baseband for baseband in timestamps]) + ') == "1" || abort("ERROR: This package requires firmware from MIUI {1}. Please upgrade firmware to MIUI {1} and retry!"););'
       info.script.AppendExtra(cmd.format(timestamps, firmware_version))
