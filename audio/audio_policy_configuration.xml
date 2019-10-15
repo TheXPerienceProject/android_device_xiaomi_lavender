@@ -362,6 +362,10 @@
     <xi:include href="/vendor/etc/audio_policy_volumes.xml"/>
     <xi:include href="/vendor/etc/default_volume_tables.xml"/>
 
+
+    <!-- MSD Audio HAL (optional) -->
+    <xi:include href="/vendor/etc/msd_audio_policy_configuration.xml"/>
+
     <!-- End of Volume section -->
 
 </audioPolicyConfiguration>
