@@ -114,6 +114,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.a2dp_offload.supported=true \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
     persist.bluetooth.a2dp_offload.disabled=false \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
     vendor.qcom.bluetooth.soc=cherokee \
     vendor.bluetooth.soc=cherokee
 
