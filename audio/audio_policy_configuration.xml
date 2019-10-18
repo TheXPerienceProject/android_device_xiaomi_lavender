@@ -328,8 +328,9 @@
 
         </module>
 
-        <!-- A2DP Audio HAL -->
-        <xi:include href="/vendor/etc/a2dp_audio_policy_configuration.xml"/>
+        <!-- A2DP Audio HAL 
+        <xi:include href="/vendor/etc/a2dp_audio_policy_configuration.xml"/>-->
+        <xi:include href="/vendor/etc/a2dp_in_audio_policy_configuration.xml"/>
 
         <!-- Usb Audio HAL -->
         <module name="usb" halVersion="2.0">
@@ -362,10 +363,15 @@
     <xi:include href="/vendor/etc/audio_policy_volumes.xml"/>
     <xi:include href="/vendor/etc/default_volume_tables.xml"/>
 
-
     <!-- MSD Audio HAL (optional) -->
     <xi:include href="/vendor/etc/msd_audio_policy_configuration.xml"/>
 
     <!-- End of Volume section -->
+
+    <!-- Surround Sound configuration -->
+
+    <xi:include href="/vendor/etc/surround_sound_configuration_5_0.xml"/>
+
+    <!-- End of Surround Sound configuration -->
 
 </audioPolicyConfiguration>
