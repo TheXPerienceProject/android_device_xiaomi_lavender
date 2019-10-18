@@ -184,7 +184,6 @@ vendor/lib/libscveObjectTracker.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/libscvePanorama.so
 vendor/lib/libscvePanorama_lite.so
-vendor/lib/libstdc++.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libvideoutils.so

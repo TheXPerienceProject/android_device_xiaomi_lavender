@@ -541,7 +541,9 @@ PRODUCT_PACKAGES += libqti_vndfwk_detect.vendor
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk_package
+    vndk_package \
+    libgui_vendor \
+    libstdc++
 
 # Wifi
 PRODUCT_PACKAGES += \
