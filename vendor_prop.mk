@@ -267,6 +267,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.sib16_support=1 \
     persist.radio.schd.cache=3500 \
     persist.radio.multisim.config=dsds \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
