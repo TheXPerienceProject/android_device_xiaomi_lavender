@@ -1501,6 +1501,9 @@ vendor/lib64/libmlipay.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
+# Perf MSM IRQBalance - from MIUI 11
+vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
+
 # Perf - from LA.UM.8.2.r1-03200-sdm660.0
 product/lib/vendor.qti.hardware.perf@1.0.so|c97191d162d608ad9f75556de3c4cff1ac9518ab
 product/lib/vendor.qti.hardware.perf@2.0.so|f51966661accc69c30f88259b603e1f2bcac33f5
