@@ -329,8 +329,7 @@
         </module>
 
         <!-- A2DP Audio HAL -->
-        <!--<xi:include href="/vendor/etc/a2dp_audio_policy_configuration.xml"/>-->
-        <xi:include href="/vendor/etc/a2dp_in_audio_policy_configuration.xml"/>
+        <xi:include href="/vendor/etc/a2dp_audio_policy_configuration.xml"/>
 
         <!-- Usb Audio HAL -->
         <module name="usb" halVersion="2.0">
@@ -355,6 +354,12 @@
         <!-- Remote Submix Audio HAL -->
         <xi:include href="/vendor/etc/r_submix_audio_policy_configuration.xml"/>
 
+        <!-- Hearing aid Audio HAL -->
+        <xi:include href="/vendor/etc/hearing_aid_audio_policy_configuration.xml"/>
+
+        <!-- MSD Audio HAL (optional) -->
+        <xi:include href="/vendor/etc/msd_audio_policy_configuration.xml"/>
+
     </modules>
     <!-- End of Modules section -->
 
@@ -363,17 +368,12 @@
     <xi:include href="/vendor/etc/audio_policy_volumes.xml"/>
     <xi:include href="/vendor/etc/default_volume_tables.xml"/>
 
-    <!-- MSD Audio HAL (optional) -->
-    <xi:include href="/vendor/etc/msd_audio_policy_configuration.xml"/>
-
     <!-- End of Volume section -->
 
     <!-- Surround Sound configuration -->
 
     <xi:include href="/vendor/etc/surround_sound_configuration_5_0.xml"/>
 
-    <!-- Bluetooth Audio HAL -->
-    <xi:include href="vendor/etc/bluetooth_qti_audio_policy_configuration.xml"/>
     <!-- End of Surround Sound configuration -->
 
 </audioPolicyConfiguration>
