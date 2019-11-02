@@ -110,7 +110,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
     ro.bluetooth.library_name=libbluetooth_qti.so \
-    ro.bluetooth.a2dp_offload.supported=true \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
     persist.bluetooth.a2dp_offload.disabled=false \
     persist.vendor.btstack.enable.splita2dp=true \
