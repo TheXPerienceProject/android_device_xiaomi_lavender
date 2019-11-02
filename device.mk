@@ -126,10 +126,22 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.hearing_aid.default \
-    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio@2.0-impl
+
+
+# Bluetooth QTI
+BT := javax.btobex
+BT += libattrib_static
+BT += libbt-vendor
+BT += libbthost_if
+BT += libbt-logClient
+BT += bt_logger
+BT += libbluetooth_qti
+BT += libbt-hidlclient
+
+PRODUCT_PACKAGES += \
+    $(BT) \
     com.qualcomm.qti.bluetooth_audio@1.0 \
-    libbthost_if \
-    libbluetooth_qti \
     vendor.qti.hardware.bluetooth_audio@2.0 \
     vendor.qti.hardware.bluetooth_dun@1.0
 

@@ -108,10 +108,10 @@ vendor/lib64/soundfx/libqcvirt.so|88349315d99cea68a3b766fa4c6e1181d26f561b
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|ad01427205d796867d6f4bf65b0713fa6c259251
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|44208f48bce10aba54227c0e50840aa106b4fa28
-vendor/lib/libbt-hidlclient.so|23fad0ef6cd48502618c3381e923369f441e0c6e
+#vendor/lib/libbt-hidlclient.so|23fad0ef6cd48502618c3381e923369f441e0c6e
 vendor/lib/libbtnv.so|f987c402e05eaecfe43bd2626a0c9b1ebc068f76
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|07f0271c81a381125e53692e7d175141dc6e5d56
-vendor/lib64/libbt-hidlclient.so|0fea38b7a4db63c759f3c962627596db601a14ec
+#vendor/lib64/libbt-hidlclient.so|0fea38b7a4db63c759f3c962627596db601a14ec
 vendor/lib64/libbtnv.so|11b97e25199558009e1df72bd002a97bb45fa8dc
 
 # Bluetooth Audio - from LA.UM.8.2.r1-03200-sdm660.0
