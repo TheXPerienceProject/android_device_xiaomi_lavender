@@ -1484,7 +1484,7 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 
-# Modem interface 
+# Modem interface
 vendor/bin/adpl
 
 # Mlipay
@@ -1812,7 +1812,7 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # Wifi
 vendor/bin/cnss-daemon
 
-# WiFi Display - from davinci-user 10 QKQ1.190825.002 9.9.26 release-keys 
+# WiFi Display - from davinci-user 10 QKQ1.190825.002 9.9.26 release-keys
 -framework/WfdCommon.jar|00e8b3cd1303785928d3146f4ddbfa7dc84e16dc
 -priv-app/WfdService/WfdService.apk|d9e39ced72ed52ca3758673c1233ca8b5f5b76cd
 bin/wfdservice|65bfa86e06a2b74dd9b3e7716d6c059944449ae6
@@ -1870,6 +1870,9 @@ vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|ca2f5157de56d0917
 vendor/etc/init/wfdvndservice.rc|42e28fb8e0bf00620d7b9939b5bd3164ca671033
 vendor/etc/wfdconfig.xml|60a210d323f3f65dd1424cfd517295c522824b7b
 vendor/lib/libFileMux_proprietary.so|520da731b058dc3bb49a38e6161cf9d2a2911584
+vendor/lib/libdisplaydebug.so
+vendor/lib/libdisplayqos.so
+vendor/lib/libOmxMux_proprietary.so
 vendor/lib/libmmparser_lite_proprietary.so|a37a4be44e72d9f1a35d33bc5534533d26f2a45f
 vendor/lib/libmmrtpdecoder_proprietary.so|86334a04d3c89fec3d2158297976cc91a3680317
 vendor/lib/libmmrtpencoder_proprietary.so|a9e59fcae384890e7097fe50df862e4d58d77204
@@ -1896,3 +1899,5 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so|fbc5bb0a69d17e5b915ed5326ebe8e9
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|ecdb614197f7813da75323e52eecaa784b4d5ace
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|be2a0059252b24960da2d8433e33dcdedeb2189d
 vendor/lib64/libmmparser_lite_proprietary.so|d8a605affd05dafb599973183052ab72ae2b8607
+vendor/lib64/libdisplaydebug.so
+vendor/lib64/libdisplayqos.so
