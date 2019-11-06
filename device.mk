@@ -161,7 +161,8 @@ PRODUCT_PACKAGES += \
     libxml2 \
     libcameraservice \
     Camera2 \
-    vendor.qti.hardware.camera.device@1.0
+    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.camera.postproc@1.0
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
