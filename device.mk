@@ -576,13 +576,17 @@ PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     libwpa_client \
-    vendor.qti.hardware.wifi.supplicant@1.0_vendor \
-    vendor.qti.hardware.wifi.supplicant@1.0 \
     wificond \
     wifilogd \
-	wifilearner \
+    wifilearner \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# Wi-FI caf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.wifi.hostapd@1.1 \
+    vendor.qti.hardware.wifi@1.0 \
+    vendor.qti.hardware.wifi.supplicant@2.1
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
