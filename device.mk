@@ -125,7 +125,6 @@ PRODUCT_PACKAGES += \
     audio.hearing_aid.default \
     android.hardware.bluetooth.audio@2.0-impl
 
-
 # Bluetooth QTI
 BT := javax.btobex
 BT += libattrib_static
@@ -135,6 +134,10 @@ BT += libbt-logClient
 BT += bt_logger
 BT += libbluetooth_qti
 BT += libbt-hidlclient
+BT += BluetoothExt
+BT += libbtconfigstore
+BT += audio.a2dp.default_qti
+BT += audio.hearing_aid.default_qti
 
 PRODUCT_PACKAGES += \
     $(BT) \
