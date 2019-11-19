@@ -61,7 +61,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio CAF
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.audio.feature.a2dp_offload.enable=true \
+    vendor.audio.feature.a2dp_offload.enable=false \
     vendor.audio.feature.afe_proxy.enable=true \
     vendor.audio.feature.anc_headset.enable=true \
     vendor.audio.feature.audiozoom.enable=false \
