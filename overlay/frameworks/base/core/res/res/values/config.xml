@@ -310,10 +310,10 @@
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
     <bool name="config_camera_sound_forced">false</bool>
 
-    <!-- Configuration to enable non-default PDP during IWLAN 
+    <!-- Configuration to enable non-default PDP during IWLAN
     <bool name="config_feature_iwlan_enabled">true</bool> -->
 
-    <!-- Is the device capable of supporting digital pen 
+    <!-- Is the device capable of supporting digital pen
     <bool name="config_digitalPenCapable">true</bool> -->
 
     <!-- Flag specifying whether VoLTE, VT and WFC is available on device -->
@@ -617,4 +617,7 @@
 
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
+
+    <!-- Specify if the fingerprint hardware support gestures-->
+    <bool name="config_fingerprintSupportsGestures">true</bool>
 </resources>
