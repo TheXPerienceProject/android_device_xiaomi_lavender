@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
+  <!--@klozz info Where 0.1 equals to 100mA-->
     <item name="none">0</item>
-    <item name="screen.on">103</item>
+    <item name="screen.on">98</item>
     <item name="screen.full">300</item>
     <array name="cpu.clusters.cores">
-        <value>4</value>
-        <value>4</value>
+        <value>4</value> <!-- Cluster 0 has 4 cores (cpu0, cpu1, cpu2, cpu3) -->
+        <value>4</value> <!-- Cluster 1 has 4 cores (cpu4, cpu5, cpu6, cpu7) -->
     </array>
     <array name="cpu.core_speeds.cluster0">
         <value>633600</value>
@@ -30,18 +31,22 @@
         <value>1401600</value>
         <value>1747200</value>
         <value>1958400</value>
+        <value>2150400</value>
+        <value>2208000</value>
     </array>
     <array name="cpu.core_power.cluster1">
         <value>75</value>
         <value>105</value>
         <value>166</value>
         <value>205</value>
+        <value>215</value>
+        <value>225</value>
     </array>
     <item name="cpu.suspend">3.9</item>
-    <item name="cpu.idle">2</item>
-    <item name="cpu.active">1</item>
-    <item name="cpu.cluster_power.cluster0">1</item>
-    <item name="cpu.cluster_power.cluster1">1</item>
+    <item name="cpu.idle">1.11</item>
+    <item name="cpu.active">2.6</item>
+    <item name="cpu.cluster_power.cluster0">2.11</item>
+    <item name="cpu.cluster_power.cluster1">2.22</item>
     <item name="battery.capacity">4000</item>
     <item name="bluetooth.active">80</item>
     <item name="bluetooth.at">2</item>
@@ -60,4 +65,6 @@
         <value>6</value>
         <value>4</value>
     </array>
+    <!-- Additional power used when screen is ambient mode -->
+    <item name="ambient.on">16</item>
 </device>
