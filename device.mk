@@ -161,9 +161,13 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     libxml2 \
     libcameraservice \
-    Camera2 \
+    SnapdragonCamera \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.postproc@1.0
+
+#CameraFeatures for MIUI Camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/lavender.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/lavender.xml
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
