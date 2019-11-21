@@ -351,6 +351,8 @@
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
+    <bool name="config_displayBrightnessBucketsInDoze">false</bool>
+
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
          When false, autosuspend_disable() will be called before the display is turned on
@@ -380,7 +382,7 @@
          to maximize power savings but not all devices support it.
          Refer to power.h for details.
     -->
-    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
 
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
@@ -560,11 +562,23 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -80,0 L -80,80 L 80,80 L 80,0 Z</string>
+         <string name="config_mainBuiltInDisplayCutout">M-90.2739892,0 L90.2731153,0 C83.5186471,1.78420885e-12 77.7355953,1.16456348 73.7760795,4.49351078 C69.8108829,7.81677729 67.6635414,13.3101084 66.4876163,19.9623222 L65.8116015,23.7798181 C60.9317964,51.4453017 39.2709158,73.1061824 11.6054322,77.9859874 C7.74360047,78.666848 3.7919865,79.9894771 9.09494702e-13,80 C-4.02464577,80.0111685 -7.9902656,78.6692509 -11.8591836,77.9771066 C-38.6524863,73.1838203 -60.8080317,52.1649521 -65.8124754,23.7798181 L-66.4828095,19.9623222 C-67.6587346,13.3101084 -69.806076,7.81677729 -73.7712726,4.49351078 C-77.7364693,1.16456348 -83.5138403,1.78420885e-12 -90.2739892,1.78420885e-12 Z</string>
+         <string name="config_mainBuiltInDisplayCutoutRectApproximation">@string/config_mainBuiltInDisplayCutout</string>
+
+    <!-- Radius of the software rounded corners at the top of the display in its natural
+        orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_top">106.0px</dimen>
+
+    <!-- Radius of the software rounded corners at the bottom of the display in its natural
+        orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_bottom">108.0px</dimen>
+
+    <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
+    <dimen name="rounded_corner_radius_adjustment">25px</dimen>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">80.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+    <dimen name="status_bar_height_portrait">29.089996dip</dimen>
+    <dimen name="status_bar_height_landscape">29.089996dip</dimen>
 
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
@@ -617,7 +631,7 @@
     <bool name="config_wifi_link_probing_supported">true</bool>
 
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
-    <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
+    <bool name="config_bluetooth_hfp_inband_ringing_support">false</bool>
 
     <!-- Specify if the fingerprint hardware support gestures-->
     <bool name="config_fingerprintSupportsGestures">true</bool>
