@@ -1,4 +1,4 @@
-# 
+#
 # Copyright (C) 2019 The The XPerience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -46,9 +46,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender" \
-    PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.6.0.PFGMIXM release-keys"
+    PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V11.0.4.0.PFGMIXM release-keys"
 
-BUILD_FINGERPRINT := "xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.6.0.PFGMIXM:user/release-keys"
+BUILD_FINGERPRINT := "xiaomi/lavender/lavender:9/PKQ1.180904.001/V11.0.4.0.PFGMIXM:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
