@@ -1,5 +1,6 @@
-# ADSP - from LA.UM.8.2.r1-03200-sdm660.0
+# ADSP - from LA.UM.8.2.r1-03200-sdm660.0 - davinci
 vendor/bin/adsprpcd|37b57334e6153a82bacaf829988dcd5cdde75ccb
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|13d8a911642844bde32d533948a35730e17d41ad
 vendor/lib/libadsp_default_listener.so|819e9c4798b0ca6c0fa44562838183afd581273e
 vendor/lib/libadsp_hvx_callback_skel.so|bf3d3202f83fb2aa711ff1245e0305d26702e78e
 vendor/lib/libadsp_hvx_stub.so|bf33cae3f4df51f71bfc3b8fe353cb8701defb83
@@ -15,7 +16,7 @@ vendor/lib64/libfastcvopt.so|43f22175bc1d8ecb877a465f4ca5857516bce959
 vendor/lib64/libmdsprpc.so|8b2040f7d12774157fcd82de35ddd73349fbfade
 vendor/lib64/libsdsprpc.so|73badbb307ea4e769032f6f4dc29bcbb9c398aa9
 
-# ADSP modules - from LA.UM.8.2.r1-03200-sdm660.0
+# ADSP modules - from LA.UM.8.2.r1-03200-sdm660.0 - davinci
 vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
@@ -105,7 +106,7 @@ vendor/lib64/soundfx/libqcreverb.so|d8ce60a46a0d20e21d3246742e08328606ddf960
 vendor/lib64/soundfx/libqcvirt.so|88349315d99cea68a3b766fa4c6e1181d26f561b
 
 # Bluetooth - from LA.UM.8.2.r1-03200-sdm660.0
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|ad01427205d796867d6f4bf65b0713fa6c259251
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|57a0a575a2b1b96176fda1bcb84ea8371c4070d1
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|44208f48bce10aba54227c0e50840aa106b4fa28
 #vendor/lib/libbt-hidlclient.so|23fad0ef6cd48502618c3381e923369f441e0c6e
@@ -114,23 +115,23 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|07f0271c81a381125e536
 #vendor/lib64/libbt-hidlclient.so|0fea38b7a4db63c759f3c962627596db601a14ec
 vendor/lib64/libbtnv.so|11b97e25199558009e1df72bd002a97bb45fa8dc
 
-# Bluetooth Audio - from davinci-user 10 QKQ1.190825.002 9.10.9 release-keys
+# Bluetooth Audio - from davinci-user 10 QKQ1.190825.002 9.9.26 release-keys
 vendor/lib64/hw/audio.bluetooth_qti.default.so|7bad29b5cfb02fb18c5e6d94162da67cb7317545
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|dacf9a625cc9f8829dd2ab8256d769291f33e98a
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|71ad8980142e7d8d754607accc0cffd8f5e68dbd
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|96b44484392abf88f8473100279e9f68b05f1f50
-vendor/lib64/libbluetooth_audio_session_qti.so|271a5856f7612d48e3c187f1db4aa276449f4fa2
 vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|4dfa7c2d66966a4b05108e18ed09b05d7677d3f0
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9346946b110086a6b473c8226e072e9a0cdbb87e
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|c51214b092f7e47c2d21989a605c4a8c7e7b85eb
+vendor/lib64/libbluetooth_audio_session_qti.so|271a5856f7612d48e3c187f1db4aa276449f4fa2
 vendor/lib/hw/audio.bluetooth_qti.default.so|103b5cd94770c4710ce0a42df4c9663fbc14a73c
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|9454237c54e1fdc2bed31e2c8dd07c14bdb208e1
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|6f9f0f1a9bbd14682caf825844cf652adb7b8f4b
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|d04ce5677ea683330ea26dfebe40759e7e533d6d
-vendor/lib/libbluetooth_audio_session_qti.so|64311797112fcc35fc40efe1c9e1f1e74e59cbae
 vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|2821469b7e7f6cee1d3b81a91e1f9a6b9d34e5c5
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|37bc226f0aa9793a6beca1cabdde40030a7637f9
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|52855c14cca9af580f2006304a5fb69ffd35e9ac
+vendor/lib/libbluetooth_audio_session_qti.so|64311797112fcc35fc40efe1c9e1f1e74e59cbae
 
 # Camera
 vendor/lib/hw/camera.sdm660.so
@@ -1831,7 +1832,7 @@ bin/wfdservice|d9cccfd6ca14a1d83117533296d6cac2c139c310
 etc/init/wfdservice.rc|311bfdd1675e56499662f39455536b75b78477bb
 etc/wfdconfig.xml|d07f6b0441c0aa8913865100239490fa8687a020
 etc/wfdconfigsink.xml|5b4a96f251fd83c2eee520d06bea2b5b159fcd36
--framework/WfdCommon.jar|3440607d29511e1a671e565a2acc4d262e38a9fb
+-framework/WfdCommon.jar|5573383d4fab57a330366cdec44dfaf887056847
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|47e7949bceaff2d4ef11c51073fa2a173b82eddd
 lib/libFileMux.so|79661e6dffc90234ad446641264fd0fa1a3fe6ab
 lib/libOmxMux.so|1ad1aa835a3dfb8bfea2a29291f82a173ba6a868
@@ -1862,7 +1863,7 @@ lib64/libmmrtpdecoder.so|680db93b68a30fef67268c5f8783371a0af22ed7
 lib64/libmmrtpencoder.so|8d03db323d3ee5efce386374769ecf6214d9a13c
 lib64/libwfdclient.so|884bfd6710f05d567eb0083a00ee4889f73d796d
 lib64/libwfdnative.so|e109284a91ad1eb6b64b29b78ae5130c3d73e60e
--priv-app/WfdService/WfdService.apk|9da05dab9097ef8b016e99fd646b50167309ee5b
+-priv-app/WfdService/WfdService.apk|900a5254d6cf3a39e6db7954fad4a031d41ee110
 vendor/bin/wifidisplayhalservice|56ec79e39595e0c34baba8cb16ab5d1931d793db
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|04e463342cbba4c0e9c311a18238f95dec9359fd
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so|f8d82d7e80e730c01fc0c84f4464762d273b4d62
