@@ -1,26 +1,26 @@
-# ADSP - from LA.UM.8.2.r1-03200-sdm660.0 - davinci
-vendor/bin/adsprpcd|37b57334e6153a82bacaf829988dcd5cdde75ccb
+# ADSP - from LA.UM.8.2.r1-04000-sdm660.0
+vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|13d8a911642844bde32d533948a35730e17d41ad
-vendor/lib/libadsp_default_listener.so|819e9c4798b0ca6c0fa44562838183afd581273e
-vendor/lib/libadsp_hvx_callback_skel.so|bf3d3202f83fb2aa711ff1245e0305d26702e78e
-vendor/lib/libadsp_hvx_stub.so|bf33cae3f4df51f71bfc3b8fe353cb8701defb83
-vendor/lib/libadsprpc.so|e179522037f08d00e4b9fbc4869a376d4b5ce2d0
-vendor/lib/libfastcvadsp_stub.so|177c0f2b1c2d6514a3284d5e22838b65f8c383b2
-vendor/lib/libfastcvopt.so|dc1eef998c864fd50a3c553ec23b6c433dfeb35b
-vendor/lib/libmdsprpc.so|e4f96f313d58eeb845e5f65815f0d5871cdabfbd
-vendor/lib/libsdsprpc.so|62115e3f17afd6279b24494dc5c4c3ac0ecc0781
-vendor/lib64/libadsp_default_listener.so|d4a6e25fa17dda9b115a7f64a0203801a2c6498f
-vendor/lib64/libadsprpc.so|d988e94539fb265de210bbc539e8b21358373296
-vendor/lib64/libfastcvadsp_stub.so|ffc03b0801926338497ad301254196d1b5ea2b2f
-vendor/lib64/libfastcvopt.so|43f22175bc1d8ecb877a465f4ca5857516bce959
-vendor/lib64/libmdsprpc.so|8b2040f7d12774157fcd82de35ddd73349fbfade
-vendor/lib64/libsdsprpc.so|73badbb307ea4e769032f6f4dc29bcbb9c398aa9
+vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
+vendor/lib/libadsp_hvx_callback_skel.so|17e18628d5f06f5ad46b9577baac0d3571b42be1
+vendor/lib/libadsp_hvx_stub.so|d3f2bfdf3f6bd4911e5015a022a098582addcf6f
+vendor/lib/libadsprpc.so|35bf7c53dc7149b39126638c5c1bac3b08e262be
+vendor/lib/libfastcvadsp_stub.so|43740cca4f7549c86e4b2ab1daf4d703d9a9b258
+vendor/lib/libfastcvopt.so|77789b2b6e978bcc2ee7e848d6163fc31d6b5393
+vendor/lib/libmdsprpc.so|caae31754dee7a45267ae3912685773046ab6b47
+vendor/lib/libsdsprpc.so|b78c12ebe73d344af786dd39f1313ec88668aacc
+vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
+vendor/lib64/libadsprpc.so|02d0684cba8bd52d2a291f85afae9ce343c94bd4
+vendor/lib64/libfastcvadsp_stub.so|ef3fd1a7d1217ad9bfff9cff0aa52db36eb73143
+vendor/lib64/libfastcvopt.so|9f95397d7e1b171f9b00323ed7acc17341200e01
+vendor/lib64/libmdsprpc.so|7aca0cc4524687c48df9e2247a6c59d0be9581bc
+vendor/lib64/libsdsprpc.so|9c3ac49b1a3c7d383c64f7fb554b1c00e2963527
 
-# ADSP modules - from LA.UM.8.2.r1-03200-sdm660.0 - davinci
+# ADSP modules - from LA.UM.8.2.r1-04000-sdm660.0
 vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
-vendor/lib/rfsa/adsp/dirac_resource.dar|1e5c52f2a41bdbec4f38ebdcb83d4fc73edc0ec9
+vendor/lib/rfsa/adsp/dirac_resource.dar|7728d5b2ee2927a01df5bd6d7edae3736186c844
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
 vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
 vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
