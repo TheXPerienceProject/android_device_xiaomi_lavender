@@ -1551,11 +1551,11 @@ vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|e82595d915655c1d47ada579b9ab
 vendor/lib64/libqti-iopd-client.so|896e83a986ed0f92b91b8f21d55de0071408752b
 vendor/lib64/vendor.qti.hardware.iop@1.0.so|4b9c51f54b12fdd54f4088ec61b06fb3fa631f23
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# Peripheral manager - from LA.UM.8.2.r1-04000-sdm660
+vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
+vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
+vendor/lib/libperipheral_client.so|836411f7b88afe296b3f3090aab70fc5700ba434
+vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
 # Postprocessing LA.UM.8.2.r1-03200-sdm660.0
 vendor/bin/hw/vendor.display.color@1.0-service
