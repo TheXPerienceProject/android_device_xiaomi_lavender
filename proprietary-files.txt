@@ -105,7 +105,7 @@ vendor/lib64/soundfx/libqcbassboost.so|1f9b4eca3f6b1fea872d90b943d2c434e25e0fa4
 vendor/lib64/soundfx/libqcreverb.so|d8ce60a46a0d20e21d3246742e08328606ddf960
 vendor/lib64/soundfx/libqcvirt.so|88349315d99cea68a3b766fa4c6e1181d26f561b
 
-# Bluetooth - from LA.UM.8.2.r1-03200-sdm660.0
+# Bluetooth - from  LA.UM.8.2.r1-04300-sdm660.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|57a0a575a2b1b96176fda1bcb84ea8371c4070d1
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|44208f48bce10aba54227c0e50840aa106b4fa28
@@ -121,8 +121,8 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|dacf9a625cc9f882
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|71ad8980142e7d8d754607accc0cffd8f5e68dbd
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|96b44484392abf88f8473100279e9f68b05f1f50
 vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|4dfa7c2d66966a4b05108e18ed09b05d7677d3f0
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9346946b110086a6b473c8226e072e9a0cdbb87e
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|c51214b092f7e47c2d21989a605c4a8c7e7b85eb
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|0a1f3b4bd383ed547e667087c0aab922efee3473
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|f5043d5f1bb02d18e940190f31017d2a1ed97de9
 vendor/lib64/libbluetooth_audio_session_qti.so|271a5856f7612d48e3c187f1db4aa276449f4fa2
 vendor/lib/hw/audio.bluetooth_qti.default.so|103b5cd94770c4710ce0a42df4c9663fbc14a73c
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|9454237c54e1fdc2bed31e2c8dd07c14bdb208e1
