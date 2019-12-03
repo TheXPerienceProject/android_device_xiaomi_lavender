@@ -231,6 +231,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware \
     /vendor/bt_firmware:/bt_firmware
+TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USES_MKE2FS := true
 
