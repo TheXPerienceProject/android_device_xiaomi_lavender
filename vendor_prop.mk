@@ -107,8 +107,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee \
+    vendor.bluetooth.soc=cherokee \
     persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    ro.bluetooth.library_name=libbluetooth_qti.so \
     ro.vendor.bluetooth.wipower=false \
+    persist.vendor.btstack.enable.splita2dp=false \
     persist.bluetooth.a2dp_offload.disabled=false \
     persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
     persist.vendor.bt.aac_frm_ctl.enabled=true
