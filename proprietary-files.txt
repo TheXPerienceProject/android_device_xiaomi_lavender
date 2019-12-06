@@ -136,6 +136,7 @@ vendor/lib/libbluetooth_audio_session_qti.so|64311797112fcc35fc40efe1c9e1f1e74e5
 # Camera
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libFaceGrade.so
+vendor/lib/libft2vendor.so
 vendor/lib/libMegviiFacepp-0.5.2.so
 vendor/lib/libSNPE.so
 vendor/lib/libSonyIMX376C3RmscLibrary.so
