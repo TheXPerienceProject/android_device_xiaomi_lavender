@@ -191,7 +191,7 @@ vendor/lib/libsymphonypower.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/libvidhance_gyro.so
-vendor/lib/miwatermar.so
+vendor/lib/miwatermark.so
 vendor/lib/mibokeh_660_opencl.bin
 vendor/lib/vendor.qti.hardware.camera.device@3.2.so
 vendor/lib64/libcdsprpc.so
