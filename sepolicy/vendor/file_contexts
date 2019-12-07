@@ -25,6 +25,9 @@
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1             u:object_r:hal_mlipay_default_exec:s0
 
+#Media C2
+/(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.0-service     u:object_r:mediacodec_exec:s0
+
 # RTC
 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-00/800f000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc/rtc/rtc0(/.*)? u:object_r:sysfs_rtc:s0
 
@@ -36,6 +39,9 @@
 
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh    u:object_r:init_fingerprint_exec:s0
+
+# Touchscreen
+/proc/tp_gesture u:object_r:sysfs_tap_to_wake:s0
 
 # Video4linux sysfs nodes
 /sys/devices/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?   u:object_r:sysfs_graphics:s0
