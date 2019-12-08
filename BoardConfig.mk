@@ -227,10 +227,7 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648 # 2097152 * 1024
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_ROOT_EXTRA_FOLDERS := cust
 BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist \
-    /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware \
-    /vendor/bt_firmware:/bt_firmware
+    /mnt/vendor/persist:/persist
 TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USES_MKE2FS := true
