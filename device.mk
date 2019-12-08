@@ -592,6 +592,12 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# WiFi Hostapd
+PRODUCT_PACKAGES += \
+    hostapd.conf \
+    hostapd.accept \
+    hostapd.deny
+
 # Wi-FI caf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.hostapd@1.1 \
@@ -602,11 +608,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/hostapd.accept:$(TARGET_OUT_VENDOR_ETC)/hostapd/hostapd.accept \
-    $(LOCAL_PATH)/wifi/hostapd.deny:$(TARGET_OUT_VENDOR_ETC)/hostapd/hostapd.deny \
-    $(LOCAL_PATH)/wifi/hostapd.conf:$(TARGET_OUT_VENDOR_ETC)/hostapd/hostapd_default.conf
 
 ###################################################################################
 # This is the End of target.mk file.

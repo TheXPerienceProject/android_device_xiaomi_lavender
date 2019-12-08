@@ -737,6 +737,13 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
 
+on property:wlan.driver.status=ok
+    # do a symlink to fix hostpad
+    symlink /vendor/etc/hostapd/hostapd.accept /data/vendor/wifi/hostapd.accept
+    symlink /vendor/etc/hostapd/hostapd.conf /data/vendor/wifi/hostapd.conf
+    symlink /vendor/etc/hostapd/hostapd.deny /data/vendor/wifi/hostapd.deny
+    restart vendor.wifi_hal_legacy
+
 service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant \
     -iwigig0 -Dnl80211 -c/data/vendor/wifi/wigig_supplicant.conf \
     -m/data/vendor/wifi/wigig_p2p_supplicant.conf \
