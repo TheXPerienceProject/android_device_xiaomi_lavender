@@ -299,4 +299,8 @@
 
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
+    <!-- The app which will handle routine based automatic battery saver, if empty the UI for
+         routine based battery saver will be hidden -->
+    <string name="config_batterySaverScheduleProvider">com.google.android.apps.turbo</string>
 </resources>
