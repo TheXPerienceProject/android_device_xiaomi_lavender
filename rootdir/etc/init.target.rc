@@ -140,7 +140,10 @@ on fs
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/bms 0700 root system
+    # add for watermark
+    mkdir /mnt/vendor/persist/camera 0777 root root
     restorecon_recursive /mnt/vendor/persist
+    restorecon_recursive /mnt/vendor/persist/camera
     write /sys/kernel/boot_adsp/boot 1
     chmod 0771 /mnt/vendor/persist/spkr_calib_l.bin
     chown system system /dev/goodix_fp
