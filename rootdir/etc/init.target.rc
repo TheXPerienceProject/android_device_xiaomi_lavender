@@ -299,6 +299,16 @@ service time_daemon /system/vendor/bin/time_daemon
    user root
    group root
 
+service adsprpcd_root /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+
+service adsprpcd /vendor/bin/adsprpcd audiopd
+   class main
+   user media
+   group media
+
 #F7A has no hbtp feature
 #service hbtp /system/vendor/bin/hbtp_daemon
 #    class main
