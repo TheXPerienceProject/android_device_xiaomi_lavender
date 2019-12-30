@@ -55,7 +55,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.path.for.pcm.voip=true \
     ro.config.media_vol_steps=25 \
     ro.config.vc_call_vol_steps=7 \
-    vendor.audio.spkr_prot.tx.sampling_rate=48000
+    vendor.audio.spkr_prot.tx.sampling_rate=48000 \
+    vendor.audio.feature.multi_voice_session.enable=true
 
 #add dynamic feature flags here
 PRODUCT_PROPERTY_OVERRIDES += \
