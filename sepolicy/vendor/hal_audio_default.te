@@ -1,2 +1,2 @@
-allow hal_audio_default audio_prop:file read;
-allow hal_audio_default audio_prop:dir read;
+allow hal_audio_default audio_prop:file { read open getattr };
+allow hal_audio_default audio_prop:dir { read open };
