@@ -261,14 +261,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.thumbnail.prefer_hw_codecs=true \
     vendor.video.disable.ubwc=1
 
+# disable PQ feature by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.vidc.enc.disable.pq=true
+
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.use_data_netmgrd=true \
     persist.vendor.data.mode=concurrent
-
-# NFC
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.nfc_nci=nqx.default
 
 # Nitz
 PRODUCT_PROPERTY_OVERRIDES += \

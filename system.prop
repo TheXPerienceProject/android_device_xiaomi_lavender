@@ -1,0 +1,45 @@
+# system property for maximum number of HFP client connections
+bt.max.hfpclient.connections=1
+#force disable Bluetooth AAC by default
+persist.bt.a2dp.aac_disable=true
+
+# System property for cabl
+ro.qualcomm.cabl=0
+ro.vendor.display.cabl=0
+
+ro.vendor.display.ad=1
+ro.vendor.display.ad.sdr_calib_data=/data/vendor/display/ad_calib.cfg
+ro.vendor.display.sensortype=2
+
+#system prop for wipower support
+ro.bluetooth.emb_wp_mode=true
+ro.bluetooth.wipower=true
+
+#minimum duration for offload playback in secs
+audio.offload.min.duration.secs=30
+
+#enable offload audio video playback by default
+audio.offload.video=true
+
+#enable music through deep buffer
+audio.deep_buffer.media=true
+
+#set AudioFlinger client heap size
+ro.af.client_heap_size_kbyte=7168
+
+#system prop for RmNet Data
+persist.data.df.dev_name=rmnet_usb0
+
+# add for exif info
+persist.vendor.camera.manufacturer=Xiaomi
+persist.vendor.camera.model=Redmi Note 7
+
+#system prop for Bluetooth SOC type
+vendor.bluetooth.soc=cherokee
+ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
+
+#add for color invert
+ro.vendor.df.effect.conflict=1
+persist.sys.df.extcolor.proc=0
