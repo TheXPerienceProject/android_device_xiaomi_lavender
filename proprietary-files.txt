@@ -106,43 +106,43 @@ vendor/lib64/soundfx/libqcbassboost.so|1f9b4eca3f6b1fea872d90b943d2c434e25e0fa4
 vendor/lib64/soundfx/libqcreverb.so|d8ce60a46a0d20e21d3246742e08328606ddf960
 vendor/lib64/soundfx/libqcvirt.so|88349315d99cea68a3b766fa4c6e1181d26f561b
 
-# Bluetooth - from  LA.UM.8.2.r1-04300-sdm660.0
+# Bluetooth - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|57a0a575a2b1b96176fda1bcb84ea8371c4070d1
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|44208f48bce10aba54227c0e50840aa106b4fa28
-vendor/lib/libbt-hidlclient.so|23fad0ef6cd48502618c3381e923369f441e0c6e
-vendor/lib/libbtnv.so|f987c402e05eaecfe43bd2626a0c9b1ebc068f76
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|1d4a9d612e0f39b09aeef1d52b153f30ad409c07
-vendor/lib64/libbt-hidlclient.so|0fea38b7a4db63c759f3c962627596db601a14ec
-vendor/lib64/libbtnv.so|b58a40965697418c7b4809026bba17bd51bfb2ef
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|49e3c72c0c9d14e1e12c2bcab8aa3c6227b1f433
+vendor/lib/libbt-hidlclient.so|db653f95deffc108ab3c12821589a0e64e8c7a30
+vendor/lib/libbtnv.so|7687cf0810cc53285bc16c48f2d2a83f6944e91f
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|8978f344c8cd0e5d224550e64c6247d209aaf5bb
+vendor/lib64/libbt-hidlclient.so|4a4038013bf438627154899d3823c9346c3d84ec
+vendor/lib64/libbtnv.so|10534661ec16c4998957a5a455ec0831a1f55880
 
-# Bluetooth Audio - from davinci-user 10 QKQ1.190825.002 9.9.26 release-keys
-product/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|3ade126c3cf1590f6b66fc38c19d3ed0c7618efb
-product/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|562eebffae19b6ac3947f35de3bc0ee2e81b5af7
-product/lib/vendor.qti.hardware.btconfigstore@1.0.so|230346aba118dbb585128047c5c7e8e0968706a5
+# Bluetooth Audio - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+product/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|235d8dc80e335a9c323f2ce395cb09b297493025
+product/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|0976fd28359b218cd041aca3fb03acde045aa760
+product/lib/vendor.qti.hardware.btconfigstore@1.0.so|b849985a2fc292120a26ba7649addd3bb6e0de1e
 product/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|995a8127aea3b2de9efe68a5e5a6a61c80f438e7
 product/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|7cdd376b08b8571e51674e0e61607c6a52a5a24a
 product/lib64/vendor.qti.hardware.btconfigstore@1.0.so|42aa6258f3bf4e8ef72b7664f2277db49837e4da
 
-# Bluetooth Audio - from from davinci-user 10 QKQ1.190825.002 9.9.26 release-keys
-vendor/lib64/hw/audio.bluetooth_qti.default.so|7bad29b5cfb02fb18c5e6d94162da67cb7317545
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|dacf9a625cc9f8829dd2ab8256d769291f33e98a
+# Bluetooth Audio - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+vendor/lib64/hw/audio.bluetooth_qti.default.so|047a23f7eadc53b2100c30c0c96a5f318d92a1d3
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|332bbe7b0e76358500605f7651b0dcfa0cd7f27b
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|71ad8980142e7d8d754607accc0cffd8f5e68dbd
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|96b44484392abf88f8473100279e9f68b05f1f50
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|f9dcf9a19a0b601969bcd606bedb8a8419de9d81
+vendor/lib64/btaudio_offload_if.so|9caa0bbcb821e6368d5fc27188e32c92e83c6367
+vendor/lib64/libbluetooth_audio_session_qti.so|b805f23dcd687b96e4b2fd3dec7ec2c5d37b8b54
 vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|4dfa7c2d66966a4b05108e18ed09b05d7677d3f0
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|0a1f3b4bd383ed547e667087c0aab922efee3473
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|f5043d5f1bb02d18e940190f31017d2a1ed97de9
-vendor/lib64/btaudio_offload_if.so|ea01d89c7d94bd28008696a64b68df2662f729eb
-vendor/lib64/libbluetooth_audio_session_qti.so|271a5856f7612d48e3c187f1db4aa276449f4fa2
-vendor/lib/hw/audio.bluetooth_qti.default.so|103b5cd94770c4710ce0a42df4c9663fbc14a73c
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|9454237c54e1fdc2bed31e2c8dd07c14bdb208e1
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|6f9f0f1a9bbd14682caf825844cf652adb7b8f4b
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|d04ce5677ea683330ea26dfebe40759e7e533d6d
-vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|2821469b7e7f6cee1d3b81a91e1f9a6b9d34e5c5
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|37bc226f0aa9793a6beca1cabdde40030a7637f9
-vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|52855c14cca9af580f2006304a5fb69ffd35e9ac
-vendor/lib/btaudio_offload_if.so|290ecb07eeda40365aa236f2eaf927bf0acf4851
-vendor/lib/libbluetooth_audio_session_qti.so|64311797112fcc35fc40efe1c9e1f1e74e59cbae
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9346946b110086a6b473c8226e072e9a0cdbb87e
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|c51214b092f7e47c2d21989a605c4a8c7e7b85eb
+vendor/lib/hw/audio.bluetooth_qti.default.so|3eaf5f5aa42f6c450526e7fa04895855485ba0f9
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|947afef6bf7a05a9a2b45022edfed06bd7c00e64
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|1360ae1d4f10d3762699d6ce82b456d8a0145a23
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|b2a644519ad0d890274c384f76269de76e706058
+vendor/lib/btaudio_offload_if.so|d9a9795e173dffd4b5ee000acac66c1ad6f1648c
+vendor/lib/libbluetooth_audio_session_qti.so|324661efdc326b0aa947365a7afeaeaf8d9d3359
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|9aafedaa8da8f0eb13bc957acbabece4bebd0507
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|5c24249adf85a30aa66f6a391bf697063d989a87
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|20464213b5f2cdb7d9c10f31b5b53fc03526698f
 
 # Camera
 vendor/lib/hw/camera.sdm660.so
