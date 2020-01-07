@@ -26,11 +26,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hw.binder.size_kbyte=1024 \
     ro.af.client_heap_size_kbyte=7168 \
     ro.vendor.audio.sos=true \
-    ro.vendor.audio.soundtrigger=none \
+    ro.vendor.audio.soundfx.usb=true \
+    ro.vendor.audio.soundtrigger=xiaomi \
     ro.vendor.audio.soundtrigger.lowpower=false \
     ro.vendor.audio.voice.volume.boost=manual \
     ro.vendor.audio.sdk.ssr=false \
-    ro.vendor.audio.sdk.fluencetype=fluence \
+    ro.vendor.audio.sdk.fluencetype=none \
     vendor.audio.tunnel.encode=false \
     vendor.audio.offload.buffer.size.kb=64 \
     vendor.audio.offload.track.enable=false \
@@ -43,12 +44,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.safx.pbe.enabled=false \
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.flac.sw.decoder.24bit=true \
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio.snd_card.open.retries=50 \
     vendor.audio.hw.aac.encoder=true \
+    vendor.fm.a2dp.conc.disabled=true \
     vendor.audio.noisy.broadcast.delay=600 \
+    audio.sys.noisy.broadcast.delay=600 \
     vendor.audio.offload.pstimeout.secs=3 \
+    audio.sys.offload.pstimeout.secs=3 \
     vendor.audio_hal.period_size=192 \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio.adm.buffering.ms=2 \
@@ -57,51 +62,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7 \
     vendor.audio.spkr_prot.tx.sampling_rate=48000 \
     vendor.audio.feature.multi_voice_session.enable=true
-
-#add dynamic feature flags here
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.audio.feature.a2dp_offload.enable=false \
-    vendor.audio.feature.afe_proxy.enable=true \
-    vendor.audio.feature.anc_headset.enable=true \
-    vendor.audio.feature.battery_listener.enable=false \
-    vendor.audio.feature.compr_cap.enable=false \
-    vendor.audio.feature.compress_in.enable=false \
-    vendor.audio.feature.compress_meta_data.enable=true \
-    vendor.audio.feature.compr_voip.enable=true \
-    vendor.audio.feature.concurrent_capture.enable=false \
-    vendor.audio.feature.custom_stereo.enable=true \
-    vendor.audio.feature.display_port.enable=false \
-    vendor.audio.feature.dsm_feedback.enable=false \
-    vendor.audio.feature.dynamic_ecns.enable=false \
-    vendor.audio.feature.ext_hw_plugin.enable=false \
-    vendor.audio.feature.external_dsp.enable=false \
-    vendor.audio.feature.external_speaker.enable=false \
-    vendor.audio.feature.external_speaker_tfa.enable=false \
-    vendor.audio.feature.fluence.enable=true \
-    vendor.audio.feature.fm.enable=true \
-    vendor.audio.feature.hdmi_edid.enable=true \
-    vendor.audio.feature.hdmi_passthrough.enable=true \
-    vendor.audio.feature.hfp.enable=true \
-    vendor.audio.feature.hifi_audio.enable=true \
-    vendor.audio.feature.hwdep_cal.enable=false \
-    vendor.audio.feature.incall_music.enable=false \
-    vendor.audio.feature.multi_voice_session.enable=true \
-    vendor.audio.feature.keep_alive.enable=false \
-    vendor.audio.feature.kpi_optimize.enable=true \
-    vendor.audio.feature.maxx_audio.enable=false \
-    vendor.audio.feature.ras.enable=true \
-    vendor.audio.feature.record_play_concurency.enable=false \
-    vendor.audio.feature.src_trkn.enable=true \
-    vendor.audio.feature.spkr_prot.enable=true \
-    vendor.audio.feature.ssrec.enable=true \
-    vendor.audio.feature.usb_offload.enable=false \
-    vendor.audio.feature.usb_offload_burst_mode.enable=false \
-    vendor.audio.feature.usb_offload_sidetone_volume.enable=false \
-    vendor.audio.feature.deepbuffer_as_primary.enable=false \
-    vendor.audio.feature.vbat.enable=true \
-    vendor.audio.feature.wsa.enable=false \
-    vendor.audio.feature.audiozoom.enable=false \
-    vendor.audio.feature.snd_mon.enable=true
 
 # A2DP offload support
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -120,7 +80,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.feature.a2dp_offload.enable=true \
 vendor.audio.feature.afe_proxy.enable=true \
 vendor.audio.feature.anc_headset.enable=true \
-vendor.audio.feature.audio_sphere.enable=true \
 vendor.audio.feature.battery_listener.enable=false \
 vendor.audio.feature.compr_cap.enable=false \
 vendor.audio.feature.compress_in.enable=false \
@@ -142,7 +101,7 @@ vendor.audio.feature.hdmi_passthrough.enable=true \
 vendor.audio.feature.hfp.enable=true \
 vendor.audio.feature.hifi_audio.enable=true \
 vendor.audio.feature.hwdep_cal.enable=false \
-vendor.audio.feature.incall_music.enable=false \
+vendor.audio.feature.incall_music.enable=true \
 vendor.audio.feature.keep_alive.enable=false \
 vendor.audio.feature.kpi_optimize.enable=true \
 vendor.audio.feature.maxx_audio.enable=false \
@@ -166,10 +125,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.bluetooth.soc=cherokee \
     persist.bluetooth.bluetooth_audio_hal.disabled=true \
     ro.bluetooth.library_name=libbluetooth_qti.so \
-    ro.vendor.bluetooth.wipower=false \
     persist.vendor.btstack.enable.splita2dp=false \
     persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
-    persist.vendor.bt.aac_frm_ctl.enabled=true
+    persist.vendor.bt.aac_frm_ctl.enabled=true \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+    ro.vendor.bluetooth.wipower=false
+
+
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -247,6 +210,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
+# FM
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.hw.fm.init=0
+v
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -289,13 +256,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable.pq=false \
     vidc.enc.dcvs.extra-buff-count=2 \
     vidc.enc.target_support_bframe=1 \
-    video.disable.ubwc=1 \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0 \
+    media.stagefright.thumbnail.prefer_hw_codecs=true \
     vendor.video.disable.ubwc=1
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.use_data_netmgrd=true \
     persist.vendor.data.mode=concurrent
+
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.nfc_nci=nqx.default
 
 # Nitz
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -321,6 +294,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Qcom System Daemon
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore_desede=true \
     persist.vendor.qcomsysd.enabled=1
 
 # Qualcomm / OEM Unlock
@@ -351,7 +325,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=1 \
     ril.subscription.types=NV,RUIM \
     rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so \
-    vendor.rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
+    vendor.rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so \
+    vendor.power.pasr.enabled=true \
+    persist.vendor.radio.procedure_bytes=SKIP
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -403,4 +379,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
-    wifi.interface=wlan0
+    wifi.interface=wlan0 \
+    ro.telephony.iwlan_operation_mode=legacy
