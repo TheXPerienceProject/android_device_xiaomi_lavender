@@ -82,16 +82,16 @@ vendor/lib64/libaudioalsa.so|a192b115e5230354e161065ab7a4f97a21adf956
 -vendor/lib64/libaudioparsers.so|235e2c40298ba328fd79613d013ee2584e4de5f7
 vendor/lib64/libqtigef.so|b02998b610680967bd672ef725c4f103a269ccc5
 
-# Audio ACDB
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
-vendor/etc/acdbdata/adsp_avs_config.acdb
+# Audio ACDB - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|436d3f09523a22741f43c1d474885e48d8b6f115
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|d2cbd54a07327f31efd6e667c1fc718e2447173f
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|d75e8710d7e32a693ee9e2ddae15da621e39091a
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|3d325cb4b11b1aedfbd03222a97433aceb25c84d
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|4bd561067afd349230e26beadee0d77036f24d44
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|bacc36dd811f27a62b720eaf1630e2099ae8b622
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|1bccdbc52b99c508462439b5892ea54d94652f84
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|5fd1a00e95ab80135535deb2580c507b899a3f84
+vendor/etc/acdbdata/adsp_avs_config.acdb|d9507f31b8970320233128fed24c39742ee53c67
 
 # Audio FX modules - from perseus-user 9 PKQ1.180729.001 9.7.31 release-keys
 vendor/lib/soundfx/libasphere.so|0783283ac9f68d5ebbeef350adc9b66b3248449b
