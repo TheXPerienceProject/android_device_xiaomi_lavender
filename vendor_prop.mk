@@ -213,7 +213,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.hw.fm.init=0
-v
+
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
