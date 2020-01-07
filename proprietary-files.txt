@@ -1,21 +1,21 @@
-# ADSP - from lavender-user-9-PKQ1.180904.001-V11.0.4.0.PFGMIXM
-vendor/bin/adsprpcd|8b439846f016decb7519e5fd5cb2c86e192af036
-vendor/lib/libadsp_default_listener.so|ca63c1b2c34bbde74c2b1fc6009ca244a1ffa535
-vendor/lib/libadsp_hvx_callback_skel.so|dc7080c68699f69f76260891ebcedcd68a093d40
-vendor/lib/libadsp_hvx_stub.so|4fa14ca235ace82551549b571f767f475fbf4b67
-vendor/lib/libadsprpc.so|756fc8ea0395866ee578030ac72fddedba288f97
-vendor/lib/libfastcvadsp_stub.so|7811d12d68ec3f9fcbd05f55264b6dcec61bc75b
-vendor/lib/libfastcvopt.so|d76563220d8d504a9dce1091a52482a8d932858d
+# ADSP - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
+vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
+vendor/lib/libadsp_hvx_callback_skel.so|17e18628d5f06f5ad46b9577baac0d3571b42be1
+vendor/lib/libadsp_hvx_stub.so|d3f2bfdf3f6bd4911e5015a022a098582addcf6f
+vendor/lib/libadsprpc.so|35bf7c53dc7149b39126638c5c1bac3b08e262be
+vendor/lib/libfastcvadsp_stub.so|43740cca4f7549c86e4b2ab1daf4d703d9a9b258
+vendor/lib/libfastcvopt.so|77789b2b6e978bcc2ee7e848d6163fc31d6b5393
 vendor/lib/libmdsprpc.so|e4f96f313d58eeb845e5f65815f0d5871cdabfbd
-vendor/lib/libsdsprpc.so|979a7a2a7bb5622d0ff404d0151536437c0c381b
-vendor/lib64/libadsp_default_listener.so|d28ea3a0509c13ff75c700efe1107bb2d2481eb6
-vendor/lib64/libadsprpc.so|66ac8f836101bc7563432d168890827d878acd42
-vendor/lib64/libfastcvadsp_stub.so|0cbdc83819780d8aa7cb8707633439db330b655d
-vendor/lib64/libfastcvopt.so|39423b9830f4eee217d9a4064a0c7449ff78acfb
-vendor/lib64/libmdsprpc.so|8b2040f7d12774157fcd82de35ddd73349fbfade
-vendor/lib64/libsdsprpc.so|fc1325b8e76a125f6608a0086712dba894151c11
+vendor/lib/libsdsprpc.so|b78c12ebe73d344af786dd39f1313ec88668aacc
+vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
+vendor/lib64/libadsprpc.so|02d0684cba8bd52d2a291f85afae9ce343c94bd4
+vendor/lib64/libfastcvadsp_stub.so|ef3fd1a7d1217ad9bfff9cff0aa52db36eb73143
+vendor/lib64/libfastcvopt.so|9f95397d7e1b171f9b00323ed7acc17341200e01
+vendor/lib64/libmdsprpc.so|7aca0cc4524687c48df9e2247a6c59d0be9581bc
+vendor/lib64/libsdsprpc.so|9c3ac49b1a3c7d383c64f7fb554b1c00e2963527
 
-# ADSP modules - from lavender-user-9-PKQ1.180904.001-V11.0.4.0.PFGMIXM
+# ADSP modules - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
 vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
@@ -28,10 +28,12 @@ vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
 vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so|c240d45c3a5fc37b964c4adab06f4cb0bfda62f5
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
-vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
 vendor/lib/rfsa/adsp/nuance.scd|d17ee46b7d136510360389baa8f365cd7669b5dd
 
 # Power-off alarm - from LA.UM.7.2.r1-06900-sdm660.0
