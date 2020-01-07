@@ -60,7 +60,7 @@ static BatteryInfoUpdate battInfoUpdate;
 static BatteryMetricsLogger battMetricsLogger(kBatteryResistance, kBatteryOCV);
 static LowBatteryShutdownMetrics shutdownMetrics(kVoltageAvg);
 static CycleCountBackupRestore ccBackupRestoreBMS(
-    8, kCycleCountsBins, "/persist/battery/qcom_cycle_counts_bins");
+    8, kCycleCountsBins, "/mnt/vendor/persist/battery/qcom_cycle_counts_bins");
 static DeviceHealth deviceHealth;
 static LearnedCapacityBackupRestore lcBackupRestore;
 
