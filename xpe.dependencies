@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "android_kernel_xiaomi_lavender",
+    "target_path": "kernel/xiaomi/lavender",
+	"branch": "xpe-14.0"
+  }
+]
