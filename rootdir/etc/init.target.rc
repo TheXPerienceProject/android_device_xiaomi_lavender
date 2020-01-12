@@ -135,7 +135,6 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     mount_all /vendor/etc/fstab.qcom
-    swapon_all /vendor/etc/fstab.qcom
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
@@ -674,6 +673,8 @@ on property:sys.boot_completed=1
     # Set runtime stune value
     write /dev/stune/schedtune.prefer_idle 0
     write /dev/stune/schedtune.boost 0
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
 
     # Update DVR cpusets to runtime values.
     write /dev/cpuset/kernel/cpus 2,3
