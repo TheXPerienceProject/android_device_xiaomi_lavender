@@ -642,4 +642,6 @@
     <!-- Disable Dual Band Tethering -->
     <bool name="config_wifi_dual_sap_mode_enabled">false</bool>
 
+    <!-- If this is true, the screen will fade off. -->
+    <bool name="config_animateScreenLights">true</bool>
 </resources>
