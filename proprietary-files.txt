@@ -1346,7 +1346,10 @@ vendor/lib64/libhdcpsrm.so|ee8e7c29e2b716a8bb07c3cbb730e34d8af3c64e
 # DRM - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|23f5dd5911cf58a86574ec9575c57bb5259eab8d
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
+vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so|852146fe49aeb796c9ce261b6e03e61e36f14f97
+vendor/lib64/mediadrm/libwvdrmengine.so
+
 
 # ESE-Powermanager
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
