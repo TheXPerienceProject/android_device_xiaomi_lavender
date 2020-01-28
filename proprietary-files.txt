@@ -1946,10 +1946,11 @@ vendor/lib64/libthermalfeature.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services - from LA.UM.7.2.r1-06900-sdm660.0
--vendor/app/TimeService/TimeService.apk|9e1a803c35bc748ebb26d55a447fd32577291a23
-vendor/bin/time_daemon|ac244644735005d4c4322168001dcd3ae757007f
-vendor/lib64/libtime_genoff.so|9de68b1aa139b06b0e455bd1c24ed0c527492c3b
+# Time services - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+-vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
+vendor/bin/time_daemon|4379f604fcb41e9b096203b1d888cac478a3aafe
+-vendor/lib/libtime_genoff.so|e858cc52e829af0a9e4b5a4c39bddef8cece4bd9
+-vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
 
 # TUI
 lib/vendor.qti.hardware.tui_comm@1.0.so
