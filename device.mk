@@ -620,5 +620,6 @@ $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
 $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
 ###################################################################################
 # Pickup blobs to satisfy LMKD
-$(call inherit-product-if-exists, vendor/qcom/common/performance/perf-common.mk)
+$(call inherit-product, vendor/qcom/common/av/qti-av.mk)
+$(call inherit-product, vendor/qcom/common/perf/qti-perf.mk)
 ###################################################################################
