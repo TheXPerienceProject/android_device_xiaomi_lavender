@@ -1,0 +1,3 @@
+# Android requires write access to media_data_file for L1 DRM.
+allow hal_drm_default media_data_file:dir create_dir_perms;
+allow hal_drm_default media_data_file:file create_file_perms;
