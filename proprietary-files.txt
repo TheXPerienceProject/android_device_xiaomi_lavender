@@ -1220,8 +1220,8 @@ vendor/bin/hvdcp_opti|ee724f847755d87e40754d6b57637ed37ec2bf22
 -sbin/charger:bin/chargeonlymode
 
 # CNE - from LA.UM.8.2.r1-04000-sdm660.0
-vendor/app/CneApp/CneApp.apk|2356a0335ab8e0106832a9325f972467654fd1f0
-vendor/app/IWlanService/IWlanService.apk|c152322e169240d16a599581c0af8a3f2c8ee0a9
+-vendor/app/CneApp/CneApp.apk|2356a0335ab8e0106832a9325f972467654fd1f0
+-vendor/app/IWlanService/IWlanService.apk|c152322e169240d16a599581c0af8a3f2c8ee0a9
 vendor/bin/cnd|ca653a8064fe83a12a12798a73c9cc8c1fecf758
 vendor/etc/init/cnd.rc|ff205cff8e00ec6805fd1e19f3ca6ff86700cbb6
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
