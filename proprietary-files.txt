@@ -1224,6 +1224,8 @@ vendor/bin/hvdcp_opti|ee724f847755d87e40754d6b57637ed37ec2bf22
 -sbin/charger:bin/chargeonlymode
 
 # CNE - from LA.UM.8.2.r1-04000-sdm660.0
+vendor/app/CneApp/CneApp.apk|2356a0335ab8e0106832a9325f972467654fd1f0
+vendor/app/IWlanService/IWlanService.apk|c152322e169240d16a599581c0af8a3f2c8ee0a9
 vendor/bin/cnd|ca653a8064fe83a12a12798a73c9cc8c1fecf758
 vendor/etc/init/cnd.rc|ff205cff8e00ec6805fd1e19f3ca6ff86700cbb6
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
@@ -1344,11 +1346,11 @@ vendor/lib64/libhdcp2p2prov.so|7cbe9df99fc2dad1c4b170c5162442e533e19cba
 vendor/lib64/libhdcpsrm.so|ee8e7c29e2b716a8bb07c3cbb730e34d8af3c64e
 
 # DRM - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|23f5dd5911cf58a86574ec9575c57bb5259eab8d
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/libwvhidl.so|852146fe49aeb796c9ce261b6e03e61e36f14f97
-vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|68767969f86126ada017fc09af151e299db651d5
+vendor/lib/mediadrm/libwvdrmengine.so|cb055ebd13261ca124b4011948ea393a9f4e2b24
+vendor/lib64/libwvhidl.so|79641121417371f82af64fdec4795eb9cec1e12f
+vendor/lib64/mediadrm/libwvdrmengine.so|3d04a3046d1ac489966d8ce9716e2adae7a8dea5
 
 
 # ESE-Powermanager
