@@ -44,10 +44,6 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|7d163c35a9deee2801070ed50c6625709c3e0b65
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|5cf1631eafbf4421d3d022c359151ee9c1cdffc3
 
-#ant bypass build
--lib/libantradio.so
--lib64/libantradio.so
-
 # ANT+ (system) - from Chef sprout 10 QPT30.61-14 LA.UM.8.2.r1-04300-sdm660.0
 product/lib/com.qualcomm.qti.ant@1.0.so|b729a2c3ee4d98bc534adf06a2a95c94314992e4
 product/lib64/com.qualcomm.qti.ant@1.0.so|4b62afdda74f01a09b62ca0b754c3693f97b3ba0
