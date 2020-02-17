@@ -5,7 +5,7 @@ allow ueventd ir_dev_file:chr_file { create setattr };
 # Fingerprint
 type fingerprintd_device, file_type, dev_type;
 type persist_fingerprint_file, file_type;
-#type sysfs_fingerprint, sysfs_type, fs_type;
+type sysfs_fingerprint, sysfs_type, fs_type;
 
 # Input files
 type idc_file, file_type, vendor_file_type;
@@ -18,7 +18,13 @@ type keylayout_file, file_type, vendor_file_type;
 type sysfs_tap_to_wake, sysfs_type, fs_type;
 
 # Power
-#type debugfs_wlan, debugfs_type, fs_type;
+type debugfs_wlan, debugfs_type, fs_type;
 
+type bt_firmware_file, file_type;
+type firmware_file, file_type;
 type avb_file, file_type;
 type cust_file, file_type;
+type persist_file, file_type;
+
+type init_fingerprint_exec, exec_type, vendor_file_type, file_type;
+type hal_drm_widevine_exec, exec_type, vendor_file_type, file_type;

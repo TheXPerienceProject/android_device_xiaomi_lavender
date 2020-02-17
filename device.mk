@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-ifneq ($(IS_PARANOID),true)
+#ifneq ($(IS_PARANOID),true)
 #Dalvik HEAP
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
-endif
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+#endif
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/lavender/lavender-vendor.mk)
@@ -624,7 +624,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
+ifneq ($(IS_PARANOID),true)
 ###################################################################################
 # This is the End of target.mk file.
 # Now, Pickup other split product.mk files:
@@ -632,6 +632,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
 $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
 ###################################################################################
+endif
 # Pickup blobs to satisfy LMKD
 ifneq ($(IS_PARANOID),true)
 $(call inherit-product, vendor/qcom/common/performance/perf-common.mk)

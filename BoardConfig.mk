@@ -225,7 +225,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648 # 2097152 * 1024
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_ROOT_EXTRA_FOLDERS := cust
+BOARD_ROOT_EXTRA_FOLDERS := cust avb
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist
 TARGET_COPY_OUT_PRODUCT := system/product
@@ -264,10 +264,17 @@ BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 # SELinux
 ifneq ($(IS_PARANOID),true)
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
-endif
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+endif
+ifeq ($(IS_PARANOID),true)
+SELINUX_IGNORE_NEVERALLOWS := true
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-aospa/vendor
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy-aospa/public
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy-aospa/private
+endif
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
@@ -307,6 +314,7 @@ endif
 # inherit from the proprietary version
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
 
+ifneq ($(IS_PARANOID),true)
 #################################################################################
 # This is the End of BoardConfig.mk file.
 # Now, Pickup other split Board.mk files:
@@ -314,6 +322,7 @@ endif
 -include vendor/qcom/defs/board-defs/system/*.mk
 -include vendor/qcom/defs/board-defs/vendor/*.mk
 #################################################################################
+endif
 
 ifeq ($(IS_PARANOID),true)
 #HALS

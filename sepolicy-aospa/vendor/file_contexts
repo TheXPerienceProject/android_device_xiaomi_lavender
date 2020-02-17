@@ -13,7 +13,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_lavender u:object_r:hal_fingerprint_default_exec:s0
 
 # HVDCP
-/sys/devices(/platform)?/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/[a-z0-9]+\.i2c:qcom,[a-z0-9]+@[a-z0-9]:qcom,smb[a-z0-9]+-parallel-slave@[0-9]+/power_supply/parallel(/.*)? u:object_r:sysfs_usb_supply:s0
+#/sys/devices(/platform)?/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/[a-z0-9]+\.i2c:qcom,[a-z0-9]+@[a-z0-9]:qcom,smb[a-z0-9]+-parallel-slave@[0-9]+/power_supply/parallel(/.*)? u:object_r:sysfs_usb_supply:s0
 
 # Input files
 /vendor/usr/idc(/.*)?                               u:object_r:idc_file:s0
@@ -23,7 +23,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_lavender     u:object_r:hal_light_default_exec:s0
 
 # Mlipay
-/(vendor|system/vendor)/bin/mlipayd@1.1             u:object_r:hal_mlipay_default_exec:s0
+#/(vendor|system/vendor)/bin/mlipayd@1.1             u:object_r:hal_mlipay_default_exec:s0
 
 #Media C2
 /(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.0-service     u:object_r:mediacodec_exec:s0
@@ -34,8 +34,9 @@
 # Root Symlinks
 /bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
 /firmware(/.*)?          u:object_r:firmware_file:s0
-/avb(/.*)?               u:object_r:firmware_file:s0
+/avb(/.*)?               u:object_r:avb_file:s0
 /cust(/.*)?              u:object_r:cust_file:s0
+/persist(/.*)?           u:object_r:persist_file:s0
 
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh    u:object_r:init_fingerprint_exec:s0
@@ -43,8 +44,6 @@
 # Touchscreen
 /proc/tp_gesture u:object_r:sysfs_tap_to_wake:s0
 
-# Video4linux sysfs nodes
-/sys/devices/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?   u:object_r:sysfs_graphics:s0
 
 # Widevine
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service.widevine   u:object_r:hal_drm_widevine_exec:s0
