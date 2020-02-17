@@ -262,7 +262,9 @@ VENDOR_SECURITY_PATCH := 2020-01-05
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
 # SELinux
+ifneq ($(IS_PARANOID),true)
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
+endif
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
@@ -312,3 +314,11 @@ endif
 -include vendor/qcom/defs/board-defs/system/*.mk
 -include vendor/qcom/defs/board-defs/vendor/*.mk
 #################################################################################
+
+ifeq ($(IS_PARANOID),true)
+#HALS
+PRODUCT_SOONG_NAMESPACES += \
+vendor/qcom/opensource/audio-hal/primary-hal \
+hardware/qcom/media \
+hardware/qcom/display
+endif

@@ -4,8 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+ifneq ($(IS_PARANOID),true)
 #Dalvik HEAP
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
+endif
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/lavender/lavender-vendor.mk)
@@ -114,8 +116,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
+ifneq ($(IS_PARANOID),true)
 PRODUCT_COPY_FILES += \
-    hardware/qcom/audio/msm8998/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
+    hardware/qcom/audio/msm8998/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml
+else
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/audio-hal/primary-hal/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml
+endif
+
+PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
@@ -159,8 +168,10 @@ PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library
 
+ifneq ($(IS_PARANOID),true)
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+endif
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -522,12 +533,14 @@ BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0
 
+ifneq ($(IS_PARANOID),true)
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+endif
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -620,5 +633,9 @@ $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
 $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
 ###################################################################################
 # Pickup blobs to satisfy LMKD
+ifneq ($(IS_PARANOID),true)
 $(call inherit-product, vendor/qcom/common/performance/perf-common.mk)
+else
+$(call inherit-product, vendor/qcom/common/perf/qti-perf.mk)
+endif
 ###################################################################################
