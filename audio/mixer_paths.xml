@@ -366,9 +366,9 @@
     <ctl name="RX3 Digital Volume" value="84" />
     <ctl name="RX4 Digital Volume" value="84" />
     <ctl name="RX5 Digital Volume" value="84" />
-    <ctl name="ADC1 Volume" value="4" />
-    <ctl name="ADC2 Volume" value="4" />
-    <ctl name="ADC3 Volume" value="4" />
+    <ctl name="ADC1 Volume" value="6" />
+    <ctl name="ADC2 Volume" value="6" />
+    <ctl name="ADC3 Volume" value="6" />
     <ctl name="DEC1 Volume" value="86" />
     <ctl name="DEC2 Volume" value="86" />
     <ctl name="DEC3 Volume" value="86" />
@@ -2193,7 +2193,7 @@
 	<path name="va-enroll-mic">
 	    <ctl name="DEC1 MUX" value="ADC2" />
 	    <ctl name="ADC2 MUX" value="INP3" />
-	    <ctl name="ADC3 Volume" value="6" />
+	    <ctl name="ADC3 Volume" value="8" />
 	</path>
 	
 	<path name="asr-mic">
@@ -2202,8 +2202,8 @@
 	    <ctl name="ADC1_INP1 Switch" value="1" />
 	    <ctl name="DEC2 MUX" value="ADC2" />
 	    <ctl name="ADC2 MUX" value="INP3" />
-	    <ctl name="ADC1 Volume" value="6" />
-	    <ctl name="ADC3 Volume" value="6" />    
+	    <ctl name="ADC1 Volume" value="8" />
+	    <ctl name="ADC3 Volume" value="8" />    
     </path>
 
     <!-- DMIC numbered from 1 to 4 -->
