@@ -126,7 +126,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     ro.vendor.bluetooth.wipower=false
 
-
+#crypto
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.filenames_mode="aes-256-cts" \
+    ro.crypto.allow_encrypt_override=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
