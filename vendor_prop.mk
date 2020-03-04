@@ -191,7 +191,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.colorpick_adjust=true \
     ro.opengles.version=196610 \
     sys.autobrightness_optimize=true \
-    vendor.display.enable_default_color_mode=0 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.perf_hint_window=50 \
     vendor.display.disable_rotator_downscale=1 \
