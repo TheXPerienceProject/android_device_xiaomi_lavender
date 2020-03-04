@@ -1323,10 +1323,12 @@ vendor/lib/libhdcp1prov.so|45357fab9b3c5bd8c2cd1a26fffc54164e384c54
 vendor/lib/libhdcp2p2prov.so|b229dcd295e317324702ec3583db5f49f733c208
 vendor/lib/libhdcpsrm.so|27cc3f35692060d3c7f3fae8553058e51e404e0e
 vendor/lib64/libcpion.so|ff24ef248bb35fd3cc1081a63f33c2565dc6351f
+vendor/lib64/libcppf.so
 vendor/lib64/libdrmfs.so|d5847a27b74955a0ccfb2da499fa42902c5bf1df
 vendor/lib64/libdrmtime.so|9f1337004246fa7e6f726486bcab949fe5e2459f
 vendor/lib64/libGPreqcancel_svc.so|610f0d55e3c3b31a5fdd590dcd6ec8c2cf258d9b
 vendor/lib64/libGPreqcancel.so|76b35e76a85b333f46ab749b7865c26ba0ca7bc4
+vendor/lib64/liboemcrypto.so
 vendor/lib64/libqisl.so|f81d523e3e257e99bd055f6576521519a074e630
 vendor/lib64/libQSEEComAPI.so|1dfc70896af18264af46be4bf797680cdd6b018b
 vendor/lib64/librpmb.so|a6add4226a289242eb2e1ccef23a94d100a94064
