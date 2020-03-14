@@ -1,0 +1,1 @@
+allow hal_drm_widevine vfat:file { read open getattr };
