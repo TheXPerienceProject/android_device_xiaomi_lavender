@@ -1,2 +1,7 @@
 allow hal_audio_default audio_prop:file { read open getattr };
 allow hal_audio_default audio_prop:dir { read open };
+
+allow hal_audio_default vendor_data_file:dir { create write add_name };
+allow hal_audio_default vendor_data_file:file { append create getattr open read };
+
+dontaudit hal_audio_default sysfs:dir read;
