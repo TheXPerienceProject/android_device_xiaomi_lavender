@@ -1,7 +1,5 @@
 Copyright (C) 2020 The XPerience Project
 
-[![Download ](https://img.shields.io/sourceforge/dm/axolotlos.svg)](https://sourceforge.net/projects/xperience-aosp/files/lavender/14/nightly/stats/timeline)
-
 The Redmi Note 7 (codenamed _"lavender"_) are high-end mid-range smartphones from Xiaomi.
 
 Xiaomi Redmi Note 7 was announced and released in January 2019.
