@@ -1,4 +1,6 @@
-Copyright (C) 2019 The LineageOS Project
+Copyright (C) 2020 The XPerience Project
+
+[![Download ](https://img.shields.io/sourceforge/dm/axolotlos.svg)](https://sourceforge.net/projects/xperienceaosp/files/lavender/lavender/14/nightly/)
 
 The Redmi Note 7 (codenamed _"lavender"_) are high-end mid-range smartphones from Xiaomi.
 
