@@ -352,7 +352,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0
+    persist.sys.wfd.virtual=0 \
+    debug.gralloc.enable_fb_ubwc=1
 
 #paper mode
 PRODUCT_PROPERTY_OVERRIDES += \
