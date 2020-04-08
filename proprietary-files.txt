@@ -1577,7 +1577,7 @@ vendor/lib64/libgcs-osal.so|5eca0a8d8ea32505d5b8d69b3e13bf640b34976a
 vendor/lib64/libgcs.so|2092b98ac0aa2a720ae1f2ca3f5b5224e5e62b8a
 vendor/lib64/vendor.qti.voiceprint@1.0.so|a276ba6f6d663c99c4f7139d2734597322680ddf
 
-Media - from LA.UM.8.2.r1-04000-sdm660.0
+#Media - from LA.UM.8.2.r1-04000-sdm660.0
 vendor/lib/libAlacSwDec.so|bca4278cb74a63772a0fc369480b5d9814063d9b
 vendor/lib/libApeSwDec.so|d175422c4b2e691dd5f2a3fe0c7dbc978084e838
 vendor/lib/libdsd2pcm.so|df3b8b4f7c209f061fd6c48bf833cb2ad3342791
