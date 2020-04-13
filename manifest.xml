@@ -413,17 +413,25 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>com.qualcomm.qti.uceservice</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>com.qualcomm.qti.wifidisplayhal</name>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.wifidisplaysession</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IDSManager</name>
-            <instance>wifidisplaydshal</instance>
+            <name>IWifiDisplaySession</name>
+            <instance>wifidisplaysession</instance>
         </interface>
         <interface>
-            <name>IHDCPSession</name>
-            <instance>wifidisplayhdcphal</instance>
+            <name>IWifiDisplaySessionVideoTrack</name>
+            <instance>wifidisplaysessionvideotrack</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionAudioTrack</name>
+            <instance>wifidisplaysessionaudiotrack</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionImageTrack</name>
+            <instance>wifidisplaysessionimagetrack</instance>
         </interface>
     </hal>
     <hal format="hidl">

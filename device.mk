@@ -206,6 +206,7 @@ PRODUCT_PACKAGES += \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     libdisplayconfig \
+    libdisplayconfig.vendor \
     liboverlay \
     libqdMetaData \
     libqdMetaData.system \
