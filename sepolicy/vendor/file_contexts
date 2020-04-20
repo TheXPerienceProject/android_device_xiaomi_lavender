@@ -44,9 +44,6 @@
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh    u:object_r:init_fingerprint_exec:s0
 
-# Touchscreen
-/proc/tp_gesture u:object_r:sysfs_tap_to_wake:s0
-
 # Video4linux sysfs nodes
 /sys/devices/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?   u:object_r:sysfs_graphics:s0
 
@@ -55,3 +52,6 @@
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
+
+# qdmetadata
+/vendor/lib(64)/libqdMetaData\.so              u:object_r:same_process_hal_file:s0
