@@ -1348,6 +1348,15 @@ vendor/lib/mediadrm/libwvdrmengine.so|cb055ebd13261ca124b4011948ea393a9f4e2b24
 vendor/lib64/libwvhidl.so|79641121417371f82af64fdec4795eb9cec1e12f
 vendor/lib64/mediadrm/libwvdrmengine.so|3d04a3046d1ac489966d8ce9716e2adae7a8dea5
 
+# DRM (HDCP) - from LA.UM.8.2.r1-06300-sdm660.0
+vendor/lib/libmm-hdcpmgr.so|1369ce85b3c133c8d4d04167cd894df85212dcfa
+vendor/lib64/libmm-hdcpmgr.so|a80b3cfa28acdb69a5047ab9592c611ab4534799
+
+# DRM (Qualcomm Trusted Execution Enviroment) - from LA.UM.8.2.r1-06300-sdm660.0
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|b03632420eea636c9c1585d18703340cdf5dd2fe
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|3da82e38c25684686ef91e88b1bafb4cdd07baf6
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|50ee00e9ecf66258efbc544492982af16b5c91d6
 
 # ESE-Powermanager
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
@@ -1933,13 +1942,10 @@ vendor/bin/time_daemon|4379f604fcb41e9b096203b1d888cac478a3aafe
 -vendor/lib/libtime_genoff.so|e858cc52e829af0a9e4b5a4c39bddef8cece4bd9
 -vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
 
-# TUI
-lib/vendor.qti.hardware.tui_comm@1.0.so
-lib64/vendor.qti.hardware.tui_comm@1.0.so
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+# TUI (DRM) - from LA.UM.8.2.r1-06300-sdm660.0
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|d4d025e0a12af87f65104fe07801517938733603
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|1ac676dca4c81094b254b62f1b608e471b385847
 
 # Wifi
 vendor/bin/cnss-daemon
