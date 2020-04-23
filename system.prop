@@ -43,3 +43,7 @@ persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 #add for color invert
 ro.vendor.df.effect.conflict=1
 persist.sys.df.extcolor.proc=0
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0

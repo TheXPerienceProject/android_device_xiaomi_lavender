@@ -413,25 +413,18 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>com.qualcomm.qti.uceservice</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.wifidisplaysession</name>
+    <!-- WFD HAL Service -->
+    <hal format="hidl">
+        <name>com.qualcomm.qti.wifidisplayhal</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IWifiDisplaySession</name>
-            <instance>wifidisplaysession</instance>
+            <name>IHDCPSession</name>
+            <instance>wifidisplayhdcphal</instance>
         </interface>
         <interface>
-            <name>IWifiDisplaySessionVideoTrack</name>
-            <instance>wifidisplaysessionvideotrack</instance>
-        </interface>
-        <interface>
-            <name>IWifiDisplaySessionAudioTrack</name>
-            <instance>wifidisplaysessionaudiotrack</instance>
-        </interface>
-        <interface>
-            <name>IWifiDisplaySessionImageTrack</name>
-            <instance>wifidisplaysessionimagetrack</instance>
+            <name>IDSManager</name>
+            <instance>wifidisplaydshal</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -798,6 +791,60 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <version>1.0</version>
         <interface>
             <name>ICryptfsHw</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- QTEEConnector HAL service -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.qteeconnector</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IAppConnector</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IGPAppConnector</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!--eSE Powermanager-->
+    <hal format="hidl">
+        <name>vendor.qti.esepowermanager</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IEsePowerManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- QSEECom HAL service -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.qseecom</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IQSEECom</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- tui communicator service -->
+  <hal format="hidl">
+        <name>vendor.qti.hardware.tui_comm</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITuiComm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!--  Soter service -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.soter</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISoter</name>
             <instance>default</instance>
         </interface>
     </hal>
