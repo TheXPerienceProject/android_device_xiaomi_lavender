@@ -2,6 +2,9 @@
 allow { appdomain -isolated_app -ephemeral_app -mediaprovider -untrusted_app_27 -untrusted_app -untrusted_app_25 -runas_app } hal_mlipay_hwservice:hwservice_manager find;
 binder_call({ appdomain -isolated_app }, hal_mlipay_default)
 
+allow { appdomain -isolated_app } adsprpcd_file:dir r_dir_perms;
+allow { appdomain -isolated_app } public_adsprpcd_file:file r_file_perms;
+
 get_prop({ appdomain -isolated_app }, ifaa_prop)
 get_prop({ appdomain -isolated_app }, vendor_fp_prop)
 get_prop({ appdomain -isolated_app }, hal_fingerprint_prop)

@@ -1,4 +1,5 @@
 type ir_dev_file, file_type;
+type public_adsprpcd_file, file_type;
 
 allow ueventd ir_dev_file:chr_file { create setattr };
 

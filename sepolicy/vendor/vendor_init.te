@@ -28,3 +28,5 @@ set_prop(vendor_init, thermal_prop)
 set_prop(vendor_init, persist_debug_prop)
 set_prop(vendor_init, persist_dpm_prop)
 set_prop(vendor_init, qcom_ims_prop)
+
+allow init adsprpcd_file:file mounton;
