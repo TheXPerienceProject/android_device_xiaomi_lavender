@@ -36,13 +36,13 @@ vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
 vendor/lib/rfsa/adsp/nuance.scd|d17ee46b7d136510360389baa8f365cd7669b5dd
 
-# Power-off alarm - from LA.UM.7.2.r1-06900-sdm660.0
--vendor/app/PowerOffAlarm/PowerOffAlarm.apk|cb6d95189b13f7f8aa34c982799918d93f9beae4
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|1707a55275c943204574d84d639b4cd9ede15553
-vendor/bin/power_off_alarm|f973dabbdba85ece5115d4beb457cb37887e4358
+# Alarm - from jasmine V11.0.8.0.QDIMIXM
+product/framework/vendor.qti.hardware.alarm-V1.0-java.jar|69dedc62181ae26bb2fac4eaacb1f2c38eb21c31
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|faccc2a7d94d486c2f61a5fe85f5c4598b4147a7
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|7d163c35a9deee2801070ed50c6625709c3e0b65
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so|5cf1631eafbf4421d3d022c359151ee9c1cdffc3
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|1e2631850cc97dfedbde50a9d0d55c8d14881b44
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|271f85f1c6dc0c65dc3aa9a8603f3910fa50e1ea
 
 # ANT+ (system) - from Chef sprout 10 QPT30.61-14 LA.UM.8.2.r1-04300-sdm660.0
 product/lib/com.qualcomm.qti.ant@1.0.so|b729a2c3ee4d98bc534adf06a2a95c94314992e4
@@ -51,10 +51,6 @@ product/lib64/com.qualcomm.qti.ant@1.0.so|4b62afdda74f01a09b62ca0b754c3693f97b3b
 # ANT+ (vendor) - from Chef sprout 10 QPT30.61-14 LA.UM.8.2.r1-04300-sdm660.0
 vendor/lib/com.qualcomm.qti.ant@1.0.so|e348910e8b1aaea335d6f856043512e54f02420a
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|a4eec2eb010ca6b6110b12eb028bb316831a8b48
-
-# Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
-product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Audio - from LA.UM.8.2.r1-03200-sdm660.0
 vendor/firmware/dbmd4_va_fw.bin|ee640f9f4e367d513f5fb7d95c85e226c9f75750
@@ -1214,8 +1210,9 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
-# Charger - from LA.UM.7.2.r1-06900-sdm660.0
-vendor/bin/hvdcp_opti|ee724f847755d87e40754d6b57637ed37ec2bf22
+# Charger - from jasmine V11.0.8.0.QDIMIXM
+vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
+
 # Stock
 -sbin/charger:bin/chargeonlymode
 
@@ -1295,11 +1292,27 @@ vendor/etc/qdcm_calib_data_boe_td4320_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_shenchao_nt36672a_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml
 
-# DPM - from LA.UM.8.2.r1-04000-sdm660.0
-framework/tcmclient.jar|a55e6981795bf74b3249c5e7297ea4e3cf1dea83
+# DPM - from jasmine V11.0.8.0.QDIMIXM
+product/bin/dpmd|49caa8e7d8af8055efdd7ebc0d7f7d67bc600041
+product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
+product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
+product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
+product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
+product/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
+product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
+product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a763bb1bbeecb84723bff6f547a3b23fab68dee3
+product/lib64/libdpmctmgr.so|3d4b87a4937caf3a8d276f48a4f0dc2cad246c5b
+product/lib64/libdpmfdmgr.so|e809155312a05d83b323ab0be64cb393d936e52a
+product/lib64/libdpmframework.so|8fd037eb8740a468a67c78e7fa01c69b1ba3fd2a
+product/lib64/libdpmtcm.so|71a3d624602807f6fa6cbdb3a489efe9e93de634
+-product/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
 vendor/bin/dpmQmiMgr|d536096b310a2d3f30a683c1bdcad8658db1ba52
-vendor/lib64/libdpmqmihal.so|30a170684219dd589d05ce5b446e73b7501f13e3
+vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|fbff6357ee46dd6d62f490a942ff567b6ce955d1
+vendor/lib64/libdpmqmihal.so|30a170684219dd589d05ce5b446e73b7501f13e3
+
+# DPM - from LA.UM.8.2.r1-04000-sdm660.0
+#framework/tcmclient.jar
 
 # DRM - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
 vendor/bin/qseecomd|90d5df44869a1de44cb11d690304e3b41bab8600
@@ -1625,8 +1638,8 @@ vendor/lib64/libOmxQcelp13Dec.so|d8bb8a5c999a2f2e3a7e717d422ab43c90ab9028
 vendor/lib64/libOmxWmaDec.so|8f8ef46403b739859f97f1fe54dff8c30b57cebb
 -vendor/lib64/libgpustats.so|dd2ecc6c5ef439a8d427a52ab9d153f8e747deff
 
-# Modem interface
-vendor/bin/adpl
+# Modem interface - from jasmine V11.0.8.0.QDIMIXM
+vendor/bin/adpl|cd2af02673c750d3cc2da4089bec751dc24f8597
 
 # Mlipay
 vendor/bin/mlipayd@1.1
@@ -1689,18 +1702,17 @@ vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
 vendor/lib/libperipheral_client.so|836411f7b88afe296b3f3090aab70fc5700ba434
 vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
-# Postprocessing LA.UM.8.2.r1-03200-sdm660.0
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/mm-pp-dpps
-vendor/etc/init/vendor.display.color@1.0-service.rc
+# Postprocessing - from jasmine V11.0.8.0.QDIMIXM
+vendor/bin/hw/vendor.display.color@1.0-service|b091c0d0f898959afedf8a3f83b5e97205fdfbc8
+vendor/bin/mm-pp-dpps|87650deb0e6df4afae33020b23af0d1cf33ec51c
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.color@1.1.so
 vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.postproc@1.0.so
+vendor/lib64/libdisp-aba.so|fcb06e36e31d741c92d189ad95bc2f69bbf1e17b
+vendor/lib64/vendor.display.color@1.0.so|3939e4d1ab4f74e6bbd04524a9e6211ade9c5d0b
+vendor/lib64/vendor.display.color@1.1.so|ce0030a7e6593236277962ffff290b834eaf1f25
+vendor/lib64/vendor.display.postproc@1.0.so|0b578a42706c770c6c61eccdee8a9e4c89c08b10
 
 # QMI - from LA.UM.8.2.r1-04000-sdm660.0
 vendor/bin/irsc_util|4381ded94ac2775cf186c97c7ad6236eaa209eac
