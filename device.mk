@@ -632,4 +632,5 @@ $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
 #$(call inherit-product, vendor/qcom/common/performance/perf-common.mk)
 ###################################################################################
 TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
     perf
