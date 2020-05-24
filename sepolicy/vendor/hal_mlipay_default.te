@@ -16,3 +16,4 @@ set_prop(hal_mlipay_default, mlipay_prop);
 get_prop(hal_mlipay_default, hal_fingerprint_prop);
 
 allow hal_mlipay_default vfat:file { read open getattr };
+allow hal_mlipay_default vfat:dir search;

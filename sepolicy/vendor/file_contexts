@@ -46,6 +46,7 @@
 /firmware(/.*)?          u:object_r:firmware_file:s0
 /avb(/.*)?               u:object_r:avb_file:s0
 /cust(/.*)?              u:object_r:cust_file:s0
+/vendor/firmware_mnt/image(/.*)?         u:object_r:vendor_firmware_file:s0
 
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh    u:object_r:init_fingerprint_exec:s0
