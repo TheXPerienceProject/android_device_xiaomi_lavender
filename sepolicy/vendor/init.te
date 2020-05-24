@@ -1,1 +1,2 @@
 allow init hal_perf_hwservice:hwservice_manager find;
+allow init vendor_file:file execute;

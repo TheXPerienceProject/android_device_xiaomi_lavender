@@ -1,1 +1,4 @@
 binder_call(mediaprovider, hal_perf_default)
+#Allow perf hal
+allow mediaprovider hal_perf_hwservice:hwservice_manager find;
+allow mediaprovider vendor_mpctl_prop:file read;

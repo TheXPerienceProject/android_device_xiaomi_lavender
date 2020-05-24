@@ -18,6 +18,7 @@ binder_call(hal_fingerprint_default, hal_perf_default)
 allow hal_fingerprint_default persist_fingerprint_file:file r_file_perms;
 allow hal_fingerprint_default sysfs_fingerprint:dir r_dir_perms;
 allow hal_fingerprint_default sysfs_fingerprint:file rw_file_perms;
+allow hal_fingerprint_default sysfs_devfreq:dir search;
 
 binder_call(hal_fingerprint_default, goodix_fingerprint_vndservice)
 allow hal_fingerprint_default goodix_fingerprint_vndservice:service_manager add;

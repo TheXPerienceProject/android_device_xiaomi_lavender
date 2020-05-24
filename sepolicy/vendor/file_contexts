@@ -26,6 +26,12 @@
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_lavender     u:object_r:hal_light_default_exec:s0
 
+# POWER
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service  u:object_r:hal_power_default_exec:s0
+
+# Service HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service          u:object_r:hal_authsecret_default_exec:s0
+
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1             u:object_r:hal_mlipay_default_exec:s0
 
@@ -55,3 +61,11 @@
 
 # qdmetadata
 /vendor/lib(64)/libqdMetaData\.so              u:object_r:same_process_hal_file:s0
+
+# tap2wake
+/proc/tp_gesture     u:object_r:proc_tap_to_wake:s0
+
+#Wlan
+/proc/sys/net/ipv4/tcp_limit_output_bytes        u:object_r:proc_net:s0
+/proc/sys/net/ipv4/tcp_use_userconfig        u:object_r:proc_net:s0
+/proc/sys/net/ipv4/tcp_adv_win_scale        u:object_r:proc_net:s0
