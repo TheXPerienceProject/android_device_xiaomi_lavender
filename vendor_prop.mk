@@ -179,10 +179,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # moving from configstore to system properties to avoid
 # high memory consuption
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.has_HDR_display=true
 
-# Move vsync and fs events to system props since configstore 
+# Move vsync and fs events to system props since configstore
 # will be deprecate and to avoid high memory consuptions
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
