@@ -26,3 +26,5 @@ type avb_file, file_type;
 type cust_file, file_type;
 
 type thermal_data_file, file_type, data_file_type;
+
+type sysfs_io_sched_tuneable, sysfs_type, fs_type;
