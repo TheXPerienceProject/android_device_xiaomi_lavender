@@ -9,4 +9,4 @@ allow qti_init_shell vfat:file { getattr read open };
 
 allow qti_init_shell wifi_vendor_data_file:dir search;
 allow qti_init_shell hostapd_data_file:dir {search write };
-allow qti_init_shell sysfs_io_sched_tuneable:file write;
+allow qti_init_shell sysfs_io_sched_tuneable2:file write;
