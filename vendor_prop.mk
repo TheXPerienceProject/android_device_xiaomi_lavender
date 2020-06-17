@@ -268,7 +268,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.mm.enable.prefetch=true \
     vendor.vidc.dec.enable.downscalar=0 \
     vendor.vidc.enc.disable_bframes=1 \
-    vendor.vidc.enc.disable.pq=false \
     vidc.enc.dcvs.extra-buff-count=2 \
     vidc.enc.target_support_bframe=1 \
     debug.stagefright.omx_default_rank.sw-audio=1 \
