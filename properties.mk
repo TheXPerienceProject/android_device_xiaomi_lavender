@@ -82,6 +82,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7 \
     vendor.audio.adm.buffering.ms=6
 
+# ART A11
+# dalvik.vm.boot-dex2oat-cpu-set: CPUs running dex2oat threads during boot time
+# Use both Silver and GOLD cluster for that
+# to build bootimage use only GOLD cluster
+# dalvik.vm.dex2oat-cpu-set CPUs running dex2oat threads after boot time
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.image-dex2oat-cpu-set=4,5,6,7 \
+    dalvik.vm.dex2oat-threads=4
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
