@@ -12,6 +12,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapmaxfree=8m \
     ro.sys.fw.dex2oat_thread_count=8
 
+# ART A11
+# dalvik.vm.boot-dex2oat-cpu-set: CPUs running dex2oat threads during boot time
+# Use both Silver and GOLD cluster for that
+# to build bootimage use only GOLD cluster
+# dalvik.vm.dex2oat-cpu-set CPUs running dex2oat threads after boot time
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.image-dex2oat-cpu-set=4,5,6,7 \
+    dalvik.vm.dex2oat-threads=4
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
