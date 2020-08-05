@@ -1460,7 +1460,7 @@ vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|22838e26f4a645a351bec32
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|e77067e7dcb04c9a319789776bee3ac4d684e1b5
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|595ba927e28accdb5c5e6927a7bb5ef17ad455a1
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|c894b0847289c15ec2d201c69a66987fab1f8453
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|69fd7a9f800da8cb74ae3a726188c028bc360d05
 vendor/lib/libkeymasterdeviceutils.so|bc2aac023d99ec9e423d2f769019d187c99a8afb
 vendor/lib/libkeymasterprovision.so|ae6bbb9fec083307336b6191194d5c48b5dfd3a5
 vendor/lib/libqtikeymaster4.so|1bf1be0b0679f12856be7d9331aaa03202c4dfdc
@@ -1655,52 +1655,50 @@ vendor/lib64/libmlipay.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
-# Perf MSM IRQBalance - from MIUI 11
-vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
+# Perf MSM IRQBalance - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
 
-# Perf - from LA.UM.8.2.r1-03200-sdm660.0
-product/lib/vendor.qti.hardware.perf@1.0.so|c97191d162d608ad9f75556de3c4cff1ac9518ab
-product/lib/vendor.qti.hardware.perf@2.0.so|f51966661accc69c30f88259b603e1f2bcac33f5
-product/lib64/vendor.qti.hardware.perf@1.0.so|fb06dcbbf156f0307cb8d07200929d58d5d8d0a1
-product/lib64/vendor.qti.hardware.perf@2.0.so|17cf6b3a3c73ed5cee96db80b5f7da11e5f4b3cb
-vendor/bin/energy-awareness|f8c2fd0dcdde5e971a7cca14f9287bfc2c33cff6
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|d82b193e12e54fa74d39c4d940c52cd76c004759
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|0101a3294311c2988060a00f7b25d8abf2f428f9
-vendor/etc/perf/commonresourceconfigs.xml|9e277f76243eb5ad16d3e55843aadf68a54e7aaa
-vendor/etc/perf/perfboostsconfig.xml|0fd6a9951f22cfe9f0942629f9d20da433604f14
-vendor/etc/perf/perfconfigstore.xml|760248b82c4f1ad8b0e7ed1924d2b198229e118d
+# Perf - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+product/lib/vendor.qti.hardware.perf@1.0.so|d04786a723d766b9d22c88e8aec5f8036d1ac53e
+product/lib/vendor.qti.hardware.perf@2.0.so|0a08551185ac8626b832068ecb77997800050233
+product/lib64/vendor.qti.hardware.perf@1.0.so|9b411738cf2ca8319bacf1f859cc3679f576215a
+product/lib64/vendor.qti.hardware.perf@2.0.so|3131f461ecb897f68d02df0bf1027ca0a7d07c1d
+vendor/bin/energy-awareness|6515fada09432a437d2ed591ce141bb70fb10a9e
+vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|82db9da81990fe8ab08487780a3783a1d147edfc
+vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
+vendor/etc/perf/commonresourceconfigs.xml|1db765e3a8fb902bdb648091178a709c34f3fb16
+vendor/etc/perf/perfboostsconfig.xml|79662db6bf1ceea7a27ab2b89bb41d3e38005d90
+vendor/etc/perf/perfconfigstore.xml|3eb531da6fad4fae819d3a66ffa71c55383e6151
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
 vendor/etc/perf/targetresourceconfigs.xml|7132f1e9ce3bb21b4854b81d6e5d24409251f177
-vendor/lib/libperfconfig.so|9c4123512ab71bb34abb3b310bce18998cb373bf
-vendor/lib/libperfgluelayer.so|9fc1a68ec2b3063e0d336bb25cefc0dd0c64cc71
-vendor/lib/libqti-perfd-client.so|0d257135b88750d6b37252d61564758046499c0b
-vendor/lib/libqti-perfd.so|5ee70a516f43cacf11cdd7c727e71575f43bf8ab
-vendor/lib/libqti-util.so|5a7c58ce00c1cc8e49f7ef9fbfcadcae7afb9f97
-vendor/lib/libqti-utils.so|722620fd7a35ce8517a4e33ac947a765e8d707f3
-vendor/lib/vendor.qti.hardware.perf@1.0.so|4506f9f549b907180cd0ec3fc50e3aa4c12cba5e
-vendor/lib/vendor.qti.hardware.perf@2.0.so|c2c005c1b2d5fc89f539c27b49f0cb65ae51a17c
-vendor/lib64/libperfconfig.so|18e98f44adb360b31446defc434b693349dd1e86
-vendor/lib64/libperfgluelayer.so|e51addfa5ee4b757765aa23a7274bdac57bf6e40
-vendor/lib64/libqti-perfd-client.so|ab070ed07dea1e25458c36a3c53221e9aa4907aa
-vendor/lib64/libqti-perfd.so|3ed57d659d085c4c395aa897588b8e63829e9ddb
-vendor/lib64/libqti-util.so|ace0cd0de97ace0d914b2b481afc8ee2ff83a2df
-vendor/lib64/libqti-utils.so|dced5ae30fbea50bf6d7ef216a92126bf36e365b
-vendor/lib64/vendor.qti.hardware.perf@1.0.so|76644802e3633e129bf2867ea21c49fd411c9c2f
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|1c5c2869cb808c222dbf24aabe2c8e23518d562d
+vendor/lib/libperfconfig.so|536c2c60110a285cc168ae82d4c0508e8eda0a0b
+vendor/lib/libperfgluelayer.so|569bc942fcd54c1a52d345178694917642707b47
+vendor/lib/libqti-perfd-client.so|8be3bcc67cdf3704cf6a328fcef7e87403747cb3
+vendor/lib/libqti-perfd.so|f09adaadc93019827274d4eb7725d09412911d82
+vendor/lib/libqti-util.so|e7882172095bb0df546d4c358744761aba932b5a
+vendor/lib/libqti-utils.so|81cff03510772c85807b880103ff1428a562e7ad
+vendor/lib/vendor.qti.hardware.perf@1.0.so|5a5aaf8c75efdf5eef5f91dd3dfbd4e85e563fad
+vendor/lib/vendor.qti.hardware.perf@2.0.so|2bd82bb06e4651d59ecc7433680fabbde5173643
+vendor/lib64/libperfconfig.so|ba85461cd381d974f465d8de035a89b023387e5d
+vendor/lib64/libperfgluelayer.so|bfb9706a184fca4163e5a7cb5fcad11674958761
+vendor/lib64/libqti-perfd-client.so|c15dfa389d28bdc6a170734c3f8f039819f09486
+vendor/lib64/libqti-perfd.so|184e4a124ef4f509ce377ce3941353948917e605
+vendor/lib64/libqti-util.so|c78b855b3909b01071ced5fc898add769de4a5b6
+vendor/lib64/libqti-utils.so|3726d65486928bc014e657960dc023d920524922
+vendor/lib64/vendor.qti.hardware.perf@1.0.so|20ca4d33306f92791679071303021c1c752213f5
+vendor/lib64/vendor.qti.hardware.perf@2.0.so|3717b35807fd7b33dced6e311c3b609d57399363
 
-# IOP - from LA.UM.8.2.r1-03200-sdm660.0
-vendor/lib/vendor.qti.hardware.iop@1.0.so|fa391bc023fd1919f4bd75fc78bec816a8642f13
-vendor/lib/vendor.qti.hardware.iop@2.0.so|d66d69b2f08e146944c7020a67ce914754978e6f
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|4b9c51f54b12fdd54f4088ec61b06fb3fa631f23
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|89b912c55ceaecc4a230cc22579cab0fef43cf87
-vendor/lib/vendor.qti.hardware.iop@2.0.so|d66d69b2f08e146944c7020a67ce914754978e6f
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|e63f97ea47f0bec498279aa6e7f3ddef5f6e33ed
-vendor/lib/libqti-iopd-client.so|700da33aed4e1b3a17e156c77ff6b32db4cda891
-vendor/lib/vendor.qti.hardware.iop@1.0.so|fa391bc023fd1919f4bd75fc78bec816a8642f13
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|89b912c55ceaecc4a230cc22579cab0fef43cf87
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|e82595d915655c1d47ada579b9aba33905835f98
-vendor/lib64/libqti-iopd-client.so|896e83a986ed0f92b91b8f21d55de0071408752b
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|4b9c51f54b12fdd54f4088ec61b06fb3fa631f23
+# IOP - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+vendor/lib/vendor.qti.hardware.iop@1.0.so|8094748d325b8b71ba48ec07f3d8575b42e21754
+vendor/lib/vendor.qti.hardware.iop@2.0.so|e49a76a90d88b630c5f3f9640cb8996c89f1b851
+vendor/lib64/vendor.qti.hardware.iop@1.0.so|8ccdc1463dcb554297b0c96d768126f0ca42b83a
+vendor/lib64/vendor.qti.hardware.iop@2.0.so|d5bafc1daeb1b417bbad1160f92e330610f09b8a
+vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|f78fd7791961c0ceea03dfae8154207820c61be9
+vendor/lib/libqti-iopd-client.so|ea48eb1e1d1f97ca9d2f53ffe635f9ab1925679c
+vendor/lib/vendor.qti.hardware.iop@1.0.so|8094748d325b8b71ba48ec07f3d8575b42e21754
+vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|071fea53abd0423bf71af128770a83941386468c
+vendor/lib64/libqti-iopd-client.so|64dcd6acbc758ca4ba7eea3ae351c005e92e95d5
+vendor/lib64/vendor.qti.hardware.iop@1.0.so|8ccdc1463dcb554297b0c96d768126f0ca42b83a
 
 # Peripheral manager - from LA.UM.8.2.r1-04000-sdm660
 vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
