@@ -2,12 +2,18 @@
 <device name="Android">
   <!--@klozz info Where 0.1 equals to 100mA-->
     <item name="none">0</item>
-    <item name="screen.on">98</item>
-    <item name="screen.full">300</item>
+    <item name="screen.on">98</item>  <!-- ~200mA -->
+    <item name="screen.full">274</item> <!--300mA-->
     <array name="cpu.clusters.cores">
-        <value>4</value> <!-- Cluster 0 has 4 cores (cpu0, cpu1, cpu2, cpu3) -->
-        <value>4</value> <!-- Cluster 1 has 4 cores (cpu4, cpu5, cpu6, cpu7) -->
+        <value>6</value> <!-- Cluster 0 has 4 cores (cpu0, cpu1, cpu2, cpu3, cpu4, cpu5) -->
+        <value>2</value> <!-- Cluster 1 has 4 cores (cpu6, cpu7) -->
     </array>
+
+    <!-- Different CPU speeds for cluster 0 as reported in
+       /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state.
+
+       There must be one of these for each cluster, labeled:
+       cpu.speeds.cluster0, cpu.speeds.cluster1, etc... -->
     <array name="cpu.core_speeds.cluster0">
         <value>633600</value>
         <value>902400</value>
@@ -22,7 +28,7 @@
         <value>20</value>
         <value>28</value>
         <value>36</value>
-        <value>45</value>
+        <value>45</value> <!-- ~139mA-->
         <value>55</value>
         <value>65</value>
     </array>
@@ -35,36 +41,79 @@
         <value>2208000</value>
     </array>
     <array name="cpu.core_power.cluster1">
-        <value>75</value>
+        <value>75</value> <!-- ~370mA-->
         <value>105</value>
         <value>166</value>
-        <value>205</value>
+        <value>205</value> <!-- ~670mA-->
         <value>215</value>
         <value>225</value>
     </array>
-    <item name="cpu.suspend">3.9</item>
-    <item name="cpu.idle">1.11</item>
+
+    <!-- Current when CPU is idle -->
+    <item name="cpu.suspend">0.1</item>
+    <!-- Current when CPU is awake -->
+    <item name="cpu.idle">5.6</item>
     <item name="cpu.active">2.6</item>
     <item name="cpu.cluster_power.cluster0">2.11</item>
     <item name="cpu.cluster_power.cluster1">2.22</item>
+
+    <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
     <item name="battery.capacity">4000</item>
     <item name="bluetooth.active">80</item>
     <item name="bluetooth.at">2</item>
     <item name="bluetooth.on">2</item>
-    <item name="wifi.on">2</item>
-    <item name="wifi.active">125</item>
-    <item name="wifi.scan">180</item>
-    <item name="dsp.audio">45</item>
-    <item name="dsp.video">60</item>
-    <item name="camera.flashlight">200</item>
-    <item name="camera.avg">550</item>
-    <item name="gps.on">100</item>
-    <item name="radio.active">100</item>
-    <item name="radio.scanning">45</item>
-    <array name="radio.on">
-        <value>6</value>
-        <value>4</value>
+
+    <!--Wifi -->
+    <item name="wifi.on">0.1</item> <!-- ~3mA -->
+    <item name="wifi.active">95</item>  <!-- WIFI data transfer, ~200mA -->
+    <item name="wifi.scan">1.28</item>  <!-- WIFI network scanning, ~100mA -->
+
+    <!--DSP-->
+    <item name="dsp.audio">21</item> <!-- ~10mA -->
+    <item name="dsp.video">65</item> <!-- ~50mA -->
+
+    <!-- Camera -->
+    <item name="camera.flashlight">638</item> <!-- Avg. power for camera flash, ~160mA -->
+    <item name="camera.avg">387</item> <!-- Avg. power use of camera in standard usecases, ~550mA -->
+
+    <!--Radio & gps -->
+    <item name="gps.on">6</item> <!-- ~50mA -->
+    <item name="radio.active">154</item> <!-- ~200mA -->
+    <item name="radio.scanning">5</item>
+    <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
+	<value>74</value> <!-- ~2mA -->
+	<value>6</value> <!-- ~1mA -->
     </array>
+
+    <!--Modem -->
+    <item name="modem.controller.idle">5</item>
+    <item name="modem.controller.rx">124</item>
+    <item name="modem.controller.tx">122</item>
+    <item name="modem.controller.voltage">3700</item>
+
+    <array name="memory.bandwidths">
+	<value>14</value> <!-- mA for bucket: 100mb/s-1.5 GB/s memory bandwidth -->
+    </array>
+
+    <item name="wifi.controller.idle">1</item>
+    <item name="wifi.controller.rx">95</item>
+    <item name="wifi.controller.tx">123</item>
+    <array name="wifi.controller.tx_levels">1 <!-- mA -->
+    </array>
+    <item name="wifi.controller.voltage">3700</item>
+
+    <array name="wifi.batchedscan"> <!-- mA -->
+	<value>.0001</value> <!-- 1-8/hr -->
+	<value>.001</value>  <!-- 9-64/hr -->
+	<value>.01</value>   <!-- 65-512/hr -->
+	<value>.1</value>    <!-- 513-4,096/hr -->
+	<value>1</value>    <!-- 4097-/hr -->
+    </array>
+
+   <item name="bluetooth.active">122</item> <!-- Bluetooth data transfer, ~56mA -->
+   <item name="bluetooth.on">0.59</item>  <!-- Bluetooth on & connectable, but not connected, ~0.1mA -->
+   <item name="bluetooth.controller.voltage">3700</item>
+
     <!-- Additional power used when screen is ambient mode -->
     <item name="ambient.on">16</item>
 </device>
