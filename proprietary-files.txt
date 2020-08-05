@@ -41,66 +41,66 @@ vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
 vendor/lib/rfsa/adsp/nuance.scd|d17ee46b7d136510360389baa8f365cd7669b5dd
 
-# Alarm - from jasmine V11.0.8.0.QDIMIXM
--product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
+# Alarm - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|29ea64d6d9b20b29f7b3ffb3f71a81038a0ec64c
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|faccc2a7d94d486c2f61a5fe85f5c4598b4147a7
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|1e2631850cc97dfedbde50a9d0d55c8d14881b44
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|271f85f1c6dc0c65dc3aa9a8603f3910fa50e1ea
 
-# ANT+ (system) - from Chef sprout 10 QPT30.61-14 LA.UM.8.2.r1-04300-sdm660.0
-product/lib/com.qualcomm.qti.ant@1.0.so|b729a2c3ee4d98bc534adf06a2a95c94314992e4
-product/lib64/com.qualcomm.qti.ant@1.0.so|4b62afdda74f01a09b62ca0b754c3693f97b3ba0
+# ANT+ (system) - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+product/lib/com.qualcomm.qti.ant@1.0.so|8119c98f53a94736d95a2fb59225e0a054e038b8
+product/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
 
-# ANT+ (vendor) - from Chef sprout 10 QPT30.61-14 LA.UM.8.2.r1-04300-sdm660.0
-vendor/lib/com.qualcomm.qti.ant@1.0.so|e348910e8b1aaea335d6f856043512e54f02420a
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|a4eec2eb010ca6b6110b12eb028bb316831a8b48
+# ANT+ (vendor) - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+vendor/lib/com.qualcomm.qti.ant@1.0.so|1b5236c8ad7990c2bcf5a91f1d3b3a7f2c8f8adf
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|181a8ab9b1d40705d3151821b53732c5566a2848
 
-# Audio - from LA.UM.8.2.r1-03200-sdm660.0
+# Audio - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/firmware/dbmd4_va_fw.bin|ee640f9f4e367d513f5fb7d95c85e226c9f75750
 vendor/firmware/tfa98xx.cnt|f8b5291feaebe7e3d18fda5d8960c313656b4a3a
 vendor/firmware/voice_amodel.bin|f0485f84718886ebcba6f2be0eb92f18240b5115
-vendor/lib/libacdb-fts.so|d35f14942bffff568899474fe50c3d0af2f8aae3
-vendor/lib/libacdbloader.so|7ce468a82529bc6f4a0b01a37edce9c35a6aebf8
-vendor/lib/libacdbrtac.so|cee53e7abebacf8ce9cebc5bc55cd237a09e6d84
-vendor/lib/libadiertac.so|f9e40b5005b215d30c84bd660b46e250f1d2be11
-vendor/lib/libadm.so|8db603b99c5c5fe1d2ca4fcc6663bf3eb0ff325d
-vendor/lib/libaudcal.so|f118e565fd640c250c41140af495dd54a9d9d2fd
-vendor/lib/libaudioalsa.so|6fe8d894f3001ec832a702b88a8043346718da2b
--vendor/lib/libaudioparsers.so|43da8538b0bf29f6eaf1b0224a1d9a9704170480
-vendor/lib/libdrc.so|acd6cee28271d3b09ffd580926d12c0aa71121d6
-vendor/lib/libqtigef.so|a6972c32f806679cf063005477925f174da24f0c
-vendor/lib/libsurround_3mic_proc.so|f46a16389fae9a67d232552cdc5dba567d72d795
-vendor/lib64/libacdb-fts.so|8379a2c7d0f5282eb79feeca6aa1fde8e54611a1
-vendor/lib64/libacdbloader.so|e53edbf416ee06024ef4570bf140069890ca29d4
-vendor/lib64/libacdbrtac.so|5b51cceb312e1d4c3aa42f8bd1ac6859d630fbe5
-vendor/lib64/libadiertac.so|d269232bb052926dcf27b075eb2ec00cafe9d666
-vendor/lib64/libaudcal.so|10179518426d54c8d638ad1b310f86b0d2754214
-vendor/lib64/libaudioalsa.so|a192b115e5230354e161065ab7a4f97a21adf956
--vendor/lib64/libaudioparsers.so|235e2c40298ba328fd79613d013ee2584e4de5f7
-vendor/lib64/libqtigef.so|b02998b610680967bd672ef725c4f103a269ccc5
+vendor/lib/libacdb-fts.so|9fdd1a62c4be3f37f3d9e438221f28b9a0110ee6
+vendor/lib/libacdbloader.so|46c765fcd6044c813449cb1096fdd83b55d61c87
+vendor/lib/libacdbrtac.so|c92b14fc99814a8720f02d8eb3ba54d2cc2abdef
+vendor/lib/libadiertac.so|d34ca223f3c8a06c24299571a5edc18cb027783f
+vendor/lib/libadm.so|d7c7d22c4fe53312e1e49fbffd587b25fdf0ac89
+vendor/lib/libaudcal.so|bbf159f2a93b880c42c913c31267140f4dab620e
+vendor/lib/libaudioalsa.so|272cd6a93bca7edbe3cf4323ca1612737f4f9cde
+-vendor/lib/libaudioparsers.so|485bbd30e2ea7e40d7fbcb3d7aa1f8a222cd2fc4
+vendor/lib/libdrc.so|854e12157d5f09831b81fcf7a4cecf0f491d660a
+vendor/lib/libqtigef.so|e0c548247e923f1e972e7765a678566dd874afb7
+vendor/lib/libsurround_3mic_proc.so|3c98223a30bf84ff91ec6e000dfea5be4a86d3cc
+vendor/lib64/libacdb-fts.so|b86cf27f6e0695c6413e2f67daf83ca1fa3be126
+vendor/lib64/libacdbloader.so|62bb214e78f49df2b5824de636d5d261883e1626
+vendor/lib64/libacdbrtac.so|c18f6b8bc2a28f8a450594942363982f2a1f1ecd
+vendor/lib64/libadiertac.so|8caa71c4e4edc420478c2db45ee4f6271860cb42
+vendor/lib64/libaudcal.so|803afde2517ab26b2c412ae80078046f2f193301
+vendor/lib64/libaudioalsa.so|a743be854f0af2ae8f60d6c598f078a4c09f8b41
+-vendor/lib64/libaudioparsers.so|ab849844b97f005231b1b3150e61cd4b67cbdb11
+vendor/lib64/libqtigef.so|14823ccfd03373f7f4ab1bd3705539aa1e2b7ade
 
-# Audio ACDB - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+# Audio ACDB - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|436d3f09523a22741f43c1d474885e48d8b6f115
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|d2cbd54a07327f31efd6e667c1fc718e2447173f
 vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|d75e8710d7e32a693ee9e2ddae15da621e39091a
 vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|3d325cb4b11b1aedfbd03222a97433aceb25c84d
 vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|4bd561067afd349230e26beadee0d77036f24d44
 vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|bacc36dd811f27a62b720eaf1630e2099ae8b622
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|1bccdbc52b99c508462439b5892ea54d94652f84
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|73518b6b2fb7c081e3825737bfe515aaa2ed7cf3
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|5fd1a00e95ab80135535deb2580c507b899a3f84
 vendor/etc/acdbdata/adsp_avs_config.acdb|d9507f31b8970320233128fed24c39742ee53c67
 
-# Audio FX modules - from perseus-user 9 PKQ1.180729.001 9.7.31 release-keys
-vendor/lib/soundfx/libasphere.so|0783283ac9f68d5ebbeef350adc9b66b3248449b
+# Audio FX modules - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+vendor/lib/soundfx/libasphere.so|b1b26f99d9fbfe75f109349de5505ca39ccd4c8c
 vendor/lib/soundfx/libmisoundfx.so|95ae9145647a85e435685036beba4dba0579a951
-vendor/lib/soundfx/libqcbassboost.so|1722ba76b9e6922fca17ce9f538d71b3ae37d78e
-vendor/lib/soundfx/libqcreverb.so|fa8a59cc8dc376ba8903104ac36707e576280c24
-vendor/lib/soundfx/libqcvirt.so|c373619e800e379d3bc88bee9dacf80a87a4e0ca
-vendor/lib64/soundfx/libasphere.so|718aa55bf9a32cb77a6f5e8f33e776d30e2dadc9
-vendor/lib64/soundfx/libqcbassboost.so|1f9b4eca3f6b1fea872d90b943d2c434e25e0fa4
-vendor/lib64/soundfx/libqcreverb.so|d8ce60a46a0d20e21d3246742e08328606ddf960
-vendor/lib64/soundfx/libqcvirt.so|88349315d99cea68a3b766fa4c6e1181d26f561b
+vendor/lib/soundfx/libqcbassboost.so|73339450a42b598a3c13e67b3d4a2266d986fea2
+vendor/lib/soundfx/libqcreverb.so|eb437cd5e264b1adb4546c6a5617c5da17be5839
+vendor/lib/soundfx/libqcvirt.so|ee9eaa81bb24ac0379e06b44ef257967a4d32614
+vendor/lib64/soundfx/libasphere.so|bd48aa3d7cf27bf3b12ce29f429b719383e104fc
+vendor/lib64/soundfx/libqcbassboost.so|8d14a19bff32a4d5f19b998076e7b6ee46787cdc
+vendor/lib64/soundfx/libqcreverb.so|f0b4ffbd5ad1c3031b2cf1cea96521bc87ce2d23
+vendor/lib64/soundfx/libqcvirt.so|09f90491a8ec67db467579a5dd6ef6a8b83723d6
 
 # Bluetooth - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|57a0a575a2b1b96176fda1bcb84ea8371c4070d1
