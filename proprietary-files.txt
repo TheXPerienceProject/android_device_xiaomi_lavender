@@ -102,7 +102,7 @@ vendor/lib64/soundfx/libqcbassboost.so|8d14a19bff32a4d5f19b998076e7b6ee46787cdc
 vendor/lib64/soundfx/libqcreverb.so|f0b4ffbd5ad1c3031b2cf1cea96521bc87ce2d23
 vendor/lib64/soundfx/libqcvirt.so|09f90491a8ec67db467579a5dd6ef6a8b83723d6
 
-# Bluetooth - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+# Bluetooth - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|57a0a575a2b1b96176fda1bcb84ea8371c4070d1
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|49e3c72c0c9d14e1e12c2bcab8aa3c6227b1f433
@@ -112,7 +112,7 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|8978f344c8cd0e5d22455
 vendor/lib64/libbt-hidlclient.so|4a4038013bf438627154899d3823c9346c3d84ec
 vendor/lib64/libbtnv.so|10534661ec16c4998957a5a455ec0831a1f55880
 
-# Bluetooth Audio - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+# Bluetooth Audio - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 product/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|235d8dc80e335a9c323f2ce395cb09b297493025
 product/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|0976fd28359b218cd041aca3fb03acde045aa760
 product/lib/vendor.qti.hardware.btconfigstore@1.0.so|b849985a2fc292120a26ba7649addd3bb6e0de1e
@@ -120,7 +120,7 @@ product/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|995a8127aea3b2de9efe68a
 product/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|7cdd376b08b8571e51674e0e61607c6a52a5a24a
 product/lib64/vendor.qti.hardware.btconfigstore@1.0.so|42aa6258f3bf4e8ef72b7664f2277db49837e4da
 
-# Bluetooth Audio - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+# Bluetooth Audio - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/lib64/hw/audio.bluetooth_qti.default.so|047a23f7eadc53b2100c30c0c96a5f318d92a1d3
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|332bbe7b0e76358500605f7651b0dcfa0cd7f27b
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|71ad8980142e7d8d754607accc0cffd8f5e68dbd
