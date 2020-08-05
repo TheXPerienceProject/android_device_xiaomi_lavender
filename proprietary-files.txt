@@ -1440,25 +1440,20 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.sdm660.so
-vendor/lib64/hw/gatekeeper.sdm660.so
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+vendor/lib/hw/gatekeeper.sdm660.so|bb56ae8a8fcc13148d1723044b8c617e6cf0b7ae
+vendor/lib64/hw/gatekeeper.sdm660.so|e8f32651e4bfff88fcc02c34eca6cd5f04a444aa
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|119385ebd0a25b9bf20ce70375a62d806f11d2f1
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|6a1960613ef0aefbd2d6c46e2a630c32359d7063
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|0f3b3809977a7048873b8b47f7533aa0e81491ea
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|b9afb923665e7714309c2b912e0663cdd781f818
 
-# Factory
-#framework/vendor.qti.data.factory-V1.0-java.jar
-#vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
-#vendor/lib/hw/vendor.qti.hardware.factory@1.0-impl.so
-#vendor/lib64/hw/vendor.qti.hardware.factory@1.0-impl.so
-#vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
-#vendor/etc/permissions/vendor.qti.hardware.factory.xml
-#vendor/lib/vendor.qti.data.factory@1.0.so
-#vendor/lib/vendor.qti.hardware.factory@1.0.so
-#vendor/lib64/vendor.qti.data.factory@1.0.so
-#vendor/lib64/vendor.qti.hardware.factory@1.0.so
+# Factory - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+vendor/bin/hw/vendor.qti.hardware.factory@1.0-service|4ac40dc8ecb2b13d7e96d26a31ad2bf9b11b4147
+vendor/lib/hw/vendor.qti.hardware.factory@1.0-impl.so|a59c8ee3a746aef8273340332fc74bb6f97809d9
+vendor/lib64/hw/vendor.qti.hardware.factory@1.0-impl.so|d7c5bcbd88168fc4574264e7665337a5fee56db0
+vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc|027141b186620db30e5333c9136aba18b74d6952
+vendor/etc/permissions/vendor.qti.hardware.factory.xml|e317f6b60e38ac6bd4394471bd44ef3ed0da5448
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
