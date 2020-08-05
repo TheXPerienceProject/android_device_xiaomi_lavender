@@ -1908,28 +1908,28 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so|7b227f1a007619dcae8d541eabe99eb5581
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so|54fc671e0d5ddb10077b7f705fc096a0217a3db9
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|d9299e6d5d18aa4ebfb984772f3111ddcf196044
 
-# Sensors
--product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
-product/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
-product/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/bin/sensors.qti
-vendor/etc/sensors/sensor_def_qcomdev.conf
-vendor/etc/sensors/elliptic.conf
-vendor/etc/sensors/hals.conf
-vendor/etc/elliptic_sensor.xml
-vendor/lib/hw/activity_recognition.sdm660.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/sensors.ssc.so
-vendor/lib/sensors.touch.so
-vendor/lib/sensor_calibrate.so
-vendor/lib64/hw/activity_recognition.sdm660.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/sensors.elliptic.so
-vendor/lib64/sensors.ssc.so
-vendor/lib64/sensors.touch.so
-vendor/lib64/sensor_calibrate.so
+# Sensors  - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+-product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|b6e036c7f03aa04b87e09e05c31d1e97d0f2cb25
+product/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|f9fc5478ea958cbf6c0eb3ecb60bde45b09ca0ed
+product/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|45fa1c6d3e292d1ca8c2d43f007654c30537debb
+vendor/bin/sensors.qti|68fd38ff96d8abe3b2d55c746de492c9268daefd
+vendor/etc/sensors/sensor_def_qcomdev.conf|3ce1145d65ade70300feadf971e69ad6f522a749
+vendor/etc/sensors/elliptic.conf|fd6193dd8ec39f85948151a83a14690c228121b9
+vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
+vendor/etc/elliptic_sensor.xml|a2e5622cfa13eddb11efec6a891b71f7f09c868b
+vendor/lib/hw/activity_recognition.sdm660.so|9114ef1cdf5cd48b62bb7023b776c2abb32d357e
+vendor/lib/libsensor1.so|fde24e9290da09cc81c8de5b057acb3383a02081
+vendor/lib/libsensor_reg.so|2d865aa3ddb4d15e8cba16a5d133886480d3ee8e
+vendor/lib/sensors.ssc.so|1c37ad46b43cd81024dd41243c949a24dd2d9f86
+vendor/lib/sensors.touch.so|7a9e10292489bd5e786d19fbbfe55e3fc1bc4dee
+vendor/lib/sensor_calibrate.so|8fb10e8c4fb59904eae1363281442bcc4be2272d
+vendor/lib64/hw/activity_recognition.sdm660.so|b1c0be438f80e92acb931b101da52a98599f3005
+vendor/lib64/libsensor1.so|16469d36e6ada214c2741e2490f5ea1a363e96f5
+vendor/lib64/libsensor_reg.so|d39e690d68f53f0032518d4f5ddae8b075ea44cb
+vendor/lib64/sensors.elliptic.so|51b8b3a1926274981f749109db9baea20b974c83
+vendor/lib64/sensors.ssc.so|fe650649184fd43dcfa90776395fe0680d972a7c
+vendor/lib64/sensors.touch.so|b546e13cd04c2ea755cb29319ca2fbe7dd4e8fe4
+vendor/lib64/sensor_calibrate.so|1bca9e2c4cfad36f264aab39f7d3641e2ef25503
 
 # Soter - from LA.UM.8.2.r1-06300-sdm660.0
 -app/SoterService/SoterService.apk|897999e257f5e59ebe2f9ca08a4f5512602f6c5e
