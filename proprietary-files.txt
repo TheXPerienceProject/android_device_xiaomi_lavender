@@ -1,4 +1,4 @@
-# ADSP - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys cdsprpcd - from jasmine V11.0.8.0.QDIMIXM
+# ADSP - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
 vendor/bin/cdsprpcd|c9fc5873c205e1ebb844d18bc10f89dd428a01ee
 vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
@@ -8,7 +8,7 @@ vendor/lib/libadsprpc.so|35bf7c53dc7149b39126638c5c1bac3b08e262be
 vendor/lib/libcdsp_default_listener.so|6347d41d3c3704a04ae0f8e816f071057c483163
 vendor/lib/libfastcvadsp_stub.so|43740cca4f7549c86e4b2ab1daf4d703d9a9b258
 vendor/lib/libfastcvopt.so|77789b2b6e978bcc2ee7e848d6163fc31d6b5393
-vendor/lib/libmdsprpc.so|e4f96f313d58eeb845e5f65815f0d5871cdabfbd
+vendor/lib/libmdsprpc.so|caae31754dee7a45267ae3912685773046ab6b47
 vendor/lib/libsdsprpc.so|b78c12ebe73d344af786dd39f1313ec88668aacc
 vendor/lib/libsysmon_cdsp_skel.so|0da55092206d94a43a82d5a416969cbfd208acf2
 vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
@@ -20,7 +20,7 @@ vendor/lib64/libmdsprpc.so|7aca0cc4524687c48df9e2247a6c59d0be9581bc
 vendor/lib64/libsdsprpc.so|9c3ac49b1a3c7d383c64f7fb554b1c00e2963527
 vendor/lib64/libsysmon_cdsp_skel.so|a76815923b46dbc41ba1a6b0f4942b8da8e52ce0
 
-# ADSP modules - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+# ADSP modules - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/etc/scve/facereco/gModel.dat|447e5e3fefe8bcf36db0f7a8595c63fb326879ba
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
@@ -1304,9 +1304,9 @@ product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac
 product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
 product/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
 product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
-product/lib/libdiag_system.so
+product/lib/libdiag_system.so|1f5ced1d806da4fef54f8120d4d18528ccdea357
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a763bb1bbeecb84723bff6f547a3b23fab68dee3
-product/lib64/libdiag_system.so
+product/lib64/libdiag_system.so|0903778a417c572dd4829bf703cec2266e079d96
 product/lib64/libdpmctmgr.so|3d4b87a4937caf3a8d276f48a4f0dc2cad246c5b
 product/lib64/libdpmfdmgr.so|e809155312a05d83b323ab0be64cb393d936e52a
 product/lib64/libdpmframework.so|8fd037eb8740a468a67c78e7fa01c69b1ba3fd2a
@@ -1366,6 +1366,7 @@ vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|68767969f86126ada01
 vendor/lib/mediadrm/libwvdrmengine.so|cb055ebd13261ca124b4011948ea393a9f4e2b24
 vendor/lib64/libwvhidl.so|79641121417371f82af64fdec4795eb9cec1e12f
 vendor/lib64/mediadrm/libwvdrmengine.so|3d04a3046d1ac489966d8ce9716e2adae7a8dea5
+#vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml
 
 # DRM (HDCP) - from LA.UM.8.2.r1-06300-sdm660.0
 vendor/lib/libmm-hdcpmgr.so|1369ce85b3c133c8d4d04167cd894df85212dcfa
@@ -1712,9 +1713,9 @@ vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 vendor/bin/hw/vendor.display.color@1.0-service|b091c0d0f898959afedf8a3f83b5e97205fdfbc8
 vendor/bin/mm-pp-dpps|87650deb0e6df4afae33020b23af0d1cf33ec51c
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.postproc@1.0.so
+vendor/lib/vendor.display.color@1.0.so|904bc4edd82bbdae0362574d76678b34cba564ff
+vendor/lib/vendor.display.color@1.1.so|ae4745564c439ed2f957b3d51aca0d8b8ac883b2
+vendor/lib/vendor.display.postproc@1.0.so|40585773db77262af6d8fd4dda2f1c3c00f39536
 vendor/lib64/libdisp-aba.so|fcb06e36e31d741c92d189ad95bc2f69bbf1e17b
 vendor/lib64/vendor.display.color@1.0.so|3939e4d1ab4f74e6bbd04524a9e6211ade9c5d0b
 vendor/lib64/vendor.display.color@1.1.so|ce0030a7e6593236277962ffff290b834eaf1f25
@@ -1934,7 +1935,7 @@ vendor/lib64/sensors.touch.so
 vendor/lib64/sensor_calibrate.so
 
 # Soter - from LA.UM.8.2.r1-06300-sdm660.0
--app/SoterService/SoterService.apk
+-app/SoterService/SoterService.apk|897999e257f5e59ebe2f9ca08a4f5512602f6c5e
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|37f9501fa45a69ba3a27fd338704d76afc534bcb
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1f27eb012650705a40fac8fec6d0b2dd10a1ec22
@@ -1953,7 +1954,7 @@ vendor/lib64/libthermalfeature.so
 vendor/lib64/libthermalioctl.so
 
 # Time services - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
+#-vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|4379f604fcb41e9b096203b1d888cac478a3aafe
 -vendor/lib/libtime_genoff.so|e858cc52e829af0a9e4b5a4c39bddef8cece4bd9
 -vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
@@ -1984,7 +1985,7 @@ etc/wfdconfigsink.xml|5b4a96f251fd83c2eee520d06bea2b5b159fcd36
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so|ae4ba4448820bae832db16c4d64bd547bff13503
 lib/libFileMux.so|1c713da8d18f03deb33c3211761fc07dd57d6946
 lib/libmmosal.so|5647df92a81245da459b30d311137068993d4787
-lib/libmmparser_lite.so|1d43c2cac10af253973d2747f4874a230cc44ca7
+lib/libmmparser_lite.so|100ac6adf23ef4b32ef83b7232a7418b94dbdac7
 lib/libmmrtpdecoder.so|c4d8d4ec093a24e2d158ffe1edb408aeb83e5edb
 lib/libmmrtpencoder.so|c1d969d3600a9b9a7505e4d1f18ab3ac0f111406
 lib/libOmxMux.so|a299e70ca30d2edc010602d3c0de00e612cfbbcf
@@ -2005,7 +2006,7 @@ lib/libwfduibcsrc.so|58d43f5593a7c0a6929c0ed3aef02386fbc0afc8
 lib/libwfduibcsrcinterface.so|4eba1e3a541bc433eb75cf74807591fd16618c74
 lib64/libmmosal.so|f2ec52d5ff321b7064dd6102a0ebc7914c11b7c9
 lib64/libwfdclient.so|90e3f8c60361c353919743a6e362c3115861fb53
-lib64/libwfdnative.so|f10fdc70715a88031fc1aa151dca18b4acc9ab92
+lib64/libwfdnative.so|b28b0d83b8d52ad3450735bdeea6498b1a7a18c2
 vendor/bin/wifidisplayhalservice|7b84c067e9caf4350a2436a912f5957f57b42c7b
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|04e463342cbba4c0e9c311a18238f95dec9359fd
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so|5004085e4c19e7812f0c71881b12f3c5168b19e2
@@ -2013,6 +2014,6 @@ vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|089b6b4b9217e0fdfc655491fecd6d
 vendor/lib/libmmosal_proprietary.so|ef5b82a40427a71a98ab3bc95b72299f8d971141
 vendor/lib/libwfdcommonutils_proprietary.so|af255ba4ce085c7502453b5bf7005f8ccfa78840
 vendor/lib/libwfdhaldsmanager.so|ad8747952cc5f85a68b4eab669897c82b086da05
-vendor/lib/libwfdhdcpcp.so|53cec4263ae5fe79a15783c86d336bb946bfc919
+vendor/lib/libwfdhdcpcp.so|1a3afba4bd6aa7d23c9c7b08669652a1b341841f
 vendor/lib/libwfdmmservice.so|d25a796600eb252d133c1370f3c62adc7e9a3d03
 vendor/lib/libwfdmodulehdcpsession.so|22b64660d1c0ca946960ecde14795e4de073ccff
