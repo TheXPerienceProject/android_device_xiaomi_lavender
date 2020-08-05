@@ -1296,7 +1296,7 @@ vendor/etc/qdcm_calib_data_boe_td4320_fhdplus_video_mode_dsi_panel.xml|6accbcc57
 vendor/etc/qdcm_calib_data_shenchao_nt36672a_fhdplus_video_mode_dsi_panel.xml|0f0779c8584da7077e0189ef9fba12ab62ff62a4
 vendor/etc/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml|fb168f5d2b14bd0726518ce3752ae23fc269c0b3
 
-# DPM - from jasmine V11.0.8.0.QDIMIXM
+# DPM - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 product/bin/dpmd|49caa8e7d8af8055efdd7ebc0d7f7d67bc600041
 product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
@@ -1320,7 +1320,7 @@ vendor/lib64/libdpmqmihal.so|30a170684219dd589d05ce5b446e73b7501f13e3
 # DPM - from LA.UM.8.2.r1-04000-sdm660.0
 #framework/tcmclient.jar
 
-# DRM - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+# DRM - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/bin/qseecomd|90d5df44869a1de44cb11d690304e3b41bab8600
 vendor/lib/libQSEEComAPI.so|1c134972d1629e7ec8e854f0fa43e2886556dbd7
 vendor/lib/libsdedrm.so|b603b6beaa50d49604ab2ebe0977a9ef79252b20
@@ -1354,29 +1354,33 @@ vendor/lib64/libsecureui_svcsock.so|889d4a12c5dee56ed4b10548abbd7b9033cbdad2
 vendor/lib64/libsecureui.so|4a9861e7887b0e03294f86009b7600369d113964
 vendor/lib64/libSecureUILib.so|3a059d1fe3395eaefeb7817ad3af46987b6f4794
 vendor/lib64/libssd.so|a64337d8044607b81adcf7e8c5760cf8cdcf82b4
-vendor/lib64/libStDrvInt.so|ff4ef2707ca8d219fd52b2ff629ffc62a43e2480
+vendor/lib64/libStDrvInt.so|a7bd8140e2cd5aa70a7d929e01233e5b71844cd8
 vendor/lib64/libtzdrmgenprov.so|6a6b5edb8c77bb51b65f3acb2fd0dedcc255a521
 vendor/lib64/libhdcp1prov.so|de3c41b147b4617dcdf9a216199aa9364fa63731
 vendor/lib64/libhdcp2p2prov.so|7cbe9df99fc2dad1c4b170c5162442e533e19cba
 vendor/lib64/libhdcpsrm.so|ee8e7c29e2b716a8bb07c3cbb730e34d8af3c64e
 
-# DRM - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+# DRM - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|68767969f86126ada017fc09af151e299db651d5
-vendor/lib/mediadrm/libwvdrmengine.so|cb055ebd13261ca124b4011948ea393a9f4e2b24
-vendor/lib64/libwvhidl.so|79641121417371f82af64fdec4795eb9cec1e12f
-vendor/lib64/mediadrm/libwvdrmengine.so|3d04a3046d1ac489966d8ce9716e2adae7a8dea5
-#vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|f206aecdd6843795f6448bb6d44d2244b3e48815
+vendor/lib/mediadrm/libwvdrmengine.so|40e47f0ea8c493181a9454b5fa70b371092405f5
+vendor/lib/liboemcrypto.so|ad286cf38f8b00a5c9b0b0f424e4a5bd1f47f046
+vendor/lib/libwvkeybox.so|e607b0e42d9cc102b5534e150b08ad36c83b9674
+vendor/lib64/libwvhidl.so|7cfd6d96cf1f423c4482c5812ba3228ee701138c
+vendor/lib64/mediadrm/libwvdrmengine.so|66c8eeeea833ed5f21e9db9feb304c4f76cc15f9
+vendor/lib64/liboemcrypto.so|e44fa8bf9bed1541342390bf316c34fe9f29cc4e
+vendor/lib64/libwvkeybox.so|3c0443c7d58275f35140437ab835b26e46c540ee
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml|e9c33ec4ff776ab02ddf49ec375184d2a8b19177
 
-# DRM (HDCP) - from LA.UM.8.2.r1-06300-sdm660.0
-vendor/lib/libmm-hdcpmgr.so|1369ce85b3c133c8d4d04167cd894df85212dcfa
-vendor/lib64/libmm-hdcpmgr.so|a80b3cfa28acdb69a5047ab9592c611ab4534799
+# DRM (HDCP) - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+vendor/lib/libmm-hdcpmgr.so|4af112050d0a5a47980103b309a163a4415de7dd
+vendor/lib64/libmm-hdcpmgr.so|152c347caca4826a64737df11e181472553be446
 
-# DRM (Qualcomm Trusted Execution Enviroment) - from LA.UM.8.2.r1-06300-sdm660.0
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|b03632420eea636c9c1585d18703340cdf5dd2fe
+# DRM (Qualcomm Trusted Execution Enviroment) - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|aaa7d15a9ebb63c0152b8fb3bfd07af929e384d4
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|3da82e38c25684686ef91e88b1bafb4cdd07baf6
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|50ee00e9ecf66258efbc544492982af16b5c91d6
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|1fe6ce202398e0ae3afebd7625c59746e04413e8
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|3202c209bd8249e3f76dec1108788b1a85b53561
 
 # ESE-Powermanager
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
