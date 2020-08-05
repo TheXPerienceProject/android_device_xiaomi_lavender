@@ -64,7 +64,7 @@
             <Limit name="measured-frame-rate-176x144" range="50-100" />
         </MediaCodec>
         <MediaCodec name="c2.android.h263.encoder" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="190-290" />
+            <Limit name="measured-frame-rate-176x144" range="50-95" />
         </MediaCodec>
         <MediaCodec name="OMX.google.mpeg4.encoder" type="video/mp4v-es" update="true">
             <Limit name="measured-frame-rate-176x144" range="385-385" />
@@ -192,3 +192,4 @@
          </MediaCodec>
     </Decoders>
 </MediaCodecs>
+
