@@ -1214,13 +1214,13 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
-# Charger - from jasmine V11.0.8.0.QDIMIXM
+# Charger - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
 
 # Stock
 -sbin/charger:bin/chargeonlymode
 
-# CNE - from LA.UM.8.2.r1-04000-sdm660.0
+# CNE - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 -vendor/app/CneApp/CneApp.apk|2356a0335ab8e0106832a9325f972467654fd1f0
 -vendor/app/IWlanService/IWlanService.apk|c152322e169240d16a599581c0af8a3f2c8ee0a9
 vendor/bin/cnd|ca653a8064fe83a12a12798a73c9cc8c1fecf758
@@ -1265,17 +1265,17 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so|638bc60267b6f8716700deb5270062961
 vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so|fc8634f7cf90524c24c45d8771eec888d652db92
 vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so|ffa8e4013bc1bd8bd44e3d64c278be0d36274f6e
 vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so|f4e1e9991fa90546dfe0d4f9c7da8441b6a0af35
-vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|ffa0b03c38b18947115ff8bfd858dceea25cb01d
-vendor/lib64/vendor.qti.hardware.data.connection@1.1.so|19705c82453f7196d88048a221993c4911d316f4
-vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|839d653573bc82b5556e1deb3392873fd8980502
-vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|941a53de8155c09f87c7cecc0eddae1f49dfad6e
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|8f63929ce05780570d1f9d9e473d2fef6d460639
+vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|e2f77b104fbc3abe7423fc24743051b69cc887be
+vendor/lib64/vendor.qti.hardware.data.connection@1.1.so|7b2e00bfbc40280a520dffc3eb99c68c1832761d
+vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|bf7766fbd49a3aa3426a93ab82bcd825cc72334a
+vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|c471659fc3fb56dcdcda183e080397a737e4708b
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|ff7a319e51ddd4de14af28a84f7bca5e82547f6e
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|90f1106f7462a9e01721e1159ed3301579adee07
-vendor/lib64/vendor.qti.hardware.factory@1.0.so|cd959b06866f9ade89ea3ebb1ddfaf40f39b40bd
-vendor/lib64/vendor.qti.hardware.factory@1.1.so|619d526ebc68c8c0d40bf40847f434c17a17fe21
-vendor/lib64/vendor.qti.latency@2.0.so|408fbbaa57ff8b00af4357626effb575ca977bb7
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|75e8a824d368cd4172985c884796381327d950da
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml|620c9fa0047bb681e918af2d1e7a98c648f45fb7
+vendor/lib64/vendor.qti.hardware.factory@1.0.so|1347d5fb217b2a8801f19bea1f93016edb3ae93a
+vendor/lib64/vendor.qti.hardware.factory@1.1.so|00e090806194349ef6235f985f0bca9b1ed07284
+vendor/lib64/vendor.qti.latency@2.0.so|91a8b05b20485057ee9f42c55ce70207ef6af761
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|335d6da6763240d58a1598f95bed50bb80e3e71d
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml|f21207db1805ec6ba512f526b795822794ff6274
 product/framework/vendor.qti.data.factory-V1.0-java.jar|f0a14b08ab6c2fb85342383235be6b75d67806fb
 product/framework/vendor.qti.data.factory-V2.0-java.jar|df667317984cf08e06bad7957a6a6390fe5f2bb4
 product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar|b42d139ba5c502f1cd2092c35d6bd867c60284f5
@@ -1287,14 +1287,14 @@ product/framework/vendor.qti.hardware.factory-V1.0-java.jar|0ecc597e18701978179b
 product/framework/vendor.qti.hardware.factory-V1.1-java.jar|d8fa470013d6a0eb2801c3ac556d62ec8bbf1136
 product/framework/vendor.qti.latency-V2.0-java.jar|d345e24271b83faecdb1abe1361db812fae0646f
 
-# Consumerir - from lavender:10/QKQ1.190910.002/20.1.7:user/release-keys
+# Consumerir - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
 vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.sdm660.so|9557dc4e5ed630f1fc534334074cce58d4c49c62
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so|d1f275a91557dfab52e82906986c5094fe078722
 
-# Display calibration
-vendor/etc/qdcm_calib_data_boe_td4320_fhdplus_video_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_shenchao_nt36672a_fhdplus_video_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml
+# Display calibration - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
+vendor/etc/qdcm_calib_data_boe_td4320_fhdplus_video_mode_dsi_panel.xml|6accbcc573c1ce71b3d205acb7e9a93cfd947ab0
+vendor/etc/qdcm_calib_data_shenchao_nt36672a_fhdplus_video_mode_dsi_panel.xml|0f0779c8584da7077e0189ef9fba12ab62ff62a4
+vendor/etc/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml|fb168f5d2b14bd0726518ce3752ae23fc269c0b3
 
 # DPM - from jasmine V11.0.8.0.QDIMIXM
 product/bin/dpmd|49caa8e7d8af8055efdd7ebc0d7f7d67bc600041
