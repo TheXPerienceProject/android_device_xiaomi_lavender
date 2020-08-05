@@ -1579,8 +1579,8 @@ vendor/lib64/libsdmextension.so|264c00a0920d291700b2948b9337037684986921
 vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
 
 # Graphics (Vulkan) - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
-vendor/lib/hw/vulkan.sdm660.so|102dc4ee268de6db66dc3ec61200aeeeb85e55c3
-vendor/lib64/hw/vulkan.sdm660.so|f4d7d5825d6e564943cf0d18c1fe78ab86a2797a
+vendor/lib/hw/vulkan.sdm660.so|87d87b2520d3a8adec7a24f5999a27b291edaeba
+vendor/lib64/hw/vulkan.sdm660.so|ad3a5d92c6c13ba0c937dd1b83f371e804a57c4e
 
 # IPA
 vendor/bin/ipacm-diag
