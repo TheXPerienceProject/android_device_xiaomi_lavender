@@ -1,2 +1,9 @@
 allow init hal_perf_hwservice:hwservice_manager find;
 allow init vendor_file:file execute;
+
+#Battery supply
+allow init sysfs_battery_supply:file { read open };
+allow init sysfs_usb_supply:file { read open };
+
+# Read eMMC fwver
+allow init sysfs:file { read };

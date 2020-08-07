@@ -30,6 +30,7 @@
 
 # HEALTH
 /vendor/bin/hw/android\.hardware\.health@2\.0-service\.lavender         u:object_r:hal_health_default_exec:s0
+/mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
 
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_lavender     u:object_r:hal_light_default_exec:s0
