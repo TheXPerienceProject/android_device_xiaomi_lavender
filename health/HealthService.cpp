@@ -64,10 +64,6 @@ static CycleCountBackupRestore ccBackupRestoreBMS(
 static DeviceHealth deviceHealth;
 static LearnedCapacityBackupRestore lcBackupRestore;
 
-#define EMMC_DIR "/sys/devices/platform/soc/c0c4000.sdhci"
-const std::string kEmmcHealthEol{EMMC_DIR "/health/eol"};
-const std::string kEmmcHealthLifetimeA{EMMC_DIR "/health/lifetimeA"};
-const std::string kEmmcHealthLifetimeB{EMMC_DIR "/health/lifetimeB"};
 const std::string kEmmcVersion{"/sys/block/mmcblk0/device/fwrev"};
 const std::string kDiskStatsFile{"/sys/block/mmcblk0/stat"};
 const std::string kEmmcName{"MMC0"};
@@ -125,9 +121,6 @@ void get_storage_info(std::vector<StorageInfo>& vec_storage_info) {
     fill_emmc_storage_attribute(&storage_info->attr);
 
     read_emmc_version(storage_info);
-    read_value_from_file(kEmmcHealthEol, &storage_info->eol);
-    read_value_from_file(kEmmcHealthLifetimeA, &storage_info->lifetimeA);
-    read_value_from_file(kEmmcHealthLifetimeB, &storage_info->lifetimeB);
     return;
 }
 
