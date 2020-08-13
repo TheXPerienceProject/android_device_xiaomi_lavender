@@ -73,6 +73,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.spkr_prot.tx.sampling_rate=48000 \
     vendor.audio.feature.multi_voice_session.enable=true
 
+#timeout crash duration set to 20sec before system is ready.
+#timeout duration updates to default timeout of 5sec once the system is ready.
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.hal.boot.timeout.ms=20000
+ 
 # A2DP offload support
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.bluetooth.a2dp_offload.supported=true
