@@ -1,5 +1,3 @@
-#Just in case
-type persist_battery_file, file_type;
 
 allow hal_health_default persist_file:dir search;
 allow hal_health_default persist_battery_file:file create_file_perms;
