@@ -8,3 +8,7 @@ type mlipay_prop, property_type;
 
 # Thermal engine
 type thermal_prop, property_type;
+
+#power hal
+type vendor_shutdown_prop, property_type;
+type vendor_battery_defender_prop, property_type;
