@@ -3,12 +3,13 @@ allow qti_init_shell { sysfs sysfs_dm }:file write;
 allow qti_init_shell default_prop:file read;
 allow qti_init_shell vendor_radio_data_file:dir { getattr read search };
 allow qti_init_shell vendor_radio_data_file:file { getattr read setattr write };
+
 #read the firmware
 allow qti_init_shell vfat:dir {read open search};
 allow qti_init_shell vfat:file { getattr read open };
 
 allow qti_init_shell wifi_vendor_data_file:dir search;
-allow qti_init_shell hostapd_data_file:dir {search write add_name };
-allow qti_init_shell hostapd_data_file:lnk_file { read };
-allow qti_init_shell hostapd_data_file:file { create read write open };
+allow qti_init_shell hostapd_data_file:dir {search write add_name remove_name };
+allow qti_init_shell hostapd_data_file:lnk_file { read create rename unlink };
+allow qti_init_shell hostapd_data_file:file { create read write open unlink };
 allow qti_init_shell sysfs_io_sched_tuneable2:file rw_file_perms;

@@ -41,6 +41,10 @@
 # Service HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.authsecret@1\.0-service          u:object_r:hal_authsecret_default_exec:s0
 
+#MMC allow to qti_init_shell to write read_ahead_kb mmc and sdcard
+/sys/devices/soc/c0c4000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/read_ahead_kb   u:object_r:sysfs_io_sched_tuneable:s0
+/sys/devices/soc/c084000.sdhci/mmc_host/mmc1/mmc1:0003/block/mmcblk1/queue/read_ahead_kb   u:object_r:sysfs_io_sched_tuneable:s0
+
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1             u:object_r:hal_mlipay_default_exec:s0
 
