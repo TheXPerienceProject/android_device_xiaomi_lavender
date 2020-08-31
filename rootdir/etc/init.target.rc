@@ -131,6 +131,9 @@ on init
     # Enable suspend clock reporting
     write /sys/kernel/debug/clk/debug_suspend 1
 
+on late-init
+   setprop vendor.thermal.config thermal_info_config.json
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice

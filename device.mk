@@ -542,9 +542,13 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service \
+    android.hardware.thermal@2.0-service.lavender \
+    android.hardware.thermal@2.0 \
+    android.hardware.thermal@2.0.vendor \
     thermal.sdm660
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # Touchscreen
 PRODUCT_PACKAGES += \
