@@ -5,6 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_lavender.mk \
     $(LOCAL_DIR)/lineage_lavender.mk \
     $(LOCAL_DIR)/xperience_lavender.mk
 
