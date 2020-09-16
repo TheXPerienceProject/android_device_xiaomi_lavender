@@ -186,7 +186,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    camera.sdm660_shim
+    camera.sdm660_shim \
+    libdpmframework_shim
 
 # CNE
 PRODUCT_PACKAGES += \
