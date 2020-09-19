@@ -262,8 +262,8 @@ PRODUCT_PACKAGES += \
     libmediadrm \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.2-service.widevine \
-    android.hardware.drm@1.2-service.clearkey
+    android.hardware.drm@1.3-service.widevine \
+    android.hardware.drm@1.3-service.clearkey
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
