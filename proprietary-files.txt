@@ -1951,7 +1951,7 @@ vendor/lib64/libthermalfeature.so
 vendor/lib64/libthermalioctl.so
 
 # Time services - from lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
+-vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|4379f604fcb41e9b096203b1d888cac478a3aafe
 -vendor/lib/libtime_genoff.so|e858cc52e829af0a9e4b5a4c39bddef8cece4bd9
 -vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
