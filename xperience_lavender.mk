@@ -26,7 +26,7 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 $(call inherit-product, vendor/xperience/config/common_full_phone.mk)
 
 #CAF prop CAF includes
-include device/qcom/common/common.mk
+include device/qcom/vendor-common/common.mk
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080

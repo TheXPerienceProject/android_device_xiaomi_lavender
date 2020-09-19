@@ -1727,7 +1727,7 @@ vendor/lib/libidl.so|e2e8ee4f5df52dfb4cfd3ac617bfec5823808913
 vendor/lib/libqcci_legacy.so|ac54f8f7c14af01d1d0b7dceb79d33bd3a7d62fd
 vendor/lib/libqdi.so|e172e376221385ea4b730294cb00a442ea61882f
 vendor/lib/libqdp.so|b7fc76648ec1ea1ad9bec5b16d3efeaa75a15f00
-vendor/lib/libqmi_cci.so|4dd4404fb26716ebdc9951074efc7102453511a6
+-vendor/lib/libqmi_cci.so|4dd4404fb26716ebdc9951074efc7102453511a6
 vendor/lib/libqmi_client_helper.so|573accdd14e0fddf2de23d795b5f9cd7a10e5511
 vendor/lib/libqmi_client_qmux.so|166a62e50a97ded20585ecc873631ac8de8398c2
 vendor/lib/libqmi_common_so.so|a021eeb3a0d80bf3f5b98b49e110b1ae20ca5d9d
@@ -1746,7 +1746,7 @@ vendor/lib64/libidl.so|ea0cd6e8dd41264eefbbb843d47e60cc62d2037e
 vendor/lib64/libqcci_legacy.so|b2b5a105215c6402b58de0f500840563ed87379d
 vendor/lib64/libqdi.so|9a66362fa0c560345860f705bae9821f312a8b04
 vendor/lib64/libqdp.so|a12c476094e625fe8d6cb7244664744f74e771da
-vendor/lib64/libqmi_cci.so|e6981c6c01d377979340366ba3259133bced350b
+-vendor/lib64/libqmi_cci.so|e6981c6c01d377979340366ba3259133bced350b
 vendor/lib64/libqmi_client_helper.so|74e4b9d4e7a177a13f9cc875b1ec5fff10b3200b
 vendor/lib64/libqmi_client_qmux.so|b1a9742792f33a9fee3da2cab127a40f847fd9b7
 vendor/lib64/libqmi_common_so.so|6603cbb04df47395ae2dac6dd518266f0366e5e0
@@ -1968,9 +1968,9 @@ vendor/bin/cnss-daemon
 vendor/bin/fstman|68971c9823929fb5c7d7ee4664f5d62508e0851c
 vendor/etc/wifi/fstman.ini|0583604009194da2c311adb80ef6c2fa9e3f4998
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|99fb118e36fc0e636da9813a47a2ab97cfe62a1c
-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|bf310fa21ed2d3500f30228b36bcce3173b85d8b
+-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|bf310fa21ed2d3500f30228b36bcce3173b85d8b
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|71a0ed501c544d0c78a72db8bc3bde05eea61010
-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|9e02db5f6b99905b22b0814da97852dff38a578b
+-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|9e02db5f6b99905b22b0814da97852dff38a578b
 
 # Wi-Fi Display - from LA.UM.8.2.r1-06300-sdm660.0
 -framework/WfdCommon.jar|3440607d29511e1a671e565a2acc4d262e38a9fb
