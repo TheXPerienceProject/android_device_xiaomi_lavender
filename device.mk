@@ -267,6 +267,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.drm@1.3-service.clearkey
 
+# Enable incremental FS feature
+PRODUCT_PROPERTY_OVERRIDES += ro.incremental.enable=1
+
 # Fingerprint feature
 PRODUCT_PACKAGES += \
     fingerprintd \
