@@ -596,6 +596,7 @@ PRODUCT_PACKAGES += libqti_vndfwk_detect.vendor
 
 # VNDK
 PRODUCT_PACKAGES += \
+    com.android.vndk.current.on_vendor \
     vndk_package \
     libgui_vendor
 
