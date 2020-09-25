@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2019 The LineageOS Project
-# Copyright (C) 2019 The XPerience Project
+# Copyright (C) 2019-2020 The XPerience Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -18,6 +18,7 @@ TARGET_NO_BOOTLOADER := true
 # Platform
 BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := sdm660
+PRODUCT_BOARD_PLATFORM := sdm660
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno512
 
 # Architecture
