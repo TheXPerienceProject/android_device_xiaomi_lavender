@@ -446,7 +446,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service \
+    android.hardware.power-service \
     vendor.xperience.power@1.0
 
 # Preopt SystemUI
@@ -576,6 +576,7 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
+    qcrilhook \
     ims-ext-common \
     ims_ext_common.xml
 
