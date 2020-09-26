@@ -77,7 +77,4 @@ patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "$BLOB_ROOT"/v
 CAM_SDM660="$DEVICE_BLOB_ROOT"/vendor/lib/hw/camera.sdm660.so
 patchelf --add-needed camera.sdm660_shim.so "$CAM_SDM660"
 
-#Patch dpmd
-patchelf --add-needed libdpmframework_shim.so "$BLOB_ROOT"/product/lib64/libdpmframework.so
-
 "${MY_DIR}/setup-makefiles.sh"
