@@ -182,7 +182,9 @@ PRODUCT_COPY_FILES += \
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
-    libsfplugin_ccodec
+    libsfplugin_ccodec \
+    libcodec2_hidl@1.0.vendor \
+    libavservices_minijail_vendor
 
 # Shims
 PRODUCT_PACKAGES += \
