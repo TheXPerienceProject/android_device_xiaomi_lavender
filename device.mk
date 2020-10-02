@@ -14,7 +14,8 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH) \
-    hardware/google/pixel
+    hardware/google/pixel \
+    vendor/qcom/opensource/usb/etc
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -483,6 +484,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.qcom.sensors.sh \
+    init.qti.usb.debug.sh \
     init.target.rc \
     ueventd.qcom.rc \
     fstab.qcom
@@ -564,7 +566,8 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
+    android.hardware.usb@1.2-service-qti \
+    android.hardware.usb.gadget@1.0-service-qti
 
 # Wi-Fi Display
 #PRODUCT_BOOT_JARS += \
