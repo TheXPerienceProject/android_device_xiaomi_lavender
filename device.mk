@@ -11,6 +11,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/lavender/lavender-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH) \
