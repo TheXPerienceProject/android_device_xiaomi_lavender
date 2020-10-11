@@ -60,7 +60,6 @@
 /avb(/.*)?               u:object_r:avb_file:s0
 /cust(/.*)?              u:object_r:cust_file:s0
 /vendor/firmware_mnt/image(/.*)?         u:object_r:vendor_firmware_file:s0
-/dev/block/platform/soc/c0c4000.sdhci/by-name/persist                           u:object_r:persist_block_device:s0
 /persist                            u:object_r:persist_block_device:s0
 
 # Shell Script
