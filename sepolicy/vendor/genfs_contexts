@@ -48,3 +48,6 @@ genfscon sysfs /devices/soc/soc:qcom,mincpubw                   u:object_r:sysfs
 genfscon sysfs /devices/soc/soc:qcom,memlat-cpu0                u:object_r:sysfs_devfreq:s0
 genfscon sysfs /devices/soc/soc:qcom,memlat-cpu4                u:object_r:sysfs_devfreq:s0
 
+# Thermal
+genfscon sysfs /devices/virtual/thermal                                        u:object_r:sysfs_thermal:s0
+genfscon sysfs /class/thermal                                                  u:object_r:sysfs_thermal:s0

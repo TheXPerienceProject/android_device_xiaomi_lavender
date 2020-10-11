@@ -1,1 +1,8 @@
 allow hal_thermal_default hal_thermal_default:netlink_kobject_uevent_socket read;
+
+allow hal_thermal_default sysfs_thermal:dir r_dir_perms;
+allow hal_thermal_default sysfs_thermal:file rw_file_perms;
+allow hal_thermal_default proc_stat:file r_file_perms;
+
+# read thermal_config
+get_prop(hal_thermal_default, vendor_thermal_prop)
