@@ -476,9 +476,6 @@ on post-fs-data
     #Start move time data to /data/vendor once post-fs-data done
     start vendor.move_time_data
 
-    # Disable FUSE by default
-    setprop persist.sys.fuse false
-
 service iop /system/vendor/bin/iop
     class main
     user root
