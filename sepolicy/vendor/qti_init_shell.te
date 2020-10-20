@@ -13,3 +13,6 @@ allow qti_init_shell hostapd_data_file:dir {search write add_name remove_name };
 allow qti_init_shell hostapd_data_file:lnk_file { read create rename unlink };
 allow qti_init_shell hostapd_data_file:file { create read write open unlink };
 allow qti_init_shell sysfs_io_sched_tuneable2:file rw_file_perms;
+
+allow qti_init_shell ctl_start_prop:property_service set;
+allow qti_init_shell ctl_stop_prop:property_service set;
