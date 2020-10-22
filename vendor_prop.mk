@@ -411,4 +411,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
+    ro.control_privapp_permissions=log \
     ro.telephony.iwlan_operation_mode=legacy
