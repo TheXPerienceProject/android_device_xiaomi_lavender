@@ -1,45 +1,47 @@
 # jasmine package version: V11.0.19.0.QDIMIXM, unless stated otherwise
 
-# ADSP - from jasmine
-vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
-vendor/bin/cdsprpcd|c9fc5873c205e1ebb844d18bc10f89dd428a01ee
-vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
-vendor/lib/libadsp_hvx_callback_skel.so|17e18628d5f06f5ad46b9577baac0d3571b42be1
-vendor/lib/libadsp_hvx_stub.so|d3f2bfdf3f6bd4911e5015a022a098582addcf6f
-vendor/lib/libadsprpc.so|35bf7c53dc7149b39126638c5c1bac3b08e262be
-vendor/lib/libcdsp_default_listener.so|6347d41d3c3704a04ae0f8e816f071057c483163
-vendor/lib/libcdsprpc.so|2774f0faf3728faf425fdeb81b9820a3c231a5ba
-vendor/lib/libfastcvadsp_stub.so|43740cca4f7549c86e4b2ab1daf4d703d9a9b258
-vendor/lib/libfastcvopt.so|77789b2b6e978bcc2ee7e848d6163fc31d6b5393
-vendor/lib/libmdsprpc.so|caae31754dee7a45267ae3912685773046ab6b47
-vendor/lib/libsdsprpc.so|b78c12ebe73d344af786dd39f1313ec88668aacc
-vendor/lib/libsysmon_cdsp_skel.so|0da55092206d94a43a82d5a416969cbfd208acf2
-vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
-vendor/lib64/libadsprpc.so|02d0684cba8bd52d2a291f85afae9ce343c94bd4
-vendor/lib64/libcdsp_default_listener.so|ebde03266606d634172d41bbc97ba9ebc5606423
-vendor/lib64/libcdsprpc.so|6636d9b8e1c3b80bae94cf1728c5168ef77cca5f
-vendor/lib64/libfastcvadsp_stub.so|ef3fd1a7d1217ad9bfff9cff0aa52db36eb73143
-vendor/lib64/libfastcvopt.so|9f95397d7e1b171f9b00323ed7acc17341200e01
-vendor/lib64/libmdsprpc.so|7aca0cc4524687c48df9e2247a6c59d0be9581bc
-vendor/lib64/libsdsprpc.so|9c3ac49b1a3c7d383c64f7fb554b1c00e2963527
-vendor/lib64/libsysmon_cdsp_skel.so|a76815923b46dbc41ba1a6b0f4942b8da8e52ce0
+# ADSP - from LA.UM.8.2.1.r1-05600-sdm660
+vendor/bin/adsprpcd|dbb7108a6f199d963cbf2145000edbd1be755385
+vendor/bin/cdsprpcd|806853d9a5e43487c9c6e53b8e35b95d663ceff4
+vendor/lib/libadsp_default_listener.so|5b5ba1662264843c6a793c315a4495e46f99c20f
+vendor/lib/libadsp_hvx_callback_skel.so|67cb46e6da3fa84d0cf086172591ba13493e663f
+vendor/lib/libadsp_hvx_stub.so|d5c2f0bc990c879fdbb4149c337d592c8762972b
+vendor/lib/libadsprpc.so|d2c7712198b94258c7e71ad3c029fe6dd0765bad
+vendor/lib/libcdsp_default_listener.so|608b5f8b11fbe4f13074609a82405182ece62c3a
+vendor/lib/libcdsprpc.so|8459350211825c2c89931593fd12aadb63ec5335
+vendor/lib/libfastcvadsp_stub.so|9957df1493863d78da261ab3bb8756be3f3d2583
+vendor/lib/libfastcvopt.so|fc36dbee817b90dd8a37e258c47a74f16c728b3b
+vendor/lib/libmdsprpc.so|2200e11da607f2617e4fbb2a46b4a30b81f342c1
+vendor/lib/libsdsprpc.so|30aa229a2cc43a01c76f9c4b0fc25edfcce955fb
+vendor/lib/libsysmon_cdsp_skel.so|9c088c263500259484a3b7c611efd413464b4d34
+vendor/lib64/libadsp_default_listener.so|30d391be99af9a013fab17676e9e8252c78d928d
+vendor/lib64/libadsprpc.so|d3ec3bfd39404ea5896304b7393cba3a52ad3f9f
+vendor/lib64/libcdsp_default_listener.so|78899710541d42c57ff3d6a231f50e274e1d4ccc
+vendor/lib64/libcdsprpc.so|9df65cc5f9eb60030a2013aa37a2906fe3be1c51
+vendor/lib64/libfastcvadsp_stub.so|f84fd537f8f176e598c0cb49f0c457f308b67be4
+vendor/lib64/libfastcvopt.so|7d91a405c758355349b882f4aebe27659f9ddb87
+vendor/lib64/libmdsprpc.so|e98e87e82fac74b6df2c8a626cfe8d1d9b17c4a0
+vendor/lib64/libsdsprpc.so|f0a3d7c976cc78e800c955f58b79468c85235ec8
+vendor/lib64/libsysmon_cdsp_skel.so|40d3511922c744016c419983b18f97952c23fee5
 
-# ADSP modules - from jasmine
-vendor/lib/rfsa/adsp/dirac_resource.dar|7728d5b2ee2927a01df5bd6d7edae3736186c844
+# ADSP modules - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
 vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
 vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
-vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
-vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
+vendor/lib/rfsa/adsp/libfastcvadsp.so|a4ded032d4ec44575d474af9e6a74ed5d8dad26a
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|57eff075eaf7a9fb9260f6cf5b918b2e7495fc6f
 vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so|c240d45c3a5fc37b964c4adab06f4cb0bfda62f5
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|e8083e551a17e880acb9d72ceb725b762cadf0d2
+
+# ADSP modules - from jasmine
+vendor/lib/rfsa/adsp/dirac_resource.dar|7728d5b2ee2927a01df5bd6d7edae3736186c844
+vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 
 # Alarm - from jasmine
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
@@ -55,18 +57,18 @@ product/lib64/com.qualcomm.qti.ant@1.0.so:system_ext/lib64/com.qualcomm.qti.ant@
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|181a8ab9b1d40705d3151821b53732c5566a2848
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|aa08f9ec51392ed841f60ad08b7f083312c8c5ee
 
-# Audio - from jasmine
-vendor/lib/libacdb-fts.so|7e542fe676bdeaf0347dada88683a67cb861d96d
-vendor/lib/libacdbloader.so|ce2494e403e79552793d65f344ce9f79b52ba51a
-vendor/lib/libacdbrtac.so|bacaa968f7da0ed014e6594b928823f0d08a06e6
-vendor/lib/libadiertac.so|ebdd9b6c4e64b38ef39401b1a1e03696583440dc
-vendor/lib/libadm.so|d7c7d22c4fe53312e1e49fbffd587b25fdf0ac89
-vendor/lib/libaudcal.so|f935b8c33972b8cee40f760478f1b64a54705683
-vendor/lib/libqtigef.so|e0c548247e923f1e972e7765a678566dd874afb7
-vendor/lib/soundfx/libasphere.so|b1b26f99d9fbfe75f109349de5505ca39ccd4c8c
-vendor/lib/soundfx/libqcbassboost.so|73339450a42b598a3c13e67b3d4a2266d986fea2
-vendor/lib/soundfx/libqcreverb.so|eb437cd5e264b1adb4546c6a5617c5da17be5839
-vendor/lib/soundfx/libqcvirt.so|ee9eaa81bb24ac0379e06b44ef257967a4d32614
+# Audio - from LA.UM.8.2.1.r1-05600-sdm660
+vendor/lib/libacdb-fts.so|a2f09f2a01c326d6b57b1c0e406c92850ceef439
+vendor/lib/libacdbloader.so|5a891c9c215153085a5a31e5fc13c832ddf50081
+vendor/lib/libacdbrtac.so|98a8a9cf331cc10c755c808da3bf4da5d4de0c2a
+vendor/lib/libadiertac.so|a8a3442358b62541fe59995bb1ace90178dd8933
+vendor/lib/libadm.so|2a275948330d0b50cbbaee644d81ffa6cfb54590
+vendor/lib/libaudcal.so|2c7b95a1c0e43f1c7d8d679f472343776f7bf718
+vendor/lib/libqtigef.so|10b64bf536b4edb6c09d047c218cfe4c9a9255f1
+vendor/lib/soundfx/libasphere.so|eaa35262337a8401aaecf02997e98e24083f064c
+vendor/lib/soundfx/libqcbassboost.so|a812a997ac3a314684ef46f4bb1a0d20c6805eb5
+vendor/lib/soundfx/libqcreverb.so|93d7325d3cc6a798b3d8cdb4317a91bcc81f8444
+vendor/lib/soundfx/libqcvirt.so|5f7c268e19a95cc9e17cc471b1664ce532d117c1
 
 # Bluetooth - from laurel_sprout V11.0.23.0.QFQMIXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|3f90eadbbb611fc553fca41c9b789e51ba3a9960
@@ -314,35 +316,33 @@ vendor/lib/libgcs-osal.so|dfae7d1bb15b7bd19fef7427f0a6f6df28d5d30a
 vendor/lib/libgcs.so|91e2a7e52bbc076eb3761586bcaf623160612a79
 vendor/lib/libsmwrapper.so|d28c31e4dd25de2eb7d1face701b0f6acf1b1d0e
 
-# Media - from jasmine
-lib/libFileMux.so|79661e6dffc90234ad446641264fd0fa1a3fe6ab
-lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
-lib/libmmparser_lite.so|bf5f6c1e571742cafe951b9c1c30a6cf92b6bfb8
-lib/libOmxMux.so|1ad1aa835a3dfb8bfea2a29291f82a173ba6a868
-lib64/libmmosal.so|9ceff2581e86d32bc2795dffb96ebe4bdc88f2f7
-vendor/lib/libAlacSwDec.so|bca4278cb74a63772a0fc369480b5d9814063d9b
-vendor/lib/libApeSwDec.so|d175422c4b2e691dd5f2a3fe0c7dbc978084e838
-vendor/lib/libdsd2pcm.so|df3b8b4f7c209f061fd6c48bf833cb2ad3342791
-vendor/lib/libFlacSwDec.so|05013a9ca75ffe5ca7ec25747679b0addabdb0c1
-vendor/lib/libgpustats.so|51338b96a0a61b1062a11723c86faba3c1f1d58e
-vendor/lib/libI420colorconvert.so|3398b258f5454361e15c063798fe03974dc1cfd4
-vendor/lib/libmm-color-convertor.so|43d7d4ac5587ecf5a7e8428e0437f45254acd767
-vendor/lib/libmmosal_proprietary.so|a339e7b1dcf86fbb3ee3262ebb15d93cbd5a1916
-vendor/lib/libOmxAacDec.so|2693bce6d624a008b7d4417f625ee363808762c1
-vendor/lib/libOmxAlacDec.so|a1562f6e7319339f1a3c2164d7929a58d14d355c
-vendor/lib/libOmxAlacDecSw.so|195745033c16f74745ef7fb73834a1781618ff32
-vendor/lib/libOmxAmrDec.so|ffd66ca58bb0f083b8ba19f9114db08d4b3d38c1
-vendor/lib/libOmxAmrwbplusDec.so|0ad2fbab0051880fc4cfaa75685100a470af1467
-vendor/lib/libOmxApeDec.so|34f86d1617f9683a290642bd2452319dad50d431
-vendor/lib/libOmxApeDecSw.so|50681d86957d6a6adc71967e67b24e2114fbf1ab
-vendor/lib/libOmxDsdDec.so|d81e103794648cf58a363cacbfa21a2ab96bda7b
-vendor/lib/libOmxEvrcDec.so|e16f0f94e91742f1aef16aad6f2438a12611a6b3
-vendor/lib/libOmxG711Dec.so|fc022c86a72ea2d6e25bb1565c6f93ee63498fa1
-vendor/lib/libOmxQcelp13Dec.so|2674324f46dfb77d2e586a04d380d6cea188e79e
-vendor/lib/libOmxVideoDSMode.so|a5a6bd8e1fe4ee4ceb11ba77fae441435a4ae207
-vendor/lib/libOmxWmaDec.so|469d6be621fab38ece0921c3f08e1638556cef0f
-vendor/lib/libvqzip.so|d037d6e54f6cff1755acb5e1f04a43536bcb8acf
-vendor/lib64/libgpustats.so|b7f9e1ee3f0d86e87d96db55404f3507db8cac6f
+# Media - from LA.UM.8.2.1.r1-05600-sdm660
+lib/libFileMux.so|5a7dc70233541e2e5455a0d802076d0ac593af62
+lib/libmmosal.so|423a0baf93ca306b08210de6469235d0fa745966
+lib/libmmparser_lite.so|870feacb7e58caca85c581c70f8ea82dee99b6f4
+lib/libOmxMux.so|6e44581b7b48e1e0487c043dc7cbebb3a6b33942
+lib64/libmmosal.so|c1282669985db9bd53194a70d5ed451d76557725
+vendor/lib/libAlacSwDec.so|d082d6eeedd8a84bd1b720d515ede48e74392dd4
+vendor/lib/libApeSwDec.so|12c5bfd798a14114a58e55c0713e8e238ccbb83f
+vendor/lib/libdsd2pcm.so|5d8b4ff5930ad3561df396a7edf636344c184fb9
+vendor/lib/libFlacSwDec.so|ad62260c534b60df028f5c5741086592aad7e220
+vendor/lib/libI420colorconvert.so|9411d06fa9b40d0f43ac18c9f3a8ef50299d2214
+vendor/lib/libmm-color-convertor.so|e0033a1061209fa67a88a73d51cfed6a8587667f
+vendor/lib/libmmosal_proprietary.so|ad37cb2aae4e9841c9175fbd5247d491fa6a01ac
+vendor/lib/libOmxAacDec.so|29a83e21d270b0b9a648054913569de98bb12076
+vendor/lib/libOmxAlacDec.so|12888f60f3350d74442ec27200fbca3f0c7ced50
+vendor/lib/libOmxAlacDecSw.so|6bec19c7c1cac2036480b04e3fb998f473433e08
+vendor/lib/libOmxAmrDec.so|1c676febb9a996f6a1956effaa32110e082cd863
+vendor/lib/libOmxAmrwbplusDec.so|20f5a87244108f66b9412c2a674e7f599c31356d
+vendor/lib/libOmxApeDec.so|7423bdb478efaac50b656e7bde1566acd375d67b
+vendor/lib/libOmxApeDecSw.so|515cba101287c9a753b32cb29f415c0b48abeed9
+vendor/lib/libOmxDsdDec.so|1793f853c171f2317187df2cebefe07d17417c3d
+vendor/lib/libOmxEvrcDec.so|124ef7556aaebad5261e62e623ddbb34610852b6
+vendor/lib/libOmxG711Dec.so|be00f927b4bf7778218ed94e60ebc6b784a7bb18
+vendor/lib/libOmxQcelp13Dec.so|54f60b30a0d3d07a0f846028e48077035e50774d
+vendor/lib/libOmxVideoDSMode.so|5038c8e003496c1efe66681f24cc53d4623240c0
+vendor/lib/libOmxWmaDec.so|d92612bf69c037b86c0f3acbcac1b9976f1bee3f
+vendor/lib/libvqzip.so|224d6ed62e52b470d9821b99e59c0857609870a5
 
 # Mlipay - from wayne V11.0.3.0.PDCCNXM
 vendor/bin/mlipayd@1.1|4c30cfd1b32f99ff3043eadca8e7a4b7b9a00c79
