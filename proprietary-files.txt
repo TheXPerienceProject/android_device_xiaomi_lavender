@@ -1925,9 +1925,9 @@ vendor/bin/cnss-daemon
 vendor/bin/fstman|68971c9823929fb5c7d7ee4664f5d62508e0851c
 vendor/etc/wifi/fstman.ini|0583604009194da2c311adb80ef6c2fa9e3f4998
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|99fb118e36fc0e636da9813a47a2ab97cfe62a1c
--vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|bf310fa21ed2d3500f30228b36bcce3173b85d8b
+#-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|bf310fa21ed2d3500f30228b36bcce3173b85d8b
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|71a0ed501c544d0c78a72db8bc3bde05eea61010
--vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|9e02db5f6b99905b22b0814da97852dff38a578b
+#-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|9e02db5f6b99905b22b0814da97852dff38a578b
 
 # Wi-Fi Display - from LA.UM.8.2.r1-06300-sdm660.0
 vendor/bin/wifidisplayhalservice|7b84c067e9caf4350a2436a912f5957f57b42c7b
