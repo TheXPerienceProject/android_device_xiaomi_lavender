@@ -18,9 +18,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH) \
-    hardware/google/pixel \
-    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf \
+    hardware/google/pixel
     
 
 # Vendor properties
@@ -28,8 +26,7 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH) \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    vendor/qcom/opensource/commonsys-intf/bluetooth/overlay/qva
+    $(LOCAL_PATH)/overlay
 
 # RRO
 PRODUCT_ENFORCE_RRO_TARGETS := \
