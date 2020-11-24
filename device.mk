@@ -660,5 +660,5 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     wfd-legacy
 
-- include vendor/qcom/defs/product-defs/system/display-product-system.mk
-- include vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk
+-include vendor/qcom/defs/product-defs/system/display-product-system.mk
+-include vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk
