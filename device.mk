@@ -18,14 +18,18 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH) \
-    hardware/google/pixel
+    hardware/google/pixel \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
+    vendor/qcom/opensource/commonsys/system/bt/conf \
+    
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    vendor/qcom/opensource/commonsys-intf/bluetooth/overlay/qva
 
 # RRO
 PRODUCT_ENFORCE_RRO_TARGETS := \
@@ -143,6 +147,7 @@ BT += libbthost_if
 BT += libbt-logClient
 BT += bt_logger
 BT += libbluetooth_qti
+BT += libbluetooth_qti_jni
 BT += libbt-hidlclient
 BT += BluetoothExt
 BT += libbtconfigstore
@@ -151,15 +156,18 @@ BT += audio.hearing_aid.default_qti
 
 PRODUCT_PACKAGES += \
     $(BT) \
+    Bluetooth \
     liba2dpoffload \
     com.qualcomm.qti.bluetooth_audio@1.0 \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0 \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0 \
     vendor.qti.hardware.btconfigstore@2.0.vendor \
-    vendor.qti.hardware.bluetooth_dun@1.0
+    vendor.qti.hardware.bluetooth_dun@1.0 \
+    vendor.qti.hardware.bluetooth_dun-V1.0-java
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -459,6 +467,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
+    android.hardware.power-impl \
     vendor.xperience.power@1.0
 
 # Preopt SystemUI
@@ -480,8 +489,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service \
+    vendor.qti.hardware.vibrator.service
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -576,7 +584,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
+    android.hardware.usb@1.0-service
 
 # Wi-Fi Display
 #PRODUCT_BOOT_JARS += \
@@ -645,19 +653,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-###################################################################################
-# This is the End of target.mk file.
-# Now, Pickup other split product.mk files:
-###################################################################################
-$(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
-$(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
-###################################################################################
-# Pickup blobs to satisfy LMKD
-#$(call inherit-product, vendor/qcom/common/performance/perf-common.mk)
-###################################################################################
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     perf \
     telephony \
     wfd-legacy
+
+- include vendor/qcom/defs/product-defs/system/display-product-system.mk
+- include vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk

@@ -222,8 +222,9 @@ TARGET_LMKD_STATS_LOG := true
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
-# Remive NFC
+# Remove NFC
 TARGET_USES_NQ_NFC := false
+TARGET_USES_QSSI_NQ_NFC := false
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864 # 65536 * 1024
@@ -321,11 +322,3 @@ endif
 
 # inherit from the proprietary version
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
-
-#################################################################################
-# This is the End of BoardConfig.mk file.
-# Now, Pickup other split Board.mk files:
-#################################################################################
--include vendor/qcom/defs/board-defs/system/*.mk
--include vendor/qcom/defs/board-defs/vendor/*.mk
-#################################################################################
