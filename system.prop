@@ -47,6 +47,3 @@ persist.sys.df.extcolor.proc=0
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
-
-#FUSE
-persist.sys.fuse=false
