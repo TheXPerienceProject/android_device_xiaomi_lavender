@@ -649,11 +649,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 TARGET_COMMON_QTI_COMPONENTS := \
-    av \
     bt \
-    perf \
-    telephony \
-    wfd-legacy
-
--include vendor/qcom/defs/product-defs/system/display-product-system.mk
--include vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk
+    perf
