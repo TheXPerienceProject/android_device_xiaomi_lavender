@@ -138,6 +138,22 @@ on property:vendor.usb.controller=*
     chmod 0664 /sys/touchpanel/double_tap
     chmod 0664 /sys/touchpanel/reversed_keys
 
+# LMKD
+on property:ro.kernel.psi.enabled=1
+    setprop ro.lmk.low 1001
+    setprop ro.lmk.medium 800
+    setprop ro.lmk.critical 0
+    setprop ro.lmk.critical_upgrade false
+    setprop ro.lmk.upgrade_pressure 100
+    setprop ro.lmk.downgrade_pressure 100
+    setprop ro.lmk.kill_heaviest_task true
+    setprop ro.lmk.kill_timeout_ms 100
+    setprop ro.lmk.use_minfree_levels true
+    setprop ro.lmk.log_stats true
+    setprop ro.lmk.use_psi true
+    #Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1
+
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
     class core
