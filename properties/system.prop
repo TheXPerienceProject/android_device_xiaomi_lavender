@@ -166,3 +166,6 @@ sys.thermal.data.path=/data/vendor/thermal/
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
 ro.zram.periodic_wb_delay_hours=24
+
+# FUSE
+persist.sys.fuse.passthrough.enable=true
