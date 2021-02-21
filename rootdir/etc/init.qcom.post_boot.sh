@@ -480,22 +480,20 @@ function sdm660_sched_schedutil_dcvs() {
 
     if [ $KernelVersionA -ge 4 ] && [ $KernelVersionB -ge 19 ]; then
         # configure governor settings for little cluster
-        echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-        echo 1401600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
-        echo 633600 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
-        echo 902400 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
+        echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+        echo 1401600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
+        echo 633600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+        echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/rtg_boost_freq
 
         # configure governor settings for big cluster
-        echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
-        echo 1401600 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
-        echo 1113600 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
-        echo 0 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/rtg_boost_freq
+        echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
+        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
+        echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
+        echo 1113600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+        echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rtg_boost_freq
     else
         # configure governor settings for little cluster
         echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -515,7 +513,7 @@ function sdm660_sched_schedutil_dcvs() {
     #if the kernel version >=4.19,set input_boost_freq accordingly
     if [ $KernelVersionA -ge 4 ] && [ $KernelVersionB -ge 19 ]; then
         echo "0:1401600" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-        echo 40 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+        echo 80 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
     else
         echo "0:1401600" > /sys/module/cpu_boost/parameters/input_boost_freq
         echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
@@ -541,11 +539,11 @@ function sdm660_sched_schedutil_dcvs() {
             echo "bw_hwmon" > $cpubw/governor
             echo 50 > $cpubw/polling_interval
             echo 762 > $cpubw/min_freq
-            echo "1525 3143 5859 7759 9887 10327 11863 13763" > $cpubw/bw_hwmon/mbps_zones
+            echo "2288 3440 4173 5195 5859 7759 10322 11863 13763" > $cpubw/bw_hwmon/mbps_zones
             echo 4 > $cpubw/bw_hwmon/sample_ms
             echo 85 > $cpubw/bw_hwmon/io_percent
-            echo 100 > $cpubw/bw_hwmon/decay_rate
-            echo 50 > $cpubw/bw_hwmon/bw_step
+            echo 90 > $cpubw/bw_hwmon/decay_rate
+            echo 190 > $cpubw/bw_hwmon/bw_step
             echo 20 > $cpubw/bw_hwmon/hist_memory
             echo 0 > $cpubw/bw_hwmon/hyst_length
             echo 80 > $cpubw/bw_hwmon/down_thres
@@ -553,21 +551,6 @@ function sdm660_sched_schedutil_dcvs() {
             echo 250 > $cpubw/bw_hwmon/up_scale
             echo 1600 > $cpubw/bw_hwmon/idle_mbps
         done
-
-        if [ $KernelVersionA -ge 4 ] && [ $KernelVersionB -le 14 ]; then
-            for memlat in $device/*cpu*-lat/devfreq/*cpu*-lat
-            do
-                echo "mem_latency" > $memlat/governor
-                echo 10 > $memlat/polling_interval
-                echo 400 > $memlat/mem_latency/ratio_ceil
-            done
-
-            for latfloor in $device/*cpu*-ddr-latfloor*/devfreq/*cpu-ddr-latfloor*
-            do
-                echo "compute" > $latfloor/governor
-                echo 10 > $latfloor/polling_interval
-            done
-        fi
     done
 
     if [ $KernelVersionA -ge 4 ] && [ $KernelVersionB -ge 19 ]; then
@@ -576,6 +559,12 @@ function sdm660_sched_schedutil_dcvs() {
         setprop vendor.dcvs.prop 1
     fi
 
+    # colcoation v3 disabled
+    echo 0 > /proc/sys/kernel/sched_min_task_util_for_boost
+    echo 0 > /proc/sys/kernel/sched_min_task_util_for_colocation
+
+    # Turn off scheduler boost at the end
+    echo 0 > /proc/sys/kernel/sched_boost
 }
 
 target=`getprop ro.board.platform`
@@ -2664,18 +2653,21 @@ case "$target" in
         case "$soc_id" in
                 "317" | "324" | "325" | "326" | "345" | "346" )
 
+            # Core control is temporarily disabled till bring up
+            echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
             echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+
+            # Core control parameters on big
+            echo 40 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
             echo 60 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
-            echo 30 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
             echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
-            echo 1 > /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster
             echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
 
             # Setting b.L scheduler parameters
-            echo 96 > /proc/sys/kernel/sched_upmigrate
-            echo 90 > /proc/sys/kernel/sched_downmigrate
-            echo 140 > /proc/sys/kernel/sched_group_upmigrate
-            echo 120 > /proc/sys/kernel/sched_group_downmigrate
+            echo 67 > /proc/sys/kernel/sched_downmigrate
+            echo 77 > /proc/sys/kernel/sched_upmigrate
+            echo 85 > /proc/sys/kernel/sched_group_downmigrate
+            echo 100 > /proc/sys/kernel/sched_group_upmigrate
 
             # cpuset settings
             echo 0-3 > /dev/cpuset/background/cpus
