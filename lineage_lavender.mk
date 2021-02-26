@@ -19,11 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Bianca stuff
+$(call inherit-product, vendor/bianca/config/common_full_phone.mk)
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Official tag
+BIANCA_OFFICIAL := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
