@@ -452,8 +452,3 @@ if [ -f /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies ]; then
     gpu_freq=`cat /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies` 2> /dev/null
     setprop vendor.gpu.available_frequencies "$gpu_freq"
 fi
-
-# check psi enable or not
-if [ -d /proc/pressure ]; then
-    setprop ro.kernel.psi.enabled 1
-fi
