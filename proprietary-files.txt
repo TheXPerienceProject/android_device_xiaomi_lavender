@@ -1466,7 +1466,7 @@ system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f00
 system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94c3c35a8d
 system_ext/framework/embmslibrary.jar|841d246e003d7d0baf27ef5937366cc34636bfc1
 system_ext/framework/qcrilhook.jar|cad8f156a4fde33cd59f25aaf1a73d1da3c8aee0
-system_ext/framework/qti-telephony-common.jar|c4d8a8b797ebcc7c73384ce3a10ba9e94fb1b460
+system_ext/framework/qti-telephony-common.jar|6b9666fe2c361ba06328ba5d6ef807b621763052
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|ca380e9afe21333715213ad79156b828ad3902a7
 vendor/bin/adpl|2990c3789e20f93b364863fa20b65f35e05bf5fa
 vendor/bin/hw/qcrild|5e39ba4874188ccdbf5fc1b421d28398e845cdb1
