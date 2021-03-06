@@ -287,9 +287,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    fstab.qcom \
-    init.device.rc
-
+    fstab.qcom
 
 # IRQ
 PRODUCT_COPY_FILES += \
