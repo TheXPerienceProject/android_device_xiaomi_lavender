@@ -1069,3 +1069,6 @@ vendor/lib64/libqtikeymaster4.so
 # Sensors - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
+
+# Wifi - from jasmine
+vendor/bin/cnss-daemon
