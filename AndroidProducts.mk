@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_lavender.mk
+    $(LOCAL_DIR)/xperience_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_lavender-user \
-    nad_lavender-userdebug \
-    nad_lavender-eng
+    xperience_lavender-user \
+    xperience_lavender-userdebug \
+    xperience_lavender-eng
