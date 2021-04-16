@@ -204,7 +204,11 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    XiaomiDoze
+    XPerienceDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=xiaomi.sensor.pickup
 
 # DRM
 PRODUCT_PACKAGES += \
