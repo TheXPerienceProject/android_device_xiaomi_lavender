@@ -253,3 +253,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WFD
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.debug.wfd.enable=0
+
+#dont force privapp permissions for now
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.control_privapp_permissions=log
