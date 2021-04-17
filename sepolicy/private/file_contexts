@@ -1,2 +1,5 @@
 # Executables
 /system/bin/chargeonlymode                    u:object_r:charger_exec:s0
+
+# OTA packages
+/data/xperience_updates(/.*)?           u:object_r:ota_package_file:s0
