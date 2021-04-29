@@ -153,9 +153,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
+# era
+#ifeq ($(PRODUCT_NAME),derp_miatoll)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4:64 \

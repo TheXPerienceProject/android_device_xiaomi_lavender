@@ -100,6 +100,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
+-include vendor/xiaomi/miuicamera/BoardConfigAnx.mk
 
 # Display
 TARGET_SCREEN_DENSITY := 420
