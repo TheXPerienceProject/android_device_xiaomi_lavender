@@ -267,6 +267,14 @@
     <!-- Enable doze mode -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
+
+    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">true</bool>
+
+    <!-- Type of the pickup sensor used when config_dozePulsePickup is enabled. -->
+    <string name="config_dozePickupSensorType" translatable="false">xiaomi.sensor.pickup</string>
+
+
     <!-- Screen brightness when dozing. -->
     <integer name="config_screenBrightnessDoze">17</integer>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
