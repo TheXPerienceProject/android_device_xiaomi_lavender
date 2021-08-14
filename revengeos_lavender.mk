@@ -29,23 +29,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
+# Inherit some common revengeos stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-EVO_DONATE_URL := https://paypal.me/Sap1k
-EVO_MAINTAINER := Sap1k
-EVO_SUPPORT_URL := https://t.me/EvolutionXLavender
+REVENGEOS_BUILDTYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender" \
-    PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.9.0.PFGMIXM release-keys" 
+    PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys" 
 
 # Device identifier
-PRODUCT_NAME := aosp_lavender
+PRODUCT_NAME := revengeos_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender

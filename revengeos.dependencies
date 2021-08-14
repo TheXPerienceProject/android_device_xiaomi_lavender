@@ -1,0 +1,41 @@
+[
+  {
+    "remote": "devices",
+    "repository"  : "device_xiaomi_lavender-common",
+    "target_path" : "device/xiaomi/sdm660-common"
+  },
+  {
+    "remote": "devices",
+    "repository"  : "vendor_xiaomi_lavender",
+    "target_path" : "vendor/xiaomi/lavender"
+  },
+  {
+    "remote": "devices",
+    "repository": "vendor_xiaomi_lavender-common",
+    "target_path": "vendor/xiaomi/sdm660-common"
+  },
+  {
+    "remote": "github",
+    "repository": "OdSazib/halcyon_kernel_xiaomi_sdm660",
+    "target_path": "kernel/xiaomi/sdm660",
+    "branch": "4.19"
+  },
+  {
+    "remote": "github",
+    "repository": "raiyanbinmohsin/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom-caf/sdm660/audio",
+    "branch": "sdm660-4.19"  
+  },
+  {
+    "remote": "github",
+    "repository": "raiyanbinmohsin/android_hardware_qcom_display",
+    "target_path": "hardware/qcom-caf/sdm660/display",
+    "branch": "sdm660-4.19"  
+  },
+  {
+    "remote": "github",
+    "repository": "raiyanbinmohsin/android_hardware_qcom_media",
+    "target_path": "hardware/qcom-caf/sdm660/media",
+    "branch": "sdm660-4.19"  
+  }
+]
