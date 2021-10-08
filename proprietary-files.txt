@@ -504,14 +504,6 @@ vendor/lib64/libOmxQcelp13Dec.so|2c9039f7a6a11056a15d7d71f1cf551b5835ec93
 vendor/lib64/libOmxWmaDec.so|b1c761ccabe793268d9f1c791de25988a64050a6
 vendor/lib64/libmm-color-convertor.so|f169b7f24612b9a0c93b9d2eeb29cec04b0e4ec8
 
-# Mlipay - from wayne V9.7.4
-vendor/bin/mlipayd@1.1|13e9167024fd2dc49a56ed27e583057408dcc1eb
-vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
-vendor/lib64/libmlipay.so|6cacf75f4a7eb50cbb7de384a3cfc1702a3a5f4a
-vendor/lib64/libmlipay@1.1.so|4dfa016779bcba8da2ff293e5112c678044c6474
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|d0bb854210433066945f9d6e7943d08a8435e746
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|785984e3c3b30671b78624484899dd418979cb56
-
 # MM OSAL - from LA.UM.9.11.r1-03900-NICOBAR.0
 vendor/lib/libmmosal.so|40dc5a502a63536a31083dc99776738171e07c86
 vendor/lib64/libmmosal.so|01ca88394da8db55606462494713612141880067
