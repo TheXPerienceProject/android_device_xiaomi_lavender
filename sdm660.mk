@@ -218,6 +218,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.idle_time=32767
 
+# IORap
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # Device Parts
 PRODUCT_PACKAGES += \
     DeviceDoze \
