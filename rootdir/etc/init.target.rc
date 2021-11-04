@@ -36,10 +36,6 @@ on early-init
     write /proc/sys/kernel/sched_energy_aware 0
 
 on init
-    write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 5
-    write /dev/stune/top-app/schedtune.prefer_idle 1
-
     # Setup permission for Power HAL
     chown system system /dev/stune/top-app/schedtune.boost
     chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
@@ -263,6 +259,17 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
 on property:sys.boot_completed=1
     # Enable EAS
     write /proc/sys/kernel/sched_energy_aware 1
+    
+    # Schedtune
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/foreground/schedtune.prefer_high_cap 0
+    write /dev/stune/foreground/schedtune.boost 0
+    write /dev/stune/schedtune.prefer_idle 0
+    write /dev/stune/schedtune.prefer_high_cap 0
+    write /dev/stune/schedtune.boost 0
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.prefer_high_cap 0
+    write /dev/stune/top-app/schedtune.boost 10
 
 on property:sys.boot_completed=1 && property:ro.boot.fpsensor=gdx
     # stop fps_hal
