@@ -214,6 +214,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
 
+# Display prop to disable Idle time out
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.idle_time=32767
+
 # Device Parts
 PRODUCT_PACKAGES += \
     DeviceDoze \
