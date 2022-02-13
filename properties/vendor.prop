@@ -113,6 +113,7 @@ ro.kernel.ebpf.supported=true
 camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam
 persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.preview.ubwc=0
+persist.vendor.camera.perflock.enable=0
 vendor.camera.aux.packageblacklist=com.discord
 vendor.camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam
 vendor.video.disable.ubwc=1
