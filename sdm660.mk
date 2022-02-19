@@ -64,7 +64,7 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 endif
 
-# Adapt Launch 
+# Adapt Launch
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml
 
@@ -144,8 +144,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.6 \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    vendor.qti.hardware.camera.device@1.0
 
 PRODUCT_PACKAGES += \
     Camera2
@@ -172,6 +171,8 @@ PRODUCT_PACKAGES += \
 # Crypto
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.keymaster@4.0.vendor \
     android.hardware.keymaster@3.0.vendor
 
 # Dalvik
@@ -232,7 +233,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.4.vendor
+    android.hardware.drm@1.4.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.0.vendor
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
