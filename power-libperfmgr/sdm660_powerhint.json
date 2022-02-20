@@ -2,9 +2,21 @@
   "Nodes": [
     {
       "PowerHint": "CAMERA_STREAMING_MID",
-      "Node": "CDSchedtuneBoost",
+      "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1"
+      "Value": "1401600"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_MID",
+      "Node": "CPUBWSampleMs",
+      "Duration": 0,
+      "Value": "10"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_MID",
+      "Node": "CPUBWIOPercent",
+      "Duration": 0,
+      "Value": "85"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
@@ -23,8 +35,13 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
+        "1747200",
         "1401600",
         "1113600"
+        "902400",
+        "1113600",
+        "1536000",
+        "1843200"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -34,7 +51,9 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
+        "1536000",
         "1401600",
+        "902400",
         "1113600",
         "633600"
       ],
@@ -46,6 +65,12 @@
       "Values": [
         "9999999",
         "1401600"
+        "1747200",
+        "1113600",
+        "1401600",
+        "1958400",
+        "2150400",
+        "2208000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -55,7 +80,9 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
+        "1747200",
         "1401600",
+        "0",
         "1113600"
       ],
       "ResetOnInit": true
@@ -140,15 +167,6 @@
     {
       "Name": "TASchedtuneHighCap",
       "Path": "/dev/stune/top-app/schedtune.prefer_high_cap",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CDSchedtuneBoost",
-      "Path": "/dev/stune/camera-daemon/schedtune.boost",
       "Values": [
         "1",
         "0"
@@ -291,9 +309,15 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "1401600"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1113600"
+      "Value": "1401600"
     },
     {
       "PowerHint": "INTERACTION",
