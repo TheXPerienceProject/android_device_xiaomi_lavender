@@ -21,3 +21,5 @@ allow hal_power_default self:capability sys_nice;
 
 # Set scheduling info for system_server (for adpf)
 allow hal_power_default system_server:process setsched;
+
+dontaudit hal_power_default self:capability dac_override;
