@@ -36,7 +36,9 @@ dalvik.vm.debug.alloc=0
 # Display
 debug.performance.tuning=1
 persist.vendor.color.matrix=2
+debug.renderengine.backend=skiaglthreaded
 persist.hwc.enable_vds=1
+renderthread.skia.reduceopstasksplitting=true
 ro.qualcomm.cabl=0
 video.disable.ubwc=1
 vendor.display.disable_rotator_downscale=1
