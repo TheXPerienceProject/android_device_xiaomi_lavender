@@ -18,10 +18,14 @@ persist.cam.pp.feat.mask                    u:object_r:vendor_camera_prop:s0
 persist.camera.                             u:object_r:vendor_camera_prop:s0
 persist.camera.debug.logfile                u:object_r:vendor_camera_prop:s0
 persist.camera.preview.ubwc                 u:object_r:vendor_camera_prop:s0
+persist.capture.burst.exposures             u:object_r:vendor_camera_prop:s0
 persist.debug.sf.showfps                    u:object_r:vendor_camera_prop:s0
+persist.debug.set.fixedfps                  u:object_r:vendor_camera_prop:s0
+persist.denoise.process.plates              u:object_r:vendor_camera_prop:s0
 persist.enable.max.pending.buf              u:object_r:vendor_camera_prop:s0
 persist.partial.skip                        u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.                      u:object_r:vendor_camera_prop:s0
+persist.vendor.mwqem.enable                 u:object_r:vendor_camera_prop:s0
 ro.camera.req.fmq.size                      u:object_r:vendor_camera_prop:s0
 ro.camera.res.fmq.size                      u:object_r:vendor_camera_prop:s0
 sys.camera                                  u:object_r:hal_camera_prop:s0
