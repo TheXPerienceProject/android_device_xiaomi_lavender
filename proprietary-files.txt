@@ -211,6 +211,20 @@ vendor/bin/ssgtzd|f2f473c1ecf4323bd206ea90c948c7d34ce287de
 vendor/etc/init/ssgtzd.rc|be60402995a8b6dcec3a726b83e7ae2de52017a6
 vendor/lib64/libminksocket.so|4a67f3a5f25fbe0419b1dc7379b75196236aecd3
 
+# Common Camera - from Pie
+vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
+vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
+vendor/lib/libmmcamera_chromaflash_lib.so|2ac15c08e7916b039b9d053a2d5c6846ed28ae41
+vendor/lib/libmmcamera_llvd.so|6fca05767e27b9a5f0050fc9296069c09e9f5dba
+vendor/lib/libmmcamera_optizoom_lib.so|0d54dcba2f86236b66384aa83861693451ee0451
+vendor/lib/libmmcamera_stillmore_lib.so|d313da5abb76da8a4328d18e13aaa3f042f63e47
+vendor/lib/libmmcamera_trueportrait_lib.so|41f491298caf7ddd2fd19b9f71906fd9f2a826ff
+vendor/lib/libmmcamera_ubifocus_lib.so|204680decba87b04a2eb5ad4746e69f8e0c413bc
+vendor/lib/liboptizoom.so|1e92993743636c045438f1f15c07c1e835d9ca46
+vendor/lib/libseemore.so|cd207541c3cdd97eb25ef2a9c63662054393e81f
+vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
+vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
+
 # Data - from LA.UM.9.12.r1-10800-SMxx50.0-AOSPA
 vendor/bin/ATFWD-daemon|b7ef8084898b2de2793bcc28faf8eca4451dfa3e
 vendor/bin/adpl|38e772278fa49d2b84ea9f9e08ad4128edaa3a63
