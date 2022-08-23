@@ -36,6 +36,7 @@ USE_PIXEL_CHARGING := true
 TARGET_USES_BLUR := true
 
 # Build Fingerprint
+BUILD_FINGERPRINT := "google/coral/coral:13/TP1A.220624.014/8819323:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender" \
