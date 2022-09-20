@@ -44,15 +44,6 @@ genfscon sysfs /devices/virtual/graphics/fb2                                    
 # Display
 genfscon sysfs /devices/virtual/graphics/fb0/idle_state                                                                                              u:object_r:sysfs_graphics:s0
 
-# Power
-genfscon sysfs /devices/platform/soc/soc:qcom,gpubw                                                                                                  u:object_r:sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw                                                                                                  u:object_r:sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,mincpubw                                                                                               u:object_r:sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-ddr-lat                                                                                            u:object_r:sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-ddr-lat                                                                                            u:object_r:sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-ddr-latfloor                                                                                            u:object_r:sysfs_devfreq:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-ddr-latfloor                                                                                            u:object_r:sysfs_devfreq:s0
-
 # Touchpanel
 genfscon sysfs /touchpanel                                                                                                                           u:object_r:sysfs_touchpanel:s0
 
