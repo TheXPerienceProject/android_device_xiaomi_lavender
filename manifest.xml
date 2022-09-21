@@ -117,6 +117,11 @@
         <fqname>@1.0::IUsb/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.perf</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.2::IPerf/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.wifi.hostapd</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::IHostapdVendor/default</fqname>
