@@ -14,13 +14,69 @@ cc_library {
     srcs: [
         "disp-power/InteractionHandler.cpp",
     ],
-     shared_libs: [
+    shared_libs: [
         "libbase",
         "libcutils",
         "liblog",
         "libperfmgr",
         "libutils",
     ],
+}
+
+cc_library {
+    name: "libadaptivecpu-xiaomi_sdm660",
+    proprietary: true,
+    vendor: true,
+    srcs: [
+        "adaptivecpu/AdaptiveCpu.cpp",
+        "adaptivecpu/AdaptiveCpuConfig.cpp",
+        "adaptivecpu/AdaptiveCpuStats.cpp",
+        "adaptivecpu/CpuFrequencyReader.cpp",
+        "adaptivecpu/CpuLoadReaderProcStat.cpp",
+        "adaptivecpu/CpuLoadReaderSysDevices.cpp",
+        "adaptivecpu/Device.cpp",
+        "adaptivecpu/KernelCpuFeatureReader.cpp",
+        "adaptivecpu/Model.cpp",
+        "adaptivecpu/RealFilesystem.cpp",
+        "adaptivecpu/ThrottleDecision.cpp",
+        "adaptivecpu/TimeSource.cpp",
+        "adaptivecpu/WorkDurationProcessor.cpp",
+    ],
+    shared_libs: [
+        "android.hardware.power-V3-ndk",
+        "libbase",
+        "liblog",
+        "libperfmgr",
+        "libutils",
+        "libcutils",
+    ],
+}
+
+cc_test {
+    name: "libadaptivecpu_test-xiaomi_sdm660",
+    proprietary: true,
+    vendor: true,
+    srcs: [
+        "adaptivecpu/tests/AdaptiveCpuConfigTest.cpp",
+        "adaptivecpu/tests/AdaptiveCpuStatsTest.cpp",
+        "adaptivecpu/tests/CpuFrequencyReaderTest.cpp",
+        "adaptivecpu/tests/CpuLoadReaderProcStatTest.cpp",
+        "adaptivecpu/tests/CpuLoadReaderSysDevicesTest.cpp",
+        "adaptivecpu/tests/KernelCpuFeatureReaderTest.cpp",
+        "adaptivecpu/tests/ModelTest.cpp",
+        "adaptivecpu/tests/WorkDurationProcessorTest.cpp",
+    ],
+    static_libs: [
+        "libadaptivecpu-xiaomi_sdm660",
+        "libgmock",
+        "android.hardware.power-V3-ndk",
+    ],
+    shared_libs: [
+        "liblog",
+        "libbase",
+        "libcutils",
+    ],
+    test_suites: ["device-tests"],
 }
 
 cc_binary {
@@ -30,7 +86,8 @@ cc_binary {
     vintf_fragments: ["aidl/android.hardware.power-service.xiaomi_sdm660.xml"],
     vendor: true,
     shared_libs: [
-        "android.hardware.power-V2-ndk",
+        "android.hardware.power-V3-ndk",
+        "libadaptivecpu-xiaomi_sdm660",
         "libbase",
         "libcutils",
         "liblog",
