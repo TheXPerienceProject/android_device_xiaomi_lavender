@@ -1,0 +1,51 @@
+//
+// Copyright (C) 2018 The Android Open Source Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+cc_library {
+    name: "libdisppower-xiaomi_sdm660",
+    proprietary: true,
+    srcs: [
+        "disp-power/InteractionHandler.cpp",
+    ],
+     shared_libs: [
+        "libbase",
+        "libcutils",
+        "liblog",
+        "libperfmgr",
+        "libutils",
+    ],
+}
+
+cc_binary {
+    name: "android.hardware.power-service.xiaomi_sdm660-libperfmgr",
+    relative_install_path: "hw",
+    init_rc: ["aidl/android.hardware.power-service.xiaomi_sdm660-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.xiaomi_sdm660.xml"],
+    vendor: true,
+    shared_libs: [
+        "android.hardware.power-V2-ndk",
+        "libbase",
+        "libcutils",
+        "liblog",
+        "libutils",
+        "libbinder_ndk",
+        "libdisppower-xiaomi_sdm660",
+        "libperfmgr",
+        "libprocessgroup",
+        "pixel-power-ext-V1-ndk",
+    ],
+    srcs: [
+        "aidl/service.cpp",
+        "aidl/Power.cpp",
+        "aidl/PowerExt.cpp",
+        "aidl/PowerHintSession.cpp",
+        "aidl/PowerSessionManager.cpp",
+    ],
+}
