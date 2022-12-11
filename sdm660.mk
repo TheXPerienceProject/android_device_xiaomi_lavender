@@ -546,6 +546,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     sqlite3
 
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
+    
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
