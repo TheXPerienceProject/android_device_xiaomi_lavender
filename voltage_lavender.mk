@@ -29,11 +29,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common Nusantara stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-USE_PIXEL_CHARGING := true
-TARGET_USES_BLUR := true
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+
+# Official-ify
+VOLTAGE_BUILD_TYPE := OFFICIAL
+
+TARGET_BOOT_ANIMATION_RES := 2160
 
 # Build Fingerprint
 BUILD_FINGERPRINT := "google/coral/coral:13/TP1A.220624.014/8819323:user/release-keys"
@@ -43,7 +45,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys"
 
 # Device identifier
-PRODUCT_NAME := arrow_lavender
+PRODUCT_NAME := voltage_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
