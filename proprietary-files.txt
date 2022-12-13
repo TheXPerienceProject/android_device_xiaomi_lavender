@@ -1033,18 +1033,12 @@ vendor/lib64/hw/gatekeeper.sdm660.so
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
 vendor/lib/libqtikeymaster4.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
 # Sensors - from LA.UM.8.2.1.r1-05600-sdm660
-vendor/lib/sensors.ssc.so
-vendor/lib64/sensors.ssc.so
+vendor/lib/sensors.ssc.so|9276c8863dccd2cd13e0a29083e75648ab0c0e97
+vendor/lib64/sensors.ssc.so|da3e7b1722ea136bd76b716ddd2ec814ee3cc0b7
 
 # Wifi - from LA.UM.8.2.1.r1-05600-sdm660
-vendor/bin/cnss-daemon
+vendor/bin/cnss-daemon|a7b196d0c8204f6fbe445710e8d062d0c2d9b42f
