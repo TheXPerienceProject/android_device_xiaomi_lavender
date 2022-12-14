@@ -1,8 +1,6 @@
 # ART
 pm.dexopt.ab-ota=speed-profile
 dalvik.vm.dex2oat64.enabled=true
-ro.vendor.qti.am.reschedule_service=true
-ro.sys.fw.dex2oat_thread_count=8
 dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.boot-dex2oat-threads=8
 dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
@@ -16,8 +14,6 @@ dalvik.vm.image-dex2oat-threads=8
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.video=true
-persist.audio.in_mmap_delay_micros=100
-persist.audio.out_mmap_delay_micros=150
 persist.vendor.audio.fluence.speaker=false
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=true
@@ -102,15 +98,9 @@ persist.bluetooth.bluetooth_audio_hal.disabled=false
 persist.vendor.qcom.bluetooth.enable.splita2dp=false
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
-bt.max.hfpclient.connections=1
 ro.vendor.fm.use_audio_session=true
-vendor.hw.fm.init=0
-
-# BPF
-ro.kernel.ebpf.supported=true
 
 # Camera
-camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam
 persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.preview.ubwc=0
 persist.vendor.camera.perflock.enable=0
@@ -122,19 +112,8 @@ vidc.enc.dcvs.extra-buff-count=2
 # Codec2 switch
 debug.media.codec2=2
 
-# Data
-persist.data.df.dev_name=rmnet_usb0
-persist.vendor.data.profile_update=true
-
 # DRM
 drm.service.enabled=true
-
-# Dirac
-ro.audio.soundfx.dirac=true
-persist.audio.dirac.speaker=true
-persist.dirac.acs.controller=qem
-persist.dirac.acs.ignore_error=1
-persist.dirac.acs.storeSettings=1
 
 # Display
 debug.cpurend.vsync=false
@@ -145,21 +124,15 @@ vendor.gralloc.disable_ahardware_buffer=1
 debug.gralloc.enable_fb_ubwc=1
 vendor.opengles.version=196610
 dev.pm.dyn_samplingrate=1
-persist.demo.hdmirotationlock=false
 ro.opengles.version=196610
 ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
-
-# GPS
-persist.backup.ntpServer="0.pool.ntp.org"
-persist.vendor.overlay.izat.optin=rro
 
 # Graphics
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
 # HAL1 app list
-camera.hal1.packagelist=com.android.camera,com.android.camera2,com.instagram.android
 vendor.camera.hal1.packagelist= com.android.camera,com.android.camera2,com.instagram.android
 
 # Media
@@ -170,19 +143,13 @@ vendor.vidc.enc.disable.pq=true
 vendor.vidc.enc.disable_bframes=1
 media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
-media.aac_51_output_enabled=true
-mm.enable.smoothstreaming=true
-vidc.enc.target_support_bframe=1
-vendor.mm.enable.qcom_parser=13631487
 vendor.video.disable.ubwc=1
-ro.media.recorder-max-base-layer-fps=60
 
 # Misc
 keyguard.no_require_sim=true
 persist.vendor.delta_time.enable=true
 qemu.hw.mainkeys=0
 ro.com.android.dataroaming=false
-ro.vendor.qti.sys.fw.bservice_enable=true
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Netflix
@@ -200,20 +167,12 @@ ro.vendor.perf.scroll_opt=true
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
-persist.dbg.ims_volte_enable=1
-persist.debug.coresight.config=stm-events
-persist.radio.add_power_save=1
-persist.radio.aosp_usr_pref_sel=true
-persist.radio.calls.on.ims=1
-persist.radio.data_con_rprt=1
 persist.radio.multisim.config=dsds
-persist.radio.VT_CAM_INTERFACE=2
 persist.sys.fflag.override.settings_provider_model=false
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 persist.vendor.dpmhalservice.enable=1
-persist.vendor.qti.telephony.vt_cam_interface=2
 persist.vendor.radio.aosp_usr_pref_sel=true
 persist.vendor.radio.add_power_save=1
 persist.vendor.radio.apm_sim_not_pwdn=1
@@ -231,7 +190,6 @@ persist.vendor.radio.force_ltd_sys_ind=1
 persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.procedure_bytes=SKIP
-ril.subscription.types=RUIM,NV
 ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.use_data_netmgrd=true
 ro.vendor.qti.va_aosp.support=1
@@ -280,9 +238,6 @@ ro.surface_flinger.use_color_management=true
 
 # System
 persist.sys.binary_xml=false
-
-# System restart
-ro.build.shutdown_timeout=2
 
 # USB
 vendor.usb.diag.func.name=diag
