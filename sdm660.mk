@@ -600,6 +600,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     android.hardware.wifi@1.5.vendor \
+    android.hardware.wifi.hostapd@1.0 \
+    android.hardware.wifi.hostapd@1.0.vendor \
+    android.hardware.wifi.hostapd@1.1 \
+    android.hardware.wifi.hostapd@1.1.vendor \
     hostapd \
     libwifi-hal-qcom \
     TetheringConfigOverlay \
