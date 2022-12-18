@@ -12,6 +12,7 @@ allow hal_camera_default diag_device:chr_file rw_file_perms;
 allow hal_camera_default mnt_vendor_file:dir search;
 allow hal_camera_default sysfs:file { getattr open read };
 allow hal_camera_default self:socket { read write };
+allow hal_camera_default system_data_file:dir { search open };
 
 r_dir_file(hal_camera_default, sysfs_kgsl)
 
