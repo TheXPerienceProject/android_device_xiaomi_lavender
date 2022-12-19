@@ -135,3 +135,4 @@
         <param DEVICE_HANDSET_MIC_ECPP_CPE="BACKEND_ECPP" />
     </backend_type>
 </sound_trigger_platform_info>
+
