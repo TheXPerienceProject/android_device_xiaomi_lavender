@@ -1040,5 +1040,9 @@ vendor/lib64/libqtikeymaster4.so
 vendor/lib/sensors.ssc.so|9276c8863dccd2cd13e0a29083e75648ab0c0e97
 vendor/lib64/sensors.ssc.so|da3e7b1722ea136bd76b716ddd2ec814ee3cc0b7
 
+# Widevine
+vendor/lib/liboemcrypto.so
+vendor/lib64/liboemcrypto.so
+
 # Wifi - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/bin/cnss-daemon|a7b196d0c8204f6fbe445710e8d062d0c2d9b42f
