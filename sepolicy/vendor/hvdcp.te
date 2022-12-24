@@ -1,0 +1,2 @@
+allow hvdcp self:capability sys_admin;
+allow hvdcp vendor_sysfs_hvdcp:file r_file_perms;

@@ -1,0 +1,2 @@
+binder_call(system_app, storaged)
+get_prop(system_app, qemu_hw_prop)

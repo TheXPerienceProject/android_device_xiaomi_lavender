@@ -1,0 +1,79 @@
+# Audio
+audio.sys.noisy.broadcast.delay         u:object_r:vendor_default_prop:s0
+audio.sys.offload.pstimeout.secs        u:object_r:vendor_default_prop:s0
+audio_hal.in_period_size                u:object_r:vendor_default_prop:s0
+audio_hal.period_multiplier             u:object_r:vendor_default_prop:s0
+persist.audio.fluence.voicecomm         u:object_r:vendor_default_prop:s0
+
+# Camera
+camera.clientname                           u:object_r:vendor_camera_prop:s0
+camera.cpp.dumpvideopayload                 u:object_r:vendor_camera_prop:s0
+camera.cpp.dumppreviewpayload               u:object_r:vendor_camera_prop:s0
+camera.cpp.dumpreprocesspayload             u:object_r:vendor_camera_prop:s0
+camera.sensor.                              u:object_r:vendor_camera_prop:s0
+cameradaemon.SaveMemAtBoot                  u:object_r:vendor_camera_prop:s0
+cpp.set.clock                               u:object_r:vendor_camera_prop:s0
+disable.cpp.power.collapse                  u:object_r:vendor_camera_prop:s0
+persist.cam.pp.feat.mask                    u:object_r:vendor_camera_prop:s0
+persist.camera.                             u:object_r:vendor_camera_prop:s0
+persist.camera.debug.logfile                u:object_r:vendor_camera_prop:s0
+persist.camera.preview.ubwc                 u:object_r:vendor_camera_prop:s0
+persist.capture.burst.exposures             u:object_r:vendor_camera_prop:s0
+persist.debug.sf.showfps                    u:object_r:vendor_camera_prop:s0
+persist.debug.set.fixedfps                  u:object_r:vendor_camera_prop:s0
+persist.denoise.process.plates              u:object_r:vendor_camera_prop:s0
+persist.enable.max.pending.buf              u:object_r:vendor_camera_prop:s0
+persist.partial.skip                        u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.                      u:object_r:vendor_camera_prop:s0
+persist.vendor.mwqem.enable                 u:object_r:vendor_camera_prop:s0
+ro.camera.req.fmq.size                      u:object_r:vendor_camera_prop:s0
+ro.camera.res.fmq.size                      u:object_r:vendor_camera_prop:s0
+sys.camera                                  u:object_r:hal_camera_prop:s0
+ubwc.no.compression                         u:object_r:vendor_camera_prop:s0
+vendor.camera.                              u:object_r:vendor_camera_prop:s0
+vendor.camera.eis.gyro_name                 u:object_r:vendor_camera_prop:s0
+vidc.enc.dcvs.extra-buff-count              u:object_r:vendor_camera_prop:s0
+video.disable.ubwc                          u:object_r:vendor_camera_prop:s0
+
+# Dirac
+persist.audio.dirac.                    u:object_r:dirac_prop:s0
+
+# Camera IDs
+persist.camera.module.info                  u:object_r:vendor_camera_prop:s0
+persist.camera.module.infoext               u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.mi.module.info        u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.mi.module.infoext     u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.mi.module.infoext2    u:object_r:vendor_camera_prop:s0
+
+# Display
+ro.vendor.display.type                  u:object_r:vendor_display_prop:s0
+
+# Fingerprint
+fpc_kpi                                 u:object_r:vendor_default_prop:s0
+gf.debug.dump_data                      u:object_r:vendor_default_prop:s0
+persist.sys.fp.                         u:object_r:hal_fingerprint_prop:s0
+persist.vendor.sys.fp.                  u:object_r:hal_fingerprint_prop:s0
+ro.boot.fp.                             u:object_r:hal_fingerprint_prop:s0
+ro.boot.fpsensor                        u:object_r:hal_fingerprint_prop:s0
+sys.fp.                                 u:object_r:hal_fingerprint_prop:s0
+
+# Hardware
+ro.hardware.chipname                    u:object_r:exported_default_prop:s0
+
+# Media
+gpu.stats.debug.level                   u:object_r:vendor_default_prop:s0
+
+# MPCTL
+sys.post_boot.parsed                    u:object_r:vendor_mpctl_prop:s0
+
+# Power
+vendor.powerhal.                        u:object_r:vendor_power_prop:s0
+vendor.powerhal.audio                   u:object_r:vendor_power_prop:s0
+vendor.powerhal.dalvik.                 u:object_r:vendor_power_prop:s0
+
+# RIL
+ro.build.software.version               u:object_r:telephony_status_prop:s0
+ro.product.mod_device                   u:object_r:telephony_status_prop:s0
+
+# Thermal engine
+vendor.thermal.config                   u:object_r:vendor_thermal_prop:s0

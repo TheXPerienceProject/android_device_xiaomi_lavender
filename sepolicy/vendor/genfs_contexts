@@ -1,0 +1,66 @@
+# Battery
+genfscon sysfs /devices/platform/soc/c175000.i2c/i2c-1/1-0062                                                                                        u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/c176000.i2c/i2c-2/2-001d                                                                                        u:object_r:sysfs_battery_supply:s0
+
+# Battery Saver
+genfscon sysfs /module/battery_saver/parameters/enabled                                                                                              u:object_r:sysfs_battery_saver:s0
+
+# Camera
+genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@0/video4linux/video2/name                                         u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@1/video4linux/video3/name                                         u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@2/video4linux/video4/name                                         u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@3/video4linux/video5/name                                         u:object_r:sysfs_graphics:s0
+genfscon sysfs /camera_sensorid/sensorid                                                                                                             u:object_r:sysfs_graphics:s0
+
+# DeviceSettings
+genfscon sysfs /devices/virtual/graphics/fb0/measured_fps                                                                                            u:object_r:sysfs_fpsinfo:s0
+genfscon sysfs /class/graphics/fb0/measured_fps                                                                                                      u:object_r:sysfs_fpsinfo:s0
+genfscon sysfs /kernel/sound_control/headphone_gain                                                                                                  u:object_r:sysfs_headphonegain:s0
+genfscon sysfs /kernel/sound_control/mic_gain                                                                                                        u:object_r:sysfs_micgain:s0
+genfscon sysfs /kernel/sound_control/earpiece_gain                                                                                                   u:object_r:sysfs_earpiecegain:s0
+
+# Fingerprint
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare                                                                              u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait                                                                             u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/irq                                                                                         u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/irq_enable                                                                                  u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable                                                                               u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/device_prepare                                                                                      u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/fingerdown_wait                                                                                     u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/irq                                                                                                 u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/irq_enable                                                                                          u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup_enable                                                                                       u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/device_prepare                                                                                    u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/fingerdown_wait                                                                                   u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/irq                                                                                               u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/irq_enable                                                                                        u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup_enable                                                                                     u:object_r:sysfs_fingerprint:s0
+
+# Graphics
+genfscon sysfs /devices/virtual/graphics/fb0                                                                                                         u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/virtual/graphics/fb1                                                                                                         u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/virtual/graphics/fb2                                                                                                         u:object_r:sysfs_graphics:s0
+
+# Display
+genfscon sysfs /devices/virtual/graphics/fb0/idle_state                                                                                              u:object_r:sysfs_graphics:s0
+
+# Power
+genfscon sysfs /devices/platform/soc/soc:qcom,gpubw                                                                                                  u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw                                                                                                  u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,mincpubw                                                                                               u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-ddr-lat                                                                                            u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-ddr-lat                                                                                            u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu0-cpu-ddr-latfloor                                                                                            u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu4-cpu-ddr-latfloor                                                                                            u:object_r:sysfs_devfreq:s0
+
+# Touchpanel
+genfscon sysfs /touchpanel                                                                                                                           u:object_r:sysfs_touchpanel:s0
+
+# Wakeup
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup                                                                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup                                                                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:hall_switch/wakeup                                                                                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@0/video4linux/video2/wakeup                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@1/video4linux/video3/wakeup                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/ca0c000.qcom,cci/ca0c000.qcom,cci:qcom,camera@2/video4linux/video4/wakeup                                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/input/input1/wakeup                                                                                                  u:object_r:sysfs_wakeup:s0

@@ -1,0 +1,4 @@
+binder_call(gmscore_app, hal_memtrack_default);
+dontaudit gmscore_app { bt_firmware_file firmware_file }:filesystem getattr;
+allow gmscore_app traced_producer_socket:sock_file { write };
+allow gmscore_app traced:unix_stream_socket { connectto };
