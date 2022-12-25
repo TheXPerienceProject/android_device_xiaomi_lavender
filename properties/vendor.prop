@@ -130,7 +130,7 @@ vendor.display.enable_default_color_mode=1
 
 # Graphics
 ro.hardware.egl=adreno
-ro.hardware.vulkan=adreno
+ro.hardware.vulkan=sdm660
 
 # HAL1 app list
 vendor.camera.hal1.packagelist= com.android.camera,com.android.camera2,com.instagram.android
