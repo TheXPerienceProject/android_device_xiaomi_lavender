@@ -101,13 +101,20 @@ vendor.qcom.bluetooth.soc=cherokee
 ro.vendor.fm.use_audio_session=true
 
 # Camera
-persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.preview.ubwc=0
-persist.vendor.camera.perflock.enable=0
-vendor.camera.aux.packageblacklist=com.discord
-vendor.camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam
 vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
+persist.vendor.camera.preview.ubwc=0
+persist.vendor.camera.isp.clock.optmz=0
+persist.vendor.camera.isp.turbo=1
+persist.vendor.camera.imglib.usefdlite=1
+persist.vendor.camera.expose.aux=1
+persist.vendor.camera.dual.isp.sync=0
+persist.vendor.camera.HAL3.enabled=1
+persist.vendor.camera.manufacturer=Xiaomi
+persist.vendor.camera.model=Redmi Note 7
+persist.vendor.camera.awb.sync=2
+persist.vendor.camera.perflock.enable=0
 
 # Codec2 switch
 debug.media.codec2=2
@@ -131,9 +138,6 @@ vendor.display.enable_default_color_mode=1
 # Graphics
 ro.hardware.egl=adreno
 ro.hardware.vulkan=sdm660
-
-# HAL1 app list
-vendor.camera.hal1.packagelist= com.android.camera,com.android.camera2,com.instagram.android
 
 # Media
 debug.stagefright.omx_default_rank=0
@@ -196,6 +200,7 @@ ro.vendor.qti.va_aosp.support=1
 ro.telephony.default_network=22,20
 ro.telephony.default_cdma_sub=0
 vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+persist.vendor.iwlan.enable=true
 
 # Rendering
 debug.egl.hw=1

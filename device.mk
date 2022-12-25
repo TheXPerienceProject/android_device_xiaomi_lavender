@@ -150,9 +150,6 @@ PRODUCT_PACKAGES += \
     DeviceDoze \
     DeviceSettings
 
-# Device properties
-$(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
-
 # Dex
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
