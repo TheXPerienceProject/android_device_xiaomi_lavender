@@ -24,12 +24,6 @@ ro.surface_flinger.supports_background_blur=0
 # BPF
 ro.kernel.ebpf.supported=true
 
-# Camera
-persist.vendor.camera.privapp.list=org.codeaurora.snapcam
-camera.aux.packagelist=com.google.android.GoogleCamera,com.android.camera,org.codeaurora.snapcam
-
-camera.hal1.packagelist=com.android.camera,com.android.camera2,com.instagram.android
-
 # Charger
 ro.charger.enable_suspend=true
 ro.charger.disable_init_blank=true
@@ -54,9 +48,7 @@ dalvik.vm.debug.alloc=0
 # Display
 debug.performance.tuning=1
 persist.vendor.color.matrix=2
-debug.renderengine.backend=skiaglthreaded
 persist.hwc.enable_vds=1
-renderthread.skia.reduceopstasksplitting=true
 ro.qualcomm.cabl=0
 video.disable.ubwc=1
 vendor.display.disable_rotator_downscale=1
