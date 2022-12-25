@@ -123,7 +123,8 @@ debug.media.codec2=2
 drm.service.enabled=true
 
 # Display
-debug.cpurend.vsync=false
+debug.sf.disable_backpressure=0
+debug.cpurend.vsync=true
 debug.hwui.use_buffer_age=false
 vendor.display.disable_skip_validate=1
 vendor.gralloc.enable_fb_ubwc=1
