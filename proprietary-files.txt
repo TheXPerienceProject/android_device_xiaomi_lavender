@@ -47,9 +47,9 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|b69cf46ee3e4e8ec0461804491e95be6757b36a4
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|464f1137f33a50f1f6ca8114969dad278a3b3cbf
 
-# ANT - from S62Pro RKQ1.210406.002
-vendor/lib/hw/com.dsi.ant@1.0-impl.so|079573a7412736b6f2da827d16cdd12d34a4f6a6
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so|87dc1a131534659173e71e108e7a3ffe6325845f
+# ANT - from LA.UM.9.12.r1-10800-SMxx50.0-AOSPA
+vendor/lib/hw/com.dsi.ant@1.0-impl.so|f896849d989ed43e28a75e196405459620a19aac
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|2b65d7086bad18c80d925638541be85f0c6d76c4
 
 # ANT+ - from LA.UM.8.2.1.r1-05600-sdm660
 -lib/libantradio.so:system_ext/lib/libantradio.so|523f108cabe6c0a2a52fa4476ada8b65eacdd9a9
@@ -1289,15 +1289,15 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|3234100973fb8c34b0bb3b3b82db4aa038d1efcf
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|8837d8d38f9448c729a2e7ca196067d7c0e7ecd3
 
-# DRM (Widevine) - from S62Pro RKQ1.210406.002
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine|2158f47423c723a9da29bb81bb16987a1e715c21
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
-vendor/lib64/mediadrm/libwvdrmengine.so|eef10067daf437a2c302e668967a7c8c55fddbe9
-vendor/lib64/libbase64.so|ba6ad6314fe82d8efc770e436237dec48c9d1331
-vendor/lib64/libcpion.so|80d7e010395b3ead01b70435584dfa11afbb52bf
-vendor/lib64/librmp.so|6392e70196f5a6da2d49a1aaec60f06ca378f1c4
-vendor/lib64/libwvhidl.so|acf4870a0b10af74a40a4c6180f2c10a1706ddbd
+# DRM (Widevine) - from jasmine-user-10-QKQ1.190910.002-V11.0.19.0.QDIMIXM
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml|1b556a6b981dfe8c5d62311b59758d370dd6dd10
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|dee5b7838ac561a2292e89fc0c4ccd1932224215
+vendor/lib/mediadrm/libwvdrmengine.so|a8bdbbfb3aa222095f1cb7658ec5c46fa41dd560
+vendor/lib64/libcpion.so|ff24ef248bb35fd3cc1081a63f33c2565dc6351f
+vendor/lib64/libhdcpsrm.so|ee8e7c29e2b716a8bb07c3cbb730e34d8af3c64e
+vendor/lib64/libwvhidl.so|adb4b2c6e65b98310d051b8b00573b55bc365435
+vendor/lib64/mediadrm/libwvdrmengine.so|80280a2292db04a1eb3750df6897dea96f0f62f5
 
 # DSP - from LA.UM.10.2.1.r1-03400-sdm660.0-kunmun
 vendor/bin/dspservice|f194ad65a930f1ac1a7fdfefc637c0531d185e89
@@ -1967,11 +1967,9 @@ system_ext/lib64/vendor.qti.latency@2.1.so|b9cca8c1db1782dc16032fec12f8ae024c24a
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|74ec0d8e2ef3d7e3b0a730da9b97237921778ac4
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|60af440aae61fcd6939af56a0b94d9b9ef5ebd55
 
-# Radio - from S62Pro RKQ1.210406.002
-system_ext/framework/qti-telephony-common.jar|b56a247d21e72fc7b0b1d5882fb4d99041374dbd
--system_ext/priv-app/ims/ims.apk|91c8e9b96882063769ef0a27ac9ea2627e8a8436
-
 # Radio - Telephony - from  LA.UM.9.6.2.r1-04100-89xx.0
+-system_ext/framework/qti-telephony-common.jar|8c99640be5b9b9ee886bfc450b6923a33eb2fd8b
+-system_ext/priv-app/ims/ims.apk|230315f38d7c2fc6c9d83bb6ec1f8f59254090cf
 system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so|c1ab8dc5de956caf0060a33922d402d0ec6c732e
 system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so|f86a87d2fef32f7176d697a7aad346b8c5be3d00
 system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so|620f8c0af756a026ac78750adc4fe0590c4e9d45
