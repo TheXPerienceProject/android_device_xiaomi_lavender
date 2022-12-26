@@ -1,8 +1,8 @@
 allow thermal-engine thermal_data_file:dir rw_dir_perms;
 allow thermal-engine thermal_data_file:file create_file_perms;
 allow thermal-engine sysfs:dir r_dir_perms;
-allow thermal-engine self:capability { chown fowner };
-allow thermal-engine system_prop:file { getattr read open };
+allow thermal-engine self:capability { chown fowner sys_admin };
+allow thermal-engine system_prop:file { getattr read open map };
 allow thermal-engine system_prop:property_service { set };
 allow thermal-engine sysfs_devfreq:file rw_file_perms;
 

@@ -1,1 +1,1 @@
-allow cnd vendor_camera_prop:file { open read };
+allow cnd vendor_camera_prop:file create_file_perms;
