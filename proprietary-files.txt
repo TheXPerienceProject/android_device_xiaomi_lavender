@@ -2031,11 +2031,13 @@ vendor/lib64/libsubsystem_control.so|3ae879485eedb7d1bc84a47ddef474608ddb4d3e
 
 # Thermal - from lemon-11-RKQ1.201004.002
 vendor/bin/mi_thermald|2cb2d46219c6bc7005b61a6960b9f674049a586c
-vendor/bin/thermal-engine|d60f20b3642ee6401503bdc48ad80dead64f79a6
-vendor/etc/init/init_thermal-engine.rc|f0d14aa4734b2e8afd61a4eed73238187b268f48
 vendor/etc/init/init.mi_thermald.rc|2b2891d3c47888c6da7266dfeec9e71b02e511a5
--vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
--vendor/lib64/libthermalclient.so|18d9f7ec494d7c7d1744b14072ac0565daa5dc5d
+
+# Thermal - from LA.UM.10.2.1.r1-03400-sdm660.0-kunmun
+vendor/bin/thermal-engine|6141013a5402a1a495b18ead103f0753277c8afd
+vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
+-vendor/lib/libthermalclient.so|0fcade69460becdbb5adb54e5ff9d11ff8d32c23
+-vendor/lib64/libthermalclient.so|30033f4831c1b6e30d9cee4a93b599fdf97cb3a7
 
 # Time services - from LA.UM.10.2.1.r1-03400-sdm660.0-kunmun
 -vendor/app/TimeService/TimeService.apk|b3e694ecbf8eccf3b503b2adfc1133f13fa0c176
