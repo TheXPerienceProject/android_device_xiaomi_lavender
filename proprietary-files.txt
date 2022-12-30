@@ -2029,13 +2029,13 @@ vendor/bin/subsystem_ramdump|7f852bea217895e0f8191e92da8d114ba72e15ef
 vendor/lib/libsubsystem_control.so|da82bb63993a186c067de0ccd6ec0e165bb36a5e
 vendor/lib64/libsubsystem_control.so|3ae879485eedb7d1bc84a47ddef474608ddb4d3e
 
-# Thermal - from wayne Miui 9.7.4
-vendor/bin/thermal-engine|0be3686204fc600f8dd8607fff10cd7fd273186e
--vendor/lib/libthermalclient.so|d5c6c82b15423e95e991d757bab1b4a27fb88848
-vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
--vendor/lib64/libthermalclient.so|3412ce67da6a58d7f44a65e6b8af8cc5bfb9f506
-vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
-vendor/lib64/libthermalioctl.so|7c7a784d8ead3d932d164cfc953b09e621060d90
+# Thermal - from lemon-11-RKQ1.201004.002
+vendor/bin/mi_thermald|2cb2d46219c6bc7005b61a6960b9f674049a586c
+vendor/bin/thermal-engine|d60f20b3642ee6401503bdc48ad80dead64f79a6
+vendor/etc/init/init_thermal-engine.rc|f0d14aa4734b2e8afd61a4eed73238187b268f48
+vendor/etc/init/init.mi_thermald.rc|2b2891d3c47888c6da7266dfeec9e71b02e511a5
+-vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
+-vendor/lib64/libthermalclient.so|18d9f7ec494d7c7d1744b14072ac0565daa5dc5d
 
 # Time services - from LA.UM.10.2.1.r1-03400-sdm660.0-kunmun
 -vendor/app/TimeService/TimeService.apk|b3e694ecbf8eccf3b503b2adfc1133f13fa0c176
