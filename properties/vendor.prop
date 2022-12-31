@@ -116,6 +116,9 @@ persist.vendor.camera.model=Redmi Note 7
 persist.vendor.camera.awb.sync=2
 persist.vendor.camera.perflock.enable=0
 
+# Camera HAL1
+vendor.camera.hal1.packagelist=com.whatsapp,com.whatsapp.w4b,com.facebook.orca,com.instagram.android
+
 # Codec2 switch
 debug.media.codec2=2
 
