@@ -1567,6 +1567,9 @@ vendor/lib64/libOmxWmaDec.so|12f994f034be6249acf8f25306bce4a38405e099
 vendor/lib64/libmm-color-convertor.so|d7404046e5863a87922b35c3ff3edc5e76d6c249
 vendor/lib64/libmmosal.so|fc4fdcc1f8d2fd75c95da4691c9511975f3b5bf3
 
+# IRQ balance - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
+vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
+
 # Perf - from LA.UM.9.2.r1-03500-SDMxx0.0
 system_ext/etc/perf/wlc_model.tflite|83cf4df067bc14c78f31943f32bcaf6f32419125
 system_ext/lib/libqti-perfd-client_system.so|e7efdcc9a641b5058d92ce94a3e352123da22571
@@ -1576,7 +1579,6 @@ system_ext/lib64/libqti-perfd-client_system.so|708c2d6672f6c8674f8af17ca8ebf82ae
 system_ext/lib64/libqti-util_system.so|7deecb7ff48db2d832159730135052c8aed66e71
 system_ext/lib64/libqti_performance.so|3cbbc72af6e192177c9d058309b6dde31a825825
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|3b972dc987838eb2fda1f9ed694fe6ab5e498330
-vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
 vendor/lib/libperfconfig.so|a7927edfdddafe90ea53bede0629ebc8a686152d
 vendor/lib/libperfgluelayer.so|8cc20a3ddf15d795ed024ac7c5c0a77888026d9f
