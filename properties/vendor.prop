@@ -200,7 +200,6 @@ ro.vendor.use_data_netmgrd=true
 ro.vendor.qti.va_aosp.support=1
 ro.telephony.default_network=22,20
 ro.telephony.default_cdma_sub=0
-vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 persist.vendor.iwlan.enable=true
 
 # Rendering
