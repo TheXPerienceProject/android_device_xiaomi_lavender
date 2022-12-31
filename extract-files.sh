@@ -56,20 +56,9 @@ fi
 function blob_fixup() {
     case "${1}" in
 
-    lib64/libwfdnative.so)
-        "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
-        ;;
-
     vendor/lib/hw/camera.sdm660.so)
         "${PATCHELF}" --add-needed camera.sdm660_shim.so "${2}"
         ;;
-
-    vendor/lib64/libril-qc-hal-qmi.so)
-        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
-        ;;
-
-    vendor/lib64/libwvhidl.so)
-        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
 
     esac
 }

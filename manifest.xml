@@ -78,7 +78,7 @@
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
         <transport>hwbinder</transport>
-        <fqname>@1.1::IRadioConfig/default</fqname>
+        <fqname>@1.2::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.renderscript</name>
@@ -155,9 +155,14 @@
         <fqname>@2.2::IImsCmService/qti.ims.connectionmanagerservice</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.ims.factory</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IImsFactory/default</fqname>
+   </hal>
+    <hal format="hidl">
         <name>com.qualcomm.qti.uceservice</name>
         <transport>hwbinder</transport>
-        <fqname>@2.2::IUceService/com.qualcomm.qti.uceservice</fqname>
+        <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.display.color</name>
@@ -336,6 +341,11 @@
         <name>vendor.qti.ims.callinfo</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IService/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IDeviceInfo/deviceinfo</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
