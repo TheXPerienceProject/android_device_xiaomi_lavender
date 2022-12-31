@@ -112,7 +112,6 @@ gsm.proximity.enable=true
 persist.timed.enable=true
 
 # Radio
-DEVICE_PROVISIONED=1
 persist.backup.ntpServer=0.pool.ntp.org
 persist.radio.aosp_usr_pref_sel=true
 persist.radio.add_power_save=1
