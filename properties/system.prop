@@ -150,6 +150,7 @@ ro.storaged.event.interval=99999
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # SurfaceFlinger
+debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
 
