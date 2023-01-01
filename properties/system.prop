@@ -24,6 +24,11 @@ ro.surface_flinger.supports_background_blur=0
 # BPF
 ro.kernel.ebpf.supported=true
 
+# Camera
+camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
+persist.sys.camera.camera2=true
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
+
 # Charger
 ro.charger.enable_suspend=true
 ro.charger.disable_init_blank=true
