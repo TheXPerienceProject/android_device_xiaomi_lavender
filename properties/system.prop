@@ -151,6 +151,7 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # SurfaceFlinger
 debug.sf.enable_transaction_tracing=false
+debug.sf.predict_hwc_composition_strategy=0
 
 # System restart
 ro.build.shutdown_timeout=2
