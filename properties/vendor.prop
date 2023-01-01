@@ -142,6 +142,7 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=sdm660
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+ro.config.avoid_gfx_accel=true
 
 # Media
 debug.stagefright.omx_default_rank=0
