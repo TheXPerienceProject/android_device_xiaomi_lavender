@@ -64,7 +64,6 @@ QCOM_BT_USE_SMD_TTY := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
-OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
 
 # Board
 TARGET_BOARD_PLATFORM := sdm660
@@ -215,7 +214,6 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := false
 
 # Recovery

@@ -448,6 +448,10 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# QCOM
+BOARD_USES_QCOM_HARDWARE := true
+OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
