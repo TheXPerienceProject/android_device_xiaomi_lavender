@@ -5,6 +5,9 @@ audio_hal.in_period_size                u:object_r:vendor_default_prop:s0
 audio_hal.period_multiplier             u:object_r:vendor_default_prop:s0
 persist.audio.fluence.voicecomm         u:object_r:vendor_default_prop:s0
 
+# Aware
+ro.vendor.aware_available                   u:object_r:vendor_aware_available_prop:s0
+
 # Camera
 camera.clientname                           u:object_r:vendor_camera_prop:s0
 camera.cpp.dumpvideopayload                 u:object_r:vendor_camera_prop:s0
@@ -35,6 +38,12 @@ vendor.camera.eis.gyro_name                 u:object_r:vendor_camera_prop:s0
 vidc.enc.dcvs.extra-buff-count              u:object_r:vendor_camera_prop:s0
 video.disable.ubwc                          u:object_r:vendor_camera_prop:s0
 sys.camera.miui.apk     		    u:object_r:exported_system_prop:s0
+persist.vendor.camera.hal3only              u:object_r:system_prop:s0
+vendor.camera.apk.usingname                 u:object_r:exported_system_prop:s0
+vendor.camera.expTimeMax                    u:object_r:vendor_camera_prop:s0
+vendor.camera.facing                        u:object_r:vendor_camera_prop:s0
+vendor.camera.motiontracking                u:object_r:vendor_camera_prop:s0
+vendor.camera.sound.forced                  u:object_r:vendor_camera_prop:s0
 
 # Dirac
 persist.audio.dirac.                    u:object_r:dirac_prop:s0

@@ -1,3 +1,5 @@
+binder_call(hal_camera_default, system_app)
+
 hal_client_domain(hal_camera_default, hal_configstore)
 hal_client_domain(hal_camera_default, hal_graphics_allocator)
 get_prop(hal_camera_default, bootanim_system_prop)
@@ -9,10 +11,15 @@ get_prop(hal_camera_default, vendor_video_prop)
 
 allow hal_camera_default sysfs_kgsl:file r_file_perms;
 allow hal_camera_default diag_device:chr_file rw_file_perms;
-allow hal_camera_default mnt_vendor_file:dir search;
+allow hal_camera_default mnt_vendor_file:file { read getattr open };
+allow hal_camera_default mnt_vendor_file:dir { search };
 allow hal_camera_default sysfs:file { getattr open read };
 allow hal_camera_default self:socket { read write };
 allow hal_camera_default default_prop:file { read };
+allow hal_camera_default system_data_file:dir { search };
+
+allow hal_camera_default vendor_file:file lock;
+allow hal_camera_default vendor_public_lib_file:file lock;
 
 r_dir_file(hal_camera_default, sysfs_kgsl)
 
@@ -21,5 +28,3 @@ typeattribute hal_camera_default data_between_core_and_vendor_violators;
 allow hal_camera_default camera_data_file:sock_file write;
 allow hal_camera_default camera_data_file:dir create_dir_perms;
 allow hal_camera_default camera_data_file:file create_file_perms;
-
-dontaudit hal_camera_default system_data_file:dir read;
