@@ -133,7 +133,6 @@ vendor.gralloc.disable_ahardware_buffer=1
 debug.gralloc.enable_fb_ubwc=1
 vendor.opengles.version=196610
 dev.pm.dyn_samplingrate=1
-ro.opengles.version=196610
 ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
 

@@ -57,6 +57,7 @@ persist.vendor.camera.mi.module.infoext2    u:object_r:vendor_camera_prop:s0
 
 # Display
 ro.vendor.display.type                  u:object_r:vendor_display_prop:s0
+ro.sf.lcd_density			u:object_r:vendor_display_prop:s0
 
 # Fingerprint
 fpc_kpi                                 u:object_r:vendor_default_prop:s0
