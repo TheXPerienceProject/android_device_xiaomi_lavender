@@ -113,6 +113,9 @@ ro.oem_unlock_supported=1
 # Proximity
 gsm.proximity.enable=true
 
+# Rescue Party
+persist.sys.disable_rescue=true
+
 # Time daemon
 persist.timed.enable=true
 
