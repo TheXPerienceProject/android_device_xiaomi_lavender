@@ -1126,8 +1126,8 @@ vendor/lib64/libcdsprpc.so|891066a404b155c545ff7f4bf23cb7e042f29f28
 vendor/lib64/libfastrpc_utf_stub.so|15243b9539bb74069d6ee59bd70340b0ea0ec338
 vendor/lib64/libsysmon_cdsp_skel.so|8a951e039071107317e0e7541ff4df7ad35d87ad
 
-# Charger
-vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
+# Charger - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/hvdcp_opti|45f500aa4816c87de222ee7eb33655f0e83e392c
 
 # CNE - from S62Pro RKQ1.210406.002
 system_ext/framework/com.quicinc.cne.api-V1.0-java.jar|31ba1bfae2830f87e77844cfb96913271dac0925
@@ -1396,7 +1396,7 @@ vendor/lib64/libqfp-service.so
 vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# FM - from LA.UM.10-sdm660.0-kunmun
+# FM - from LA.UM.9.2.1.r1-08700-sdm660.0
 system_ext/lib64/fm_helium.so|d24c1e33e778867de8af036b97249a5e555e4d8e
 system_ext/lib64/libfm-hci.so|439f3bd3c8035482b598a099c2d5c7c09bad66c7
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so|b1474a14f1a22007e2792c240777470b16e80574
@@ -1633,19 +1633,18 @@ vendor/lib64/libqti-perfd.so|3dbd50a777b7db759d289da7f85f1361b27849f6
 vendor/lib64/libqti-util.so|6c1f2bdc6e663a913c3090cf9880101a61c5cad5
 vendor/lib64/libqti-utils.so|851798783cd77f7f847a67f1fff65ff727c9522b
 
-# Perf-configs - from S62Pro RKQ1.210406.002
-vendor/etc/perf/commonresourceconfigs.xml|2f7521ad0c0b0bb472c747c0c2176b21492936ab
+# Perf-configs - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/etc/perf/commonresourceconfigs.xml|1e5fd2e4612b61371cda4114c9091430f6d5fb1c
 vendor/etc/perf/commonsysnodesconfigs.xml|77ea36edec83f67f5c5591f36bd0f75e361db097
 vendor/etc/perf/perfboostsconfig.xml|1b925efc5be95c1fbcec228a609ffa59b1f6ecc9
 vendor/etc/perf/perfconfigstore.xml|7aed790478c9796246ea7c4b3bb6f7d31172ecb3
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
 vendor/etc/perf/targetresourceconfigs.xml|50eb2e60eb50a1d27b476c7aeb98ecb612df7eee
 
-# Peripheral manager - from LA.UM.8.2.1.r1-05600-sdm660
-vendor/bin/pm-proxy|3182c937d93cc02c6721c053f57fc6794ad7edb3
-vendor/bin/pm-service|d41dabf5e4830f93b267d668d37e72aedae48163
-vendor/lib/libperipheral_client.so|6a95436d0d649fff0a48a4662a0781330e723ae1
-vendor/lib64/libperipheral_client.so|18796ea27c31bd39946f23f2b4173bafd26d9216
+# Peripheral manager - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/pm-proxy|42383b9163716d8e6d81f0516e9cf09f22ea8b06
+vendor/bin/pm-service|b0a5d3491615ef9a237d93a393082105e3c0097c
+vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
 
 # Power-off charging daemon - from msm8998
 -sbin/charger:bin/chargeonlymode|664dfa548b81cac348f1699222160f8d2b4d247c
@@ -1876,18 +1875,14 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|bd0db76d555c51971dcfcce62d981f987af
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|a5f9d28f7adbfbf349e6f5bc210c651c78ed776e
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|460e589128fce0b0e83bb3c75aa32f7e1a9494fd
 
-# Sensors - from lavender-21.3.17
-vendor/bin/sensors.qti|d520260aca9a3063d8b7ee4954028e5b767e0741
-vendor/etc/sensors/sensor_def_qcomdev.conf|3ce1145d65ade70300feadf971e69ad6f522a749
-vendor/lib/hw/activity_recognition.sdm660.so|9114ef1cdf5cd48b62bb7023b776c2abb32d357e
-vendor/lib/libsensor1.so|fde24e9290da09cc81c8de5b057acb3383a02081
-vendor/lib/libsensor_reg.so|2d865aa3ddb4d15e8cba16a5d133886480d3ee8e
-vendor/lib/sensors.ssc.so|1c37ad46b43cd81024dd41243c949a24dd2d9f86
-vendor/lib64/hw/activity_recognition.sdm660.so|b1c0be438f80e92acb931b101da52a98599f3005
-vendor/lib64/libsensor1.so|16469d36e6ada214c2741e2490f5ea1a363e96f5
-vendor/lib64/libsensor_reg.so|d39e690d68f53f0032518d4f5ddae8b075ea44cb
-vendor/lib64/sensors.elliptic.so|9a6f4e7e1556e110955330588ca02d1898367d5f
-vendor/lib64/sensors.ssc.so|fe650649184fd43dcfa90776395fe0680d972a7c
+# Sensors - from LA.UM.9.2.1.r1-08700-sdm660.0
+vendor/bin/sensors.qti|4a9d9a0c6f7269b265f7800fcbdd48bf3e925b93
+vendor/lib/libsensor1.so|c247730400d71e6c1b67626d2109cf52c9a57da1
+vendor/lib/libsensor_reg.so|8fc19423b5b39b0518c271b5ed5d8115e1ebdc50
+vendor/lib/sensors.ssc.so|14ef326a5c61c33ab81652d80266ae5829ccd581
+vendor/lib64/libsensor1.so|99405c9be06abaa21d29f16f6a30e8af154a9193
+vendor/lib64/libsensor_reg.so|b18e116898180bc196374ca76390e78e4a295dcb
+vendor/lib64/sensors.ssc.so|a4179d52152ed73c15d4dbb3c47cd83b9654fbd8
 
 # SMC Invoke - from LA.UM.9.12.r1-10800-SMxx50.0-AOSPA
 vendor/etc/ssg/ta_config.json|e18554b038da3737b7352d1271e5fde9c789c9df
@@ -1915,11 +1910,11 @@ vendor/lib64/libsubsystem_control.so|3ae879485eedb7d1bc84a47ddef474608ddb4d3e
 vendor/bin/mi_thermald|2cb2d46219c6bc7005b61a6960b9f674049a586c
 vendor/etc/init/init.mi_thermald.rc|2b2891d3c47888c6da7266dfeec9e71b02e511a5
 
-# Thermal - from LA.UM.10-sdm660.0-kunmun
+# Thermal - from LA.UM.9.2.1.r1-08700-sdm660.0
 vendor/bin/thermal-engine|6141013a5402a1a495b18ead103f0753277c8afd
 vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
--vendor/lib/libthermalclient.so|0fcade69460becdbb5adb54e5ff9d11ff8d32c23
--vendor/lib64/libthermalclient.so|30033f4831c1b6e30d9cee4a93b599fdf97cb3a7
+vendor/lib/libthermalclient.so|0fcade69460becdbb5adb54e5ff9d11ff8d32c23
+vendor/lib64/libthermalclient.so|30033f4831c1b6e30d9cee4a93b599fdf97cb3a7
 
 # Time services - from LA.UM.10.2.1.r1-03400-sdm660.0
 vendor/app/TimeService/TimeService.apk|b3e694ecbf8eccf3b503b2adfc1133f13fa0c176
