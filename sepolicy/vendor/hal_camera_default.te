@@ -15,7 +15,7 @@ allow hal_camera_default mnt_vendor_file:file { read getattr open };
 allow hal_camera_default mnt_vendor_file:dir { search };
 allow hal_camera_default sysfs:file { getattr open read };
 allow hal_camera_default self:socket { read write };
-allow hal_camera_default default_prop:file { read };
+allow hal_camera_default default_prop:file { read open };
 allow hal_camera_default system_data_file:dir { search };
 
 allow hal_camera_default vendor_file:file lock;
