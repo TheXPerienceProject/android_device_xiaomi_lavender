@@ -30,10 +30,10 @@
     <dimen name="status_bar_clock_starting_padding">5dp</dimen>
     
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">6dp</dimen>
+    <dimen name="status_bar_padding_start">0dp</dimen>
 
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">6dp</dimen>
+    <dimen name="status_bar_padding_end">1dp</dimen>
     
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">106px</dimen>
