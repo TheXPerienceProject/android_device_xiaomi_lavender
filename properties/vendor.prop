@@ -115,6 +115,7 @@ persist.vendor.camera.manufacturer=Xiaomi
 persist.vendor.camera.model=Redmi Note 7
 persist.vendor.camera.awb.sync=2
 persist.vendor.camera.perflock.enable=0
+camera.disable_zsl_mode=true
 
 # Codec2 switch
 debug.media.codec2=2
