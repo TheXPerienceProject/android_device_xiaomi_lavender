@@ -448,7 +448,7 @@ int ThermalCommon::read_temperature(struct therm_sensor& sensor)
 	snprintf(file_name, sizeof(file_name), TEMPERATURE_FILE_FORMAT,
 			sensor.tzn);
 	ret = readLineFromFile(std::string(file_name), buf);
-	if (ret <= 0) {
+	if (ret <= 1) {
 		LOG(ERROR) << "Temperature read error:"<< ret <<
 			" for sensor " << sensor.t.name;
 		return -1;
