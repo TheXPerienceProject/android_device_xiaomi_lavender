@@ -90,3 +90,8 @@ on boot
 # Workaround for camera HAL can not read sys property
 on property:sys.camera.face.unlock=*
     setprop vendor.camera.face.unlock ${sys.camera.face.unlock}
+
+on property:vendor.post_boot.parsed=1
+
+    # Disable multiple kswapd threads
+    write /proc/sys/vm/kswapd_threads 1
