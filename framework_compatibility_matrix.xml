@@ -1,0 +1,133 @@
+<compatibility-matrix version="2.0" type="framework">
+    <!--Custom one-->
+    <hal format="hidl" optional="true">
+         <name>vendor.goodix.hardware.fingerprint</name>
+         <transport>hwbinder</transport>
+         <version>1.0</version>
+         <interface>
+             <name>IGoodixBiometricsFingerprint</name>
+             <instance>default</instance>
+         </interface>
+     </hal>
+   <hal format="hidl" optional="true">
+        <name>com.fingerprints.extension</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFingerprintEngineering</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFingerprintNavigation</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFingerprintSensorTest</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+   <hal format="hidl" optional="true">
+        <name>com.qualcomm.qti.ant</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IAntHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+   <hal format="hidl" optional="true">
+        <name>android.hardware.sensors</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+   <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.motor</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMotor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+   <hal format="hidl" optional="true">
+       <name>android.hardware.radio.config</name>
+       <version>1.0-3</version>
+       <interface>
+           <name>IRadioConfig</name>
+           <instance>default</instance>
+       </interface>
+   </hal>
+	<hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.iop</name>
+        <version>2.0</version>
+        <interface>
+            <name>IIop</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+   <hal format="aidl" optional="true">
+       <name>vendor.qti.hardware.radio.am</name>
+       <version>1</version>
+       <interface>
+           <name>IQcRilAudio</name>
+           <instance>slot1</instance>
+           <instance>slot2</instance>
+       </interface>
+    </hal>
+	<hal format="aidl" optional="true">
+        <name>vendor.qti.gnss</name>
+        <version>1-2</version>
+        <interface>
+            <name>ILocAidlGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+   <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.wifi.supplicant</name>
+        <version>2.0-3</version>
+        <interface>
+            <name>ISupplicantVendor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.wifi.supplicant</name>
+        <version>1</version>
+        <interface>
+            <name>ISupplicantVendor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>vendor.qti.hardware.wifi.wificfr</name>
+       <transport>hwbinder</transport>
+       <version>1.0</version>
+       <interface>
+           <name>IWificfr</name>
+           <instance>wificfr</instance>
+       </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>vendor.qti.hardware.radio.uim_remote_client</name>
+       <transport>hwbinder</transport>
+       <version>1.2</version>
+       <interface>
+           <name>IUimRemoteServiceClient</name>
+           <instance>uimRemoteClient0</instance>
+           <instance>uimRemoteClient1</instance>
+       </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>vendor.xiaomi.hardware.mfidoca</name>
+       <transport>hwbinder</transport>
+       <version>1.0</version>
+       <interface>
+           <name>IFidoService</name>
+           <instance>default</instance>
+       </interface>
+    </hal>
+</compatibility-matrix>
