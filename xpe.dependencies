@@ -1,5 +1,5 @@
 [
-  {
+/*  {
     "remote": "SDM660-lavender",
     "repository": "android_hardware_qcom_display",
     "target_path": "hardware/qcom-caf/sdm660/display",
@@ -16,7 +16,7 @@
     "repository": "android_hardware_qcom_media",
     "target_path": "hardware/qcom-caf/sdm660/media",
   }
-
+*/
   {
     "remote": "pix106",
     "repository": "android_kernel_xiaomi_southwest-4.19",

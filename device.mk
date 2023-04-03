@@ -269,10 +269,6 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
 
-# IMS JAR
-# PRODUCT_BOOT_JARS += \
-#    ims-ext-common
-
 # Init
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -420,6 +416,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml
 
+# Platform
+TARGET_BOARD_PLATFORM := sdm660
+TARGET_PROVIDES_POWERHAL := true
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi_sdm660-libperfmgr \
@@ -494,10 +494,6 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml \
     rild \
-    telephony-ext
-
-# RIL JAR
-PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # RRO configuration

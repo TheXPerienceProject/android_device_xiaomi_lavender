@@ -23,9 +23,9 @@
 
 # Inherit Redmi Note 7 device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_lavender.mk
+    $(LOCAL_DIR)/xperience_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_lavender-eng \
-    voltage_lavender-userdebug \
-    voltage_lavender-user
+    xperience_lavender-eng \
+    xperience_lavender-userdebug \
+    xperience_lavender-user
