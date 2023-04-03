@@ -18,9 +18,6 @@ vendor.bluetooth.soc=cherokee
 bt.max.hfpclient.connections=1
 vendor.hw.fm.init=0
 
-# Blur
-ro.surface_flinger.supports_background_blur=0
-
 # BPF
 ro.kernel.ebpf.supported=true
 
