@@ -21,3 +21,11 @@ type audio_socket, file_type;
 
 # Battery Saver
 type sysfs_battery_saver, fs_type, sysfs_type;
+
+type vendor_adpl, file_type;
+type vendor_cnd, file_type;
+type vendor_hal_imsrtp, file_type;
+
+type vendor_sysfs_battery_supply, fs_type, sysfs_type;
+# useless but im not gonna remove these sepolicy
+type vendor_sysfs_scsi_target, fs_type, sysfs_type;
