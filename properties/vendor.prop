@@ -136,7 +136,6 @@ vendor.display.enable_default_color_mode=1
 
 # Graphics
 ro.hardware.egl=adreno
-ro.hardware.vulkan=sdm660
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 ro.config.avoid_gfx_accel=true
