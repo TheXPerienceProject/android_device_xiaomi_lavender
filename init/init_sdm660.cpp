@@ -43,6 +43,7 @@
 
 using android::base::GetProperty;
 using android::base::ReadFileToString;
+using std::string;
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -95,6 +96,33 @@ void property_override(char const prop[], char const value[], bool add = true)
     }
 }
 
+void set_ro_build_prop(const string &source, const string &prop,
+                       const string &value, bool product = true) {
+    string prop_name;
+
+    if (product)
+        prop_name = "ro.product." + source + prop;
+    else
+        prop_name = "ro." + source + "build." + prop;
+
+    property_override(prop_name.c_str(), value.c_str());
+}
+
+void set_device_props(const string model, const string name, const string marketname,
+        const string mod_device) {
+    // list of partitions to override props
+    string source_partitions[] = { "", "bootimage.", "odm.", "product.",
+                                   "system.", "system_ext.", "vendor." };
+
+    for (const string &source : source_partitions) {
+        set_ro_build_prop(source, "model", model);
+        set_ro_build_prop(source, "name", name);
+        set_ro_build_prop(source, "marketname", marketname);
+    }
+
+    property_override("ro.product.mod_device", mod_device.c_str());
+}
+
 void property_override_dual(char const system_prop[],
         char const vendor_prop[], char const value[])
 {
@@ -110,78 +138,37 @@ void property_override_multifp(char const buildfp[], char const systemfp[],
     property_override(vendorfp, value);
 }
 
-void vendor_load_persist_properties()
+
+static void init_setup_model_properties()
 {
-    std::string product = GetProperty("ro.product.vendor.device", "");
-    if (product.find("clover") != std::string::npos) {
+    std::ifstream fin;
+    std::string buf;
 
-    std::string hw_device;
+    fin.open("/proc/cmdline");
+    while (std::getline(fin, buf, ' '))
+        if (buf.find("androidboot.hwc") != std::string::npos)
+            break;
+    fin.close();
 
-    char const *hw_id_file = "/sys/devices/platform/HardwareInfo/hw_id";
+    property_override_dual("ro.product.model", "ro.vendor.product.model",  "Redmi Note 7");
+    set_device_props("Redmi Note 7", "lavender", "Redmi Note 7", "lavender");
+    property_override("vendor.usb.product_string", "Redmi Note 7");
+    property_override("bluetooth.device.default_name", "Redmi Note 7");
 
-    ReadFileToString(hw_id_file, &hw_device);
-    if (hw_device.find("D9P") != std::string::npos) {
-        property_override("persist.sys.fp.vendor", "fpc");
-        property_override("ro.board.variant", "d9p");
-        property_override("vendor.display.lcd_density", "265");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "MI PAD 4 PLUS");
-
-        property_override ("persist.vendor.audio.calfile0","/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Bluetooth_cal.acdb");
-        property_override ("persist.vendor.audio.calfile1","/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_General_cal.acdb");
-        property_override ("persist.vendor.audio.calfile2","/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Global_cal.acdb");
-        property_override ("persist.vendor.audio.calfile3","/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Handset_cal.acdb");
-        property_override ("persist.vendor.audio.calfile4","/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Hdmi_cal.acdb");
-        property_override ("persist.vendor.audio.calfile5","/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Headset_cal.acdb");
-        property_override ("persist.vendor.audio.calfile6","/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Speaker_cal.acdb");
-        property_override ("persist.vendor.audio.calfile7","/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_workspaceFile.qwsp");
-        property_override ("persist.vendor.audio.calfile8","/vendor/etc/acdbdata/adsp_avs_config.acdb");
-
-    } else {
-        property_override("persist.sys.fp.vendor", "none");
-        property_override("ro.board.variant", "d9");
-        property_override("vendor.display.lcd_density", "320");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "MI PAD 4");
-
-        property_override ("persist.vendor.audio.calfile0","/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Bluetooth_cal.acdb");
-        property_override ("persist.vendor.audio.calfile1","/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_General_cal.acdb");
-        property_override ("persist.vendor.audio.calfile2","/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Global_cal.acdb");
-        property_override ("persist.vendor.audio.calfile3","/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Handset_cal.acdb");
-        property_override ("persist.vendor.audio.calfile4","/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Hdmi_cal.acdb");
-        property_override ("persist.vendor.audio.calfile5","/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Headset_cal.acdb");
-        property_override ("persist.vendor.audio.calfile6","/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Speaker_cal.acdb");
-        property_override ("persist.vendor.audio.calfile7","/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_workspaceFile.qwsp");
-        property_override ("persist.vendor.audio.calfile8","/vendor/etc/acdbdata/adsp_avs_config.acdb");
-        
-    }
-  }
 }
+
 void vendor_load_properties()
 {
     check_device();
-    
+    init_setup_model_properties();
+
     property_override("dalvik.vm.heapstartsize", heapstartsize);
     property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
     property_override("dalvik.vm.heapsize", heapsize);
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
-
-   std::string product = GetProperty("ro.product.vendor.device", "");	
-   if (product.find("whyred") != std::string::npos)
-   {
-  	std::string region = GetProperty("ro.boot.hwc", "");
-
-    if (region.find("CN") != std::string::npos || region.find("Global") != std::string::npos || region.find("GLOBAL") != std::string::npos)
-	{
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi Note 5");
-        property_override_dual("ro.product.odm.model", "ro.product.system.model", "Redmi Note 5");
-        property_override_dual("ro.product.vendor.model", "persist.vendor.camera.exif.model", "Redmi Note 5");
-	}
-	else
-	{
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi Note 5 Pro");
-        property_override_dual("ro.product.odm.model", "ro.product.system.model", "Redmi Note 5 Pro");
-        property_override_dual("ro.product.vendor.model", "persist.vendor.camera.exif.model", "Redmi Note 5 Pro");
-	}
-  }
+    // SafetyNet workaround
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.oem_unlock_supported", "0");
 }
