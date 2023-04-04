@@ -234,6 +234,10 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
+BOARD_SEPOLICY_M4DEFS += \
+    hal_perf_default=vendor_hal_perf_default \
+    hal_perf_hwservice=vendor_hal_perf_hwservice \
+    hal_perf_default_exec=vendor_hal_perf_default_exec
 
 # Treble
 PRODUCT_VENDOR_MOVE_ENABLED := true
