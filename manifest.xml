@@ -123,11 +123,6 @@
     </hal>
     <!--Custom requeriments -->
     <hal format="hidl">
-        <name>vendor.qti.hardware.iop</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.2::IIop/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.wifi.hostapd</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::IHostapdVendor/default</fqname>
