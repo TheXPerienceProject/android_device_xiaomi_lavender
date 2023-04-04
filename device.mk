@@ -420,6 +420,7 @@ TARGET_BOARD_PLATFORM := sdm660
 TARGET_PROVIDES_POWERHAL := true
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
+    bt \
     perf \
     wfd
 
