@@ -426,8 +426,10 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
     perf \
-    telephony \
     wfd
+
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.radio.enableadvancedscan=false
 
 # Power
 PRODUCT_PACKAGES += \
@@ -468,7 +470,8 @@ OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libjson.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
