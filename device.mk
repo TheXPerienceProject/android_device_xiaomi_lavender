@@ -426,10 +426,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
     perf \
+    telephony \
     wfd
-
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.radio.enableadvancedscan=false
 
 # Power
 PRODUCT_PACKAGES += \
