@@ -263,3 +263,6 @@ persist.device_config.configuration.disable_rescue_party=true
 persist.device_config.configuration.disable_rescue_party_factory_reset=true
 persist.sys.enable_rescue=false
 sys.attempting_factory_reset=false
+
+# FS-verity
+ro.apk_verity.mode=2
