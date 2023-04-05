@@ -10,3 +10,6 @@ allow init {
     bt_firmware_file
     firmware_file
 }:filesystem getattr;
+
+allow init default_android_hwservice:hwservice_manager { add find };
+allow init hal_pasrmanager_memory_hwservice:hwservice_manager { add find };
