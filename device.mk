@@ -403,7 +403,6 @@ PRODUCT_COPY_FILES += \
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
-TARGET_PROVIDES_POWERHAL := true
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
@@ -413,12 +412,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi_sdm660-libperfmgr \
-    android.hardware.power.stats@1.0-service.mock
-
-# Powerhint
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/power-libperfmgr/sdm660_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    android.hardware.power-service
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
