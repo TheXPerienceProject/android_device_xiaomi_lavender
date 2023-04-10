@@ -208,7 +208,6 @@ persist.vendor.iwlan.enable=true
 
 # Rendering
 debug.egl.hw=1
-debug.hwui.renderer=skiagl
 debug.enable.sglscale=1
 debug.sf.disable_hwc=0
 debug.sf.gpu_comp_tiling=1
