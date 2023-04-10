@@ -143,8 +143,7 @@ vendor.display.enable_default_color_mode=1
 
 # Graphics
 ro.hardware.egl=adreno
-debug.hwui.use_hint_manager=true
-debug.hwui.target_cpu_time_percent=30
+ro.hardware.vulkan=sdm660
 
 # Media
 debug.stagefright.omx_default_rank=0
