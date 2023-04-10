@@ -149,10 +149,6 @@ ro.storaged.event.interval=99999
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
-# SurfaceFlinger
-debug.sf.disable_client_composition_cache=1
-debug.sf.enable_transaction_tracing=false
-
 # System restart
 ro.build.shutdown_timeout=2
 
