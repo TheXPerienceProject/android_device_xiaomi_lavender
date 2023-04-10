@@ -1,4 +1,17 @@
 <compatibility-matrix version="2.0" type="framework">
+    <hal format="hidl">
+        <name>android.frameworks.sensorservice</name> 
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+         <interface>
+             <name>ISensors</name>
+             <instance>default</instance>
+         </interface>
+         <interface>
+             <name>ISensorManager</name>
+             <instance>default</instance>
+         </interface>
+    </hal>
     <!--Custom one-->
     <hal format="hidl" optional="true">
          <name>vendor.goodix.hardware.fingerprint</name>

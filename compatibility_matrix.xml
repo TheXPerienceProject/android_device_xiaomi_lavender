@@ -8,14 +8,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="false">
-        <name>android.frameworks.sensorservice</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISensorManager</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="false">
         <name>android.hidl.allocator</name>
         <version>1.0</version>
         <interface>
@@ -53,45 +45,6 @@
         <interface>
             <name>IKeystore</name>
             <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.sigma_miracast</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>Isigma_miracast</name>
-            <instance>sigmahal</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.qccsyshal</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQccsyshal</name>
-            <instance>qccsyshal</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.gnss</name>
-        <version>1.0-1</version>
-        <version>2.0</version>
-        <version>2.1</version>
-        <interface>
-            <name>IGnss</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.gnss</name>
-        <version>1.0-2</version>
-        <version>2.0-1</version>
-        <version>3.0</version>
-        <version>4.0</version>
-        <interface>
-            <name>ILocHidlGnss</name>
-            <instance>gnss_vendor</instance>
         </interface>
     </hal>
     <hal format="native" optional="false">

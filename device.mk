@@ -405,7 +405,6 @@ PRODUCT_COPY_FILES += \
 TARGET_BOARD_PLATFORM := sdm660
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
-    perf \
     telephony \
     wfd
 
