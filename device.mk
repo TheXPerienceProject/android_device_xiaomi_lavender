@@ -54,7 +54,6 @@ PRODUCT_COPY_FILES += \
 # Audio Policy
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration_7_0.xml \
-    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
@@ -77,18 +76,24 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    android.hardware.bluetooth.audio@2.1-impl \
-    android.hardware.bluetooth@1.1.vendor \
-    bt_stack.conf \
-    liba2dpoffload \
-    libbthost_if \
-    libhdmiedid \
-    libhfp \
     libldacBT_bco \
     libldacBT_dec \
-    libsndmonitor \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor
+    libsndmonitor
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.bluetooth.audio@2.1-impl \
+    audio.bluetooth.default \
+    libbthost_if \
+    libldacBT_bco \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
+
+TARGET_USE_QTI_BT_STACK := true
+PRODUCT_COPY_FILES += \
+    $(TOPDIR)hardware/qcom-caf/sdm660/audio/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
