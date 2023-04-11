@@ -139,6 +139,9 @@ dev.pm.dyn_samplingrate=1
 ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
 
+# Fastbootd
+ro.fastbootd.available=true
+
 # Graphics
 ro.hardware.egl=adreno
 debug.hwui.use_hint_manager=true
