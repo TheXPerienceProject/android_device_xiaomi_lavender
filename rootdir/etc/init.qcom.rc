@@ -162,6 +162,8 @@ on boot
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
+    #Create IOP  deamon related dirs
+    mkdir /data/vendor/iop 0700 root system
 
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
