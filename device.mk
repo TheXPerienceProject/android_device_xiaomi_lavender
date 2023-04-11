@@ -351,6 +351,35 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-voltage
 
 # Perf
+PRODUCT_COPY_FILES += \
+    device/xperience/common/vendor/perf-legacy/poweropt-service-disable.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/poweropt-service-disable.rc \
+    device/xperience/common/vendor/perf-legacy/vendor.qti.hardware.iop@2.0-service-disable.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service-disable.rc
+
+# Boot Jars
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
+# Packages
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0 \
+    libavservices_minijail
+
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0.vendor \
+    libavservices_minijail.vendor \
+    libpsi.vendor \
+    libtflite \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
+# Properties
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.perf-hal.ver=2.2 \
+    ro.vendor.extension_library=libqti-perfd-client.so \
+    ro.vendor.perf.scroll_opt=true \
+    ro.vendor.qspm.enable=true \
+    vendor.power.pasr.enabled=true
+PRODUCT_VENDOR_PROPERTIES += vendor.pasr.activemode.enabled=true
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
 
@@ -406,7 +435,6 @@ TARGET_BOARD_PLATFORM := sdm660
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     telephony \
-    perf \
     wfd
 
 # Power
