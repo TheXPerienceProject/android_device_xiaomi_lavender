@@ -384,4 +384,9 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IQccsyshal/qccsyshal</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.embmssl</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IEmbms/embmsslServer0</fqname>
+    </hal>
 </manifest>
