@@ -491,11 +491,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	init.device.rc
 
-# Remove some packages
-# We have less storage
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_lavender
