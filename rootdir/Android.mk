@@ -105,7 +105,7 @@ LOCAL_MODULE       := fstab.qcom
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 ifneq ($(filter lavender,$(TARGET_DEVICE)),)
-LOCAL_SRC_FILES    := etc/fstab_A.qcom
+LOCAL_SRC_FILES    := etc/fstab_A_retro.qcom
 else ifeq ($(ENABLE_AB), true)
 LOCAL_SRC_FILES    := etc/fstab_AB.qcom
 else
