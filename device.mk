@@ -29,7 +29,6 @@ PRODUCT_PACKAGES += \
     audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
-    liba2dpoffload \
     libaudio-resampler \
     libhdmiedid \
     libhfp \
@@ -81,14 +80,12 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.1.vendor \
     bt_stack.conf \
-    liba2dpoffload \
     libbthost_if \
     libhdmiedid \
     libhfp \
     libldacBT_bco \
     libldacBT_dec \
-    libsndmonitor \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor
+    libsndmonitor
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -115,6 +112,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
     libsfplugin_ccodec
+
+# Component overrides
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # Configstore
 PRODUCT_PACKAGES += \
