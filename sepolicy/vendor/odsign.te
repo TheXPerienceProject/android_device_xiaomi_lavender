@@ -1,0 +1,2 @@
+allow odsign odsign:capability { sys_admin };
+

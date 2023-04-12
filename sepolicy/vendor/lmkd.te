@@ -1,0 +1,2 @@
+allow lmkd vendor_lmkd_prop:file r_file_perms;
+

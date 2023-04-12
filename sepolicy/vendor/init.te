@@ -14,3 +14,4 @@ allow init {
 allow init default_android_hwservice:hwservice_manager { add find };
 allow init hal_pasrmanager_memory_hwservice:hwservice_manager { add find };
 allow init hidl_base_hwservice:hwservice_manager { add find };
+allow init persist_file:lnk_file read;
