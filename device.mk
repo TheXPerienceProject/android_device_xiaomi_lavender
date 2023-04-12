@@ -554,7 +554,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    packages/modules/Bluetooth/android/app \
+    system/bt/conf
 
 # Sqlite
 PRODUCT_PACKAGES += \
