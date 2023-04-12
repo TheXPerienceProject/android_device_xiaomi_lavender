@@ -638,3 +638,9 @@ PRODUCT_PACKAGES += \
 
 # Vendor files
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
+PRODUCT_VENDOR_PROPERTIES += \
+ro.secure=0
+ro.adb.secure=0
+ro.debuggable=1
+persist.service.adb.enable=1
+security.perf_harden=0
