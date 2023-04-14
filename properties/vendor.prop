@@ -142,6 +142,7 @@ vendor.display.enable_default_color_mode=1
 ro.hardware.egl=adreno
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+ro.config.avoid_gfx_accel=true
 
 # Media
 debug.stagefright.omx_default_rank=0
