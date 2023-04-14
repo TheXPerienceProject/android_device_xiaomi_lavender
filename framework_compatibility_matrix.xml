@@ -327,12 +327,11 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="true">
         <name>android.hardware.bluetooth.audio</name>
-        <transport>hwbinder</transport>
         <version>2.1-2</version>
         <interface>
-            <name>IBluetoothAudioProvidersFactory<name>
+            <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
