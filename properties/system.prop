@@ -151,6 +151,9 @@ ro.storaged.event.interval=99999
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# SurfaceFlinger
+debug.sf.predict_hwc_composition_strategy=0
+
 # System restart
 ro.build.shutdown_timeout=2
 
