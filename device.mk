@@ -13,6 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product-if-exists, build/target/product/embedded.mk)
 
+# Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+
 # Enable updating of APEXes
 ifeq ($(ENABLE_APEX), true)
 TARGET_SUPPORTS_UPDATABLE_APEX := true
@@ -148,6 +152,16 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk 
 PRODUCT_PACKAGES += \
     DeviceDoze \
     DeviceSettings
+
+# Dex
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+ART_BUILD_TARGET_NDEBUG := true
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_HOST_NDEBUG := true
+ART_BUILD_HOST_DEBUG := false
+endif
 
 # Display
 PRODUCT_PACKAGES += \
@@ -569,6 +583,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     sqlite3
 
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
+    
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
