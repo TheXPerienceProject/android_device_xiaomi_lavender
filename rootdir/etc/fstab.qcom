@@ -21,7 +21,9 @@
 /dev/block/bootdevice/by-name/cache                                 /cache                  ext4    nodev,noatime,nosuid,barrier=1                                                                      wait
 /dev/block/bootdevice/by-name/cache                                 /cache                  f2fs    nodev,noatime,nosuid,nodiratime,discard,fsync_mode=nobarrier,inline_xattr,inline_data,data_flush    wait
 /dev/block/bootdevice/by-name/persist                               /mnt/vendor/persist     ext4    nodev,noatime,nosuid,barrier=1                                                                      wait,check
+/dev/block/bootdevice/by-name/system                                /system                 erofs   ro                                                                                                  wait,recoveryonly
 /dev/block/bootdevice/by-name/system                                /system                 ext4    ro,barrier=1                                                                                        wait,recoveryonly
+/dev/block/bootdevice/by-name/vendor                                /vendor                 erofs   ro                                                                                                  wait,recoveryonly
 /dev/block/bootdevice/by-name/vendor                                /vendor                 ext4    ro,barrier=1                                                                                        wait,recoveryonly
 /dev/block/bootdevice/by-name/boot                                  /boot                   emmc    defaults                                                                                            defaults
 /devices/platform/soc/a800000.ssusb/a800000.dwc3/xhci-hcd.0.auto*   /storage/usbotg         auto    nodev,nosuid                                                                                        wait,voldmanaged=usbotg:auto
