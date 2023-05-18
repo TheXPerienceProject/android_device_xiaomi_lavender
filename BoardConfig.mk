@@ -175,8 +175,6 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_VERSION := 4.19
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/vendor/qcom/sdclang/compiler/
-TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 BOARD_RAMDISK_USE_LZ4 := true
 
 # Keymaster
