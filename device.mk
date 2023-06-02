@@ -112,6 +112,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor
 
+# Use aperture for QR
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.com.google.lens.oem_camera_package=org.lineageos.aperture
+
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
