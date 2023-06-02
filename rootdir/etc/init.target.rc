@@ -280,6 +280,10 @@ on property:sys.boot_completed=1
     write /sys/devices/platform/kcal_ctrl.0/kcal_enable 1
     write /sys/devices/platform/kcal_ctrl.0/kcal "237 237 237" 
 
+   # optimize for some games
+   write /proc/sys/kernel/sched_lib_name "com.miHoYo., com.activision., UnityMain, libunity.so, libil2cpp.so, libfb.so"
+   write /proc/sys/kernel/sched_lib_mask_force 240
+
 on property:sys.boot_completed=1 && property:ro.boot.fpsensor=gdx
     # stop fps_hal
     stop vendor.fps_hal

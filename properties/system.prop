@@ -169,3 +169,6 @@ ro.zram.periodic_wb_delay_hours=24
 
 # FUSE
 persist.sys.fuse.passthrough.enable=true
+
+#Evita que se desactive la carga previa de bibliotecas gráficas
+ro.zygote.disable_gl_preload=false
