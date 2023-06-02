@@ -114,7 +114,9 @@ PRODUCT_PACKAGES += \
 
 # Use aperture for QR
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.com.google.lens.oem_camera_package=org.lineageos.aperture
+    ro.com.google.lens.oem_camera_package=org.lineageos.aperture \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
