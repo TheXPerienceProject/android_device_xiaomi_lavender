@@ -10,6 +10,7 @@ allow vendor_init tee_device:chr_file getattr;
 allow vendor_init proc:file w_file_perms;
 allow vendor_init persist_file:lnk_file { read };
 allow vendor_init default_prop:property_service { set };
+allow vendor_init device:file create;
 
 get_prop(vendor_init, hal_camera_prop)
 set_prop(vendor_init, vendor_camera_prop)

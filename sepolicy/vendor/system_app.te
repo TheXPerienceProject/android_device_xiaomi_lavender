@@ -15,7 +15,10 @@ allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
 # kcal
 allow system_app sysfs_kcal:dir search;
-
+allow system_app sysfs_kcal:file write;
+allow system_app sysfs_battery_supply:dir search;
 
 get_prop(system_app, system_prop);
 set_prop(system_app, system_prop);
+
+
