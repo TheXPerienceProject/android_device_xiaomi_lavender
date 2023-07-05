@@ -460,6 +460,7 @@ PRODUCT_COPY_FILES += \
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
 TARGET_COMMON_QTI_COMPONENTS := \
+    alarm \
     telephony \
     wfd
 
