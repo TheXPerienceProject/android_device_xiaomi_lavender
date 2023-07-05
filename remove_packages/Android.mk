@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := Maps Drive YouTubeMusicPrebuilt talkback CalendarGoogle RecorderPrebuilt XPerienceWallpapers RecorderPrebuilt
+LOCAL_OVERRIDES_PACKAGES := CalendarGoogle Maps Drive YouTubeMusicPrebuilt PixelLiveWallpaperPrebuilt talkback CalendarGoogle RecorderPrebuilt XPerienceWallpapers RecorderPrebuilt
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
