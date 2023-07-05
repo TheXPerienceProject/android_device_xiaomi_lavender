@@ -45,14 +45,6 @@ vendor/lib/rfsa/adsp/nuance.scd
 vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/libdirac-capiv2.so
 
-# Alarm - from LA.UM.10.2.1.r1-03400-sdm660.0
-product/app/PowerOffAlarm/PowerOffAlarm.apk|3b965f7f7edf7974dcf2f6b60ee72144ecb17dd2
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|c97f4fd088a7e3ae3f1c6ff9372fdaf9680ebe08
-vendor/bin/power_off_alarm|6b5d03e569488b3ab06f62810b1bb48ec1e52a39
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|b69cf46ee3e4e8ec0461804491e95be6757b36a4
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so|464f1137f33a50f1f6ca8114969dad278a3b3cbf
-
 # ANT - from LA.UM.9.12.r1-10800-SMxx50.0-AOSPA
 vendor/lib/hw/com.dsi.ant@1.0-impl.so|f896849d989ed43e28a75e196405459620a19aac
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|2b65d7086bad18c80d925638541be85f0c6d76c4
