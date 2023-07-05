@@ -248,6 +248,9 @@ BOARD_SEPOLICY_M4DEFS += \
     hal_perf_hwservice=vendor_hal_perf_hwservice \
     hal_perf_default_exec=vendor_hal_perf_default_exec
 
+# SVELTE
+MALLOC_SVELTE := true
+
 # Treble
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
