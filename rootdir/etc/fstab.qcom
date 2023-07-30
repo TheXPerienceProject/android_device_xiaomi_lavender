@@ -7,6 +7,7 @@
 
 # Non-A/B fstab.qcom variant
 #<src>                                                   <mnt_point>          <type>  <mnt_flags and options>                                                                         <fs_mgr_flags>
+/dev/block/zram0                                         none                 swap    defaults                                                                                        zramsize=75%,zram_backingdev_size=512M
 #system                                                  /system              erofs   ro                                                                                              wait,avb=vbmeta_system,logical,first_stage_mount
 system                                                   /system              ext4    ro,barrier=1                                                                                    wait,avb=vbmeta_system,logical,first_stage_mount
 #system_ext                                              /system_ext          erofs   ro                                                                                              wait,avb=vbmeta_system,logical,first_stage_mount
