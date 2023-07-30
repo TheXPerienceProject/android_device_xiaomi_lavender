@@ -121,9 +121,10 @@ camera.disable_zsl_mode=true
 # Codec2 switch
 debug.media.codec2=2
 
-#crypto
-ro.crypto.volume.filenames_mode="aes-256-cts"
-ro.crypto.allow_encrypt_override=true
+# Crypto
+ro.crypto.dm_default_key.options_format.version=1
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.volume.options=::v1
 
 # DRM
 drm.service.enabled=true
