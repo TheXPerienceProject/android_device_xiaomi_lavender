@@ -74,14 +74,10 @@ on init
     chown system system /sys/module/battery_saver/parameters/enabled
     chmod 0664 /sys/module/battery_saver/parameters/enabled
 
-on early-fs
-    # We need vold early for metadata encryption
-    start vold
-
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    mount_all /vendor/etc/fstab.qcom --early
+    mount_all /vendor/etc/fstab.qcom
     swapon_all /vendor/etc/fstab.qcom
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
@@ -94,13 +90,6 @@ on fs
     copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
     chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
     mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
-
-on late-fs
-    # Wait for keymaster
-    exec_start wait_for_keymaster
-
-    # Mount RW partitions which need run fsck
-    mount_all /vendor/etc/fstab.qcom --late
 
 on post-fs
     start vendor.qseecomd
