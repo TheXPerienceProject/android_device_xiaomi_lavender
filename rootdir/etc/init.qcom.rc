@@ -146,12 +146,6 @@ on boot
     mkdir /mnt/vendor/persist/iar_db 0770 system system
     mkdir /mnt/vendor/spunvm 0770 system system
 
-    #Create PERFD deamon related dirs
-    mkdir /data/misc/perfd 0755 root system
-    chmod 2755 /data/misc/perfd
-    mkdir /data/system/perfd 0770 root system
-    chmod 2770 /data/system/perfd
-
     setprop wifi.interface wlan0
 
     setprop ro.telephony.call_ring.multiple false
@@ -161,9 +155,6 @@ on boot
 
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
-
-    #Create IOP  deamon related dirs
-    mkdir /data/vendor/iop 0700 root system
 
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
@@ -325,6 +316,14 @@ on post-fs-data
     #Create FM dir for patchdownloader
     mkdir /data/vendor/fm 0770 system system
     chmod 0770 /data/vendor/fm
+
+    #Create PERFD deamon related dirs
+    mkdir /data/vendor/perfd 0770 root system
+    chmod 2770 /data/vendor/perfd
+    rm /data/vendor/perfd/default_values
+
+    #Create IOP  deamon related dirs
+    mkdir /data/vendor/iop 0700 root system
 
     mkdir /data/vendor/secure_element 0777 system system
 

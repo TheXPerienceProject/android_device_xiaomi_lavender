@@ -2,4 +2,4 @@ allow hal_perf_default self:capability sys_admin;
 allow hal_perf_default hal_camera_default:dir search;
 allow vendor_hal_perf_default hal_fingerprint_sdm660:file r_file_perms;
 allow vendor_hal_perf_default mediacodec:dir search;
-
+allow vendor_hal_perf_default mediacodec:file r_file_perms;
