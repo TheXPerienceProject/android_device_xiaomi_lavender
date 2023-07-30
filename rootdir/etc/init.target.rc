@@ -31,6 +31,8 @@ on early-init
     # Disable EAS
     write /proc/sys/kernel/sched_energy_aware 0
 
+    # change IO Scheduler
+    write /sys/block/mmcblk0/queue ssg
 on init
     # Setup permission for Power HAL
     chown system system /dev/stune/top-app/schedtune.boost
