@@ -1273,6 +1273,7 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|3234100973fb8c34b0bb3b3b82db4aa03
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|8837d8d38f9448c729a2e7ca196067d7c0e7ecd3
 
 # DRM (Widevine)
+vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
 
 # DRM (Widevine) - from LA.UM.10.2.1.r1-03400-sdm660.0
